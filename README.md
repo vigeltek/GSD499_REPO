@@ -1,5 +1,6 @@
 # GSD499_REPO
 GSD499 Source Repository for group 1
 
-Sean: Testing ability to edit.
+Sean: Testing ability to edit again
+.
 George: Testing the ability to edit.
