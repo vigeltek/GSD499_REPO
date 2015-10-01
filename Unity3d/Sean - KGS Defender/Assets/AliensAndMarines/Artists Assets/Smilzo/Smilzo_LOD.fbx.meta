@@ -1,0 +1,2227 @@
+fileFormatVersion: 2
+guid: 1b7f80b95f6b5d84ab130ea6065d1221
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Gun_ctrl
+    100002: Gun_EmitterJ
+    100004: Smilzo_Body_LOD0
+    100006: Smilzo_Body_LOD1
+    100008: Smilzo_Body_LOD2
+    100010: //RootNode
+    100012: Smilzo_Root
+    100014: Smilzo_SH_HeadJ
+    100016: Smilzo_SH_HeadTipJ
+    100018: Smilzo_SH_lAnkleJ
+    100020: Smilzo_SH_lBallJ
+    100022: Smilzo_SH_lClavicleJ
+    100024: Smilzo_SH_lElbowJ
+    100026: Smilzo_SH_lFinger1J1
+    100028: Smilzo_SH_lFinger1J2
+    100030: Smilzo_SH_lFinger1J3
+    100032: Smilzo_SH_lFinger1JTip
+    100034: Smilzo_SH_lFinger2J1
+    100036: Smilzo_SH_lFinger2J2
+    100038: Smilzo_SH_lFinger2J3
+    100040: Smilzo_SH_lFinger2JTip
+    100042: Smilzo_SH_lFinger3J1
+    100044: Smilzo_SH_lFinger3J2
+    100046: Smilzo_SH_lFinger3J3
+    100048: Smilzo_SH_lFinger3JTip
+    100050: Smilzo_SH_lForearmJ
+    100052: Smilzo_SH_lHipJ
+    100054: Smilzo_SH_lKneeJ
+    100056: Smilzo_SH_lPalmJ
+    100058: Smilzo_SH_lShoulderJ
+    100060: Smilzo_SH_lThumbJ1
+    100062: Smilzo_SH_lThumbJ2
+    100064: Smilzo_SH_lThumbJ3
+    100066: Smilzo_SH_lThumbJTip
+    100068: Smilzo_SH_lToeJ
+    100070: Smilzo_SH_lWristJ
+    100072: Smilzo_SH_Neck01J
+    100074: Smilzo_SH_rAnkleJ
+    100076: Smilzo_SH_rBallJ
+    100078: Smilzo_SH_rClavicleJ
+    100080: Smilzo_SH_rElbowJ
+    100082: Smilzo_SH_rFinger1J1
+    100084: Smilzo_SH_rFinger1J2
+    100086: Smilzo_SH_rFinger1J3
+    100088: Smilzo_SH_rFinger1JTip
+    100090: Smilzo_SH_rFinger2J1
+    100092: Smilzo_SH_rFinger2J2
+    100094: Smilzo_SH_rFinger2J3
+    100096: Smilzo_SH_rFinger2JTip
+    100098: Smilzo_SH_rFinger3J1
+    100100: Smilzo_SH_rFinger3J2
+    100102: Smilzo_SH_rFinger3J3
+    100104: Smilzo_SH_rFinger3JTip
+    100106: Smilzo_SH_rForearmJ
+    100108: Smilzo_SH_rHipJ
+    100110: Smilzo_SH_rKneeJ
+    100112: Smilzo_SH_ROOTJ
+    100114: Smilzo_SH_rPalmJ
+    100116: Smilzo_SH_rShoulderJ
+    100118: Smilzo_SH_rThumbJ1
+    100120: Smilzo_SH_rThumbJ2
+    100122: Smilzo_SH_rThumbJ3
+    100124: Smilzo_SH_rThumbJTip
+    100126: Smilzo_SH_rToeJ
+    100128: Smilzo_SH_rWristJ
+    100130: Smilzo_SH_Spine01J
+    100132: Smilzo_SH_Spine02J
+    100134: Smilzo_SH_Spine03J
+    100136: Smilzo_SH_SpineTopJ
+    400000: Gun_ctrl
+    400002: Gun_EmitterJ
+    400004: Smilzo_Body_LOD0
+    400006: Smilzo_Body_LOD1
+    400008: Smilzo_Body_LOD2
+    400010: //RootNode
+    400012: Smilzo_Root
+    400014: Smilzo_SH_HeadJ
+    400016: Smilzo_SH_HeadTipJ
+    400018: Smilzo_SH_lAnkleJ
+    400020: Smilzo_SH_lBallJ
+    400022: Smilzo_SH_lClavicleJ
+    400024: Smilzo_SH_lElbowJ
+    400026: Smilzo_SH_lFinger1J1
+    400028: Smilzo_SH_lFinger1J2
+    400030: Smilzo_SH_lFinger1J3
+    400032: Smilzo_SH_lFinger1JTip
+    400034: Smilzo_SH_lFinger2J1
+    400036: Smilzo_SH_lFinger2J2
+    400038: Smilzo_SH_lFinger2J3
+    400040: Smilzo_SH_lFinger2JTip
+    400042: Smilzo_SH_lFinger3J1
+    400044: Smilzo_SH_lFinger3J2
+    400046: Smilzo_SH_lFinger3J3
+    400048: Smilzo_SH_lFinger3JTip
+    400050: Smilzo_SH_lForearmJ
+    400052: Smilzo_SH_lHipJ
+    400054: Smilzo_SH_lKneeJ
+    400056: Smilzo_SH_lPalmJ
+    400058: Smilzo_SH_lShoulderJ
+    400060: Smilzo_SH_lThumbJ1
+    400062: Smilzo_SH_lThumbJ2
+    400064: Smilzo_SH_lThumbJ3
+    400066: Smilzo_SH_lThumbJTip
+    400068: Smilzo_SH_lToeJ
+    400070: Smilzo_SH_lWristJ
+    400072: Smilzo_SH_Neck01J
+    400074: Smilzo_SH_rAnkleJ
+    400076: Smilzo_SH_rBallJ
+    400078: Smilzo_SH_rClavicleJ
+    400080: Smilzo_SH_rElbowJ
+    400082: Smilzo_SH_rFinger1J1
+    400084: Smilzo_SH_rFinger1J2
+    400086: Smilzo_SH_rFinger1J3
+    400088: Smilzo_SH_rFinger1JTip
+    400090: Smilzo_SH_rFinger2J1
+    400092: Smilzo_SH_rFinger2J2
+    400094: Smilzo_SH_rFinger2J3
+    400096: Smilzo_SH_rFinger2JTip
+    400098: Smilzo_SH_rFinger3J1
+    400100: Smilzo_SH_rFinger3J2
+    400102: Smilzo_SH_rFinger3J3
+    400104: Smilzo_SH_rFinger3JTip
+    400106: Smilzo_SH_rForearmJ
+    400108: Smilzo_SH_rHipJ
+    400110: Smilzo_SH_rKneeJ
+    400112: Smilzo_SH_ROOTJ
+    400114: Smilzo_SH_rPalmJ
+    400116: Smilzo_SH_rShoulderJ
+    400118: Smilzo_SH_rThumbJ1
+    400120: Smilzo_SH_rThumbJ2
+    400122: Smilzo_SH_rThumbJ3
+    400124: Smilzo_SH_rThumbJTip
+    400126: Smilzo_SH_rToeJ
+    400128: Smilzo_SH_rWristJ
+    400130: Smilzo_SH_Spine01J
+    400132: Smilzo_SH_Spine02J
+    400134: Smilzo_SH_Spine03J
+    400136: Smilzo_SH_SpineTopJ
+    4300000: Smilzo_Body_LOD0
+    4300002: Smilzo_Body_LOD1
+    4300004: Smilzo_Body_LOD2
+    7400000: Death
+    7400002: Idle
+    7400004: Run
+    7400006: Shoot
+    7400008: ShootEnd
+    7400010: ShootStart
+    7400012: Walk
+    7400014: YesSir
+    9500000: //RootNode
+    13700000: Smilzo_Body_LOD0
+    13700002: Smilzo_Body_LOD1
+    13700004: Smilzo_Body_LOD2
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 411
+      lastFrame: 434
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 71
+      lastFrame: 196
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Shoot
+      takeName: Take 001
+      firstFrame: 320
+      lastFrame: 361
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ShootEnd
+      takeName: Take 001
+      firstFrame: 361
+      lastFrame: 380
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ShootStart
+      takeName: Take 001
+      firstFrame: 301
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 12
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: YesSir
+      takeName: Take 001
+      firstFrame: 211
+      lastFrame: 265
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Smilzo_Body_LOD0
+        weight: 1
+      - path: Smilzo_Body_LOD1
+        weight: 1
+      - path: Smilzo_Body_LOD2
+        weight: 1
+      - path: Smilzo_Root
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_lHipJ/Smilzo_SH_lKneeJ/Smilzo_SH_lAnkleJ/Smilzo_SH_lBallJ/Smilzo_SH_lToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_rHipJ/Smilzo_SH_rKneeJ/Smilzo_SH_rAnkleJ/Smilzo_SH_rBallJ/Smilzo_SH_rToeJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Gun_ctrl/Gun_EmitterJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger1J1/Smilzo_SH_lFinger1J2/Smilzo_SH_lFinger1J3/Smilzo_SH_lFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger2J1/Smilzo_SH_lFinger2J2/Smilzo_SH_lFinger2J3/Smilzo_SH_lFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lPalmJ/Smilzo_SH_lFinger3J1/Smilzo_SH_lFinger3J2/Smilzo_SH_lFinger3J3/Smilzo_SH_lFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_lClavicleJ/Smilzo_SH_lShoulderJ/Smilzo_SH_lElbowJ/Smilzo_SH_lWristJ/Smilzo_SH_lThumbJ1/Smilzo_SH_lThumbJ2/Smilzo_SH_lThumbJ3/Smilzo_SH_lThumbJTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_Neck01J/Smilzo_SH_HeadJ/Smilzo_SH_HeadTipJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rForearmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger1J1/Smilzo_SH_rFinger1J2/Smilzo_SH_rFinger1J3/Smilzo_SH_rFinger1JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger2J1/Smilzo_SH_rFinger2J2/Smilzo_SH_rFinger2J3/Smilzo_SH_rFinger2JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rPalmJ/Smilzo_SH_rFinger3J1/Smilzo_SH_rFinger3J2/Smilzo_SH_rFinger3J3/Smilzo_SH_rFinger3JTip
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3
+        weight: 1
+      - path: Smilzo_Root/Smilzo_SH_ROOTJ/Smilzo_SH_Spine01J/Smilzo_SH_Spine02J/Smilzo_SH_Spine03J/Smilzo_SH_SpineTopJ/Smilzo_SH_rClavicleJ/Smilzo_SH_rShoulderJ/Smilzo_SH_rElbowJ/Smilzo_SH_rWristJ/Smilzo_SH_rThumbJ1/Smilzo_SH_rThumbJ2/Smilzo_SH_rThumbJ3/Smilzo_SH_rThumbJTip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - .25
+    - .125
+    - .00999999978
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Smilzo_Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lHipJ
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rHipJ
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lKneeJ
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rKneeJ
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lAnkleJ
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rAnkleJ
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_Spine01J
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_Spine03J
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lClavicleJ
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rClavicleJ
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lShoulderJ
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rShoulderJ
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lElbowJ
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rElbowJ
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lWristJ
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rWristJ
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lToeJ
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rToeJ
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lThumbJ1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lThumbJ2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lThumbJ3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger1J1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger1J2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger1J3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger2J1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger2J2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger2J3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger3J1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger3J2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_lFinger3J3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rThumbJ1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rThumbJ2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rThumbJ3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger1J1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger1J2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger1J3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger2J1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger2J2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger2J3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger3J1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger3J2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Smilzo_SH_rFinger3J3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Smilzo_LOD(Clone)
+      position: {x: .0343519896, y: 1.07490277, z: .100000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_Body_LOD0
+      position: {x: -.0343519896, y: 0, z: -.100000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_Body_LOD1
+      position: {x: -.0343519896, y: 0, z: -.100000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_Body_LOD2
+      position: {x: -.0343519896, y: 0, z: -.100000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_Root
+      position: {x: -.0343519896, y: -.938956261, z: -.251489818}
+      rotation: {x: .133242115, y: -.215705082, z: -.0323066972, w: .966785491}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_ROOTJ
+      position: {x: -6.93889401e-19, y: .781651497, z: -5.55111521e-18}
+      rotation: {x: -.00931551121, y: .2180617, z: .00463583088, w: .97587955}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rHipJ
+      position: {x: .139178395, y: -.129022002, z: -.0292036291}
+      rotation: {x: .564967394, y: -.444274426, z: .513534725, w: -.468736917}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rKneeJ
+      position: {x: .218931004, y: 3.33066921e-17, z: 2.22044608e-17}
+      rotation: {x: -.00276724342, y: .00801841076, z: .193802714, w: .981003881}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rAnkleJ
+      position: {x: .337901503, y: 6.66133841e-17, z: -1.99840099e-16}
+      rotation: {x: .00871137064, y: .0336932763, z: -.538070798, w: .842180908}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rBallJ
+      position: {x: .248500302, y: -2.22044608e-17, z: 4.44089216e-17}
+      rotation: {x: 0, y: -0, z: -.322868973, w: .946443677}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rToeJ
+      position: {x: .138553604, y: 1.45131899e-17, z: 1.55431208e-16}
+      rotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lHipJ
+      position: {x: -.139178395, y: -.129022002, z: -.0292036291}
+      rotation: {x: .472287565, y: .516324043, z: .441029698, w: .56200242}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lKneeJ
+      position: {x: -.218931004, y: -8.88178433e-17, z: -4.44089216e-17}
+      rotation: {x: -.00894879177, y: .00923923869, z: .19374828, w: .980966985}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lAnkleJ
+      position: {x: -.337901503, y: -8.88178433e-17, z: -2.22044608e-17}
+      rotation: {x: .0087113129, y: .0336932763, z: -.538070738, w: .842180967}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lBallJ
+      position: {x: -.248500302, y: -2.07183207e-12, z: 4.09779988e-11}
+      rotation: {x: 0, y: -0, z: -.322868973, w: .946443677}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lToeJ
+      position: {x: -.138553604, y: -1.15491503e-12, z: 2.38111319e-11}
+      rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_Spine01J
+      position: {x: -0, y: .177711904, z: -.0121848006}
+      rotation: {x: -.111815065, y: 0, z: -0, w: .993729055}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_Spine02J
+      position: {x: -0, y: .184516206, z: -.00985640567}
+      rotation: {x: -.0471689962, y: 0, z: -0, w: .998886943}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_Spine03J
+      position: {x: -0, y: .205263495, z: -.0550274625}
+      rotation: {x: -.036102768, y: 0, z: -0, w: .999348104}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_SpineTopJ
+      position: {x: 2.10681896e-16, y: .187085301, z: .0124053909}
+      rotation: {x: -.483176112, y: .516276002, z: -.483176112, w: .516276002}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rClavicleJ
+      position: {x: -.0560070388, y: .00967445225, z: .154222414}
+      rotation: {x: -.406192988, y: -.565187812, z: -.419045031, w: .583070517}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rShoulderJ
+      position: {x: .164792806, y: 5.32907126e-16, z: 7.54951731e-16}
+      rotation: {x: -.00101339328, y: -.0207477137, z: .0409738682, w: .998944283}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rElbowJ
+      position: {x: .392014712, y: 7.10542693e-16, z: 3.10862415e-16}
+      rotation: {x: .0191602837, y: .00072168553, z: 1.38302421e-05, w: .999816179}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rWristJ
+      position: {x: .473639697, y: -7.10542693e-16, z: 6.66133815e-16}
+      rotation: {x: -.018731581, y: .00420352677, z: -.0459490828, w: .998759329}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rThumbJ1
+      position: {x: .0449999981, y: .00766450493, z: -.0445012301}
+      rotation: {x: .490832329, y: .0376697071, z: .869023204, w: .0496315435}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rThumbJ2
+      position: {x: -.0392016135, y: -5.32907126e-16, z: -3.55271426e-16}
+      rotation: {x: .0431742892, y: .0258862469, z: .0119102029, w: .99866116}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rThumbJ3
+      position: {x: -.0583058409, y: 1.77635705e-15, z: -5.32907126e-16}
+      rotation: {x: .0381685011, y: .0362934805, z: .00950440299, w: .998566806}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rThumbJTip
+      position: {x: -.03890457, y: -7.10542693e-16, z: 0}
+      rotation: {x: -.442641854, y: -.551423788, z: .442641854, w: .551423788}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rPalmJ
+      position: {x: .0488267019, y: -1.77635713e-16, z: 8.88178433e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger3J1
+      position: {x: .0341153704, y: -3.76587596e-14, z: .0442001}
+      rotation: {x: .999781907, y: .00276483572, z: .0189622361, w: -.00830350164}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger3J2
+      position: {x: .0479082614, y: -.00172530802, z: 4.44706511e-12}
+      rotation: {x: 1.84161749e-07, y: 6.31590751e-07, z: .048013255, w: .998846769}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger3J3
+      position: {x: .0414426103, y: -.00835418981, z: -3.09908312e-16}
+      rotation: {x: 7.55757128e-08, y: 3.83915989e-07, z: .0262517147, w: .999655426}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger3JTip
+      position: {x: .0313781016, y: -.0108193709, z: -5.32299909e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger2J1
+      position: {x: .0341153704, y: -3.83693118e-14, z: -.0100000007}
+      rotation: {x: .999775469, y: -1.29754767e-18, z: .0211905614, w: 6.12185916e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger2J2
+      position: {x: .0479082614, y: -.00172530802, z: 4.45217214e-12}
+      rotation: {x: -1.12058714e-07, y: -5.51165499e-07, z: -.0179203358, w: .999839485}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger2J3
+      position: {x: .0580954812, y: -.00427526096, z: -1.77635713e-16}
+      rotation: {x: 7.15135116e-08, y: 5.33955983e-07, z: .0190213323, w: .99981916}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger2JTip
+      position: {x: .0420403294, y: -.00820778403, z: -5.32907126e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger1J1
+      position: {x: .0341153704, y: -3.81916687e-14, z: -.0576128177}
+      rotation: {x: .999016345, y: 2.71523711e-18, z: -.0443431884, w: 6.11721106e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger1J2
+      position: {x: .0479082614, y: -.00172530802, z: 4.45172805e-12}
+      rotation: {x: -6.28253494e-09, y: -7.11985635e-08, z: .0210697427, w: .999778092}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger1J3
+      position: {x: .0470079109, y: -.00699103391, z: -1.77635713e-16}
+      rotation: {x: 1.24632265e-07, y: 5.23119866e-07, z: .0422597416, w: .999106646}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rFinger1JTip
+      position: {x: .0326565728, y: -.0105062304, z: -2.6645351e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_rForearmJ
+      position: {x: .236819789, y: -8.88178433e-17, z: 4.66293702e-16}
+      rotation: {x: .0881387517, y: -0, z: -0, w: .996108234}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lClavicleJ
+      position: {x: -.0560070388, y: .00967445225, z: -.154222414}
+      rotation: {x: .565187812, y: -.406192988, z: .583070517, w: .419045031}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lShoulderJ
+      position: {x: -.164792806, y: -1.06581404e-15, z: 7.54951731e-16}
+      rotation: {x: -.00101337663, y: -.0207478069, z: .0409738757, w: .998944283}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lElbowJ
+      position: {x: -.392014712, y: -7.10542693e-16, z: -3.99680305e-16}
+      rotation: {x: .0191602837, y: .000721758872, z: 1.38316473e-05, w: .999816179}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lWristJ
+      position: {x: -.473639697, y: 0, z: -1.06581415e-15}
+      rotation: {x: -.014534276, y: -.0545145385, z: -.253739357, w: .965625823}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Gun_ctrl
+      position: {x: -.0978791416, y: -.0271865819, z: .00801197812}
+      rotation: {x: -.0718320608, y: -.0183280148, z: -.258541495, w: .963151395}
+      scale: {x: .00999999978, y: .00999999978, z: .00999999978}
+      transformModified: 1
+    - name: Gun_EmitterJ
+      position: {x: -.508498371, y: -.327752411, z: .0652382299}
+      rotation: {x: -.0860050917, y: -.110195123, z: -.00957176089, w: .99013561}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lThumbJ1
+      position: {x: -.0449999981, y: -.00766450493, z: .0445012301}
+      rotation: {x: .439186573, y: .555968523, z: -.330053538, w: .623761833}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lThumbJ2
+      position: {x: -.0384245999, y: -.00749142794, z: -.00204823609}
+      rotation: {x: .00945496559, y: -.0228816736, z: .124510303, w: .991909385}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lThumbJ3
+      position: {x: -.0583058409, y: -1.77635713e-16, z: -3.55271426e-16}
+      rotation: {x: 1.18932604e-07, y: -2.64106006e-07, z: .0375192873, w: .99929589}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lThumbJTip
+      position: {x: -.03890457, y: 4.4408921e-16, z: 3.55271426e-16}
+      rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lPalmJ
+      position: {x: -.0392824411, y: -.0279143211, z: .00785666332}
+      rotation: {x: -.00278653624, y: .0838169381, z: .3011823, w: .949871659}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger3J1
+      position: {x: -.0341153704, y: 9.60476165e-13, z: -.0442001}
+      rotation: {x: .00830375962, y: -.0189636387, z: .00276602269, w: .999781907}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger3J2
+      position: {x: -.0479082614, y: -.00172530802, z: -5.69295696e-12}
+      rotation: {x: 5.0606328e-09, y: -1.83350167e-07, z: -.0480129607, w: .99884671}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger3J3
+      position: {x: -.0414426103, y: -.00835418981, z: -3.55271426e-16}
+      rotation: {x: -1.35623601e-08, y: 2.37420874e-08, z: -.0262475573, w: .999655545}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger3JTip
+      position: {x: -.0313781016, y: -.0108193709, z: -3.77475786e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger2J1
+      position: {x: -.0341153704, y: 3.6184391e-13, z: .0100000007}
+      rotation: {x: 0, y: -.0211905614, z: -0, w: .999775469}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger2J2
+      position: {x: -.0479082614, y: -.00172530802, z: -5.67785792e-12}
+      rotation: {x: 3.82246128e-08, y: -1.64937262e-07, z: .0179175008, w: .999839485}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger2J3
+      position: {x: -.0580954812, y: -.00427526096, z: 1.41553407e-16}
+      rotation: {x: 1.06544791e-08, y: -1.20520568e-07, z: -.0190244783, w: .9998191}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger2JTip
+      position: {x: -.0420403294, y: -.00820778403, z: -5.10702581e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger1J1
+      position: {x: -.0341153704, y: -1.63424802e-13, z: .0576128177}
+      rotation: {x: 0, y: .0443431884, z: -0, w: .999016345}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger1J2
+      position: {x: -.0479082614, y: -.00172530802, z: -5.68092231e-12}
+      rotation: {x: 1.40023575e-08, y: -1.15243438e-06, z: -.0210713055, w: .999778032}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger1J3
+      position: {x: -.0470079109, y: -.00699103391, z: -1.55431208e-16}
+      rotation: {x: -4.97105823e-08, y: -2.46896925e-09, z: -.0422548726, w: .999106884}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lFinger1JTip
+      position: {x: -.0326565728, y: -.0105062304, z: -2.6645351e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_lForearmJ
+      position: {x: -.236819789, y: 0, z: -6.21724883e-16}
+      rotation: {x: .0234017875, y: -0, z: -0, w: .999726176}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_Neck01J
+      position: {x: -.0532238148, y: -.067668125, z: -1.924493e-16}
+      rotation: {x: .614156902, y: -.350444525, z: .614156902, w: .350444525}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_HeadJ
+      position: {x: 2.57689816e-16, y: .0802474692, z: .0311784092}
+      rotation: {x: .549484432, y: -.445047021, z: .549484432, w: -.445047021}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Smilzo_SH_HeadTipJ
+      position: {x: -.484878391, y: 6.66133841e-17, z: 2.495646e-16}
+      rotation: {x: .5, y: -.5, z: .5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
