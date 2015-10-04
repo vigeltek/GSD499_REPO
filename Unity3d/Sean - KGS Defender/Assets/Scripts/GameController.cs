@@ -38,6 +38,11 @@ public class GameController : MonoBehaviour
 
 	}
 
+    void Awake()
+    {
+        Screen.SetResolution(1074, 768, true);
+    }
+
 	IEnumerator Spawner(int enemyTarget)
 	{
 		while (enemyCount < enemyTarget)
