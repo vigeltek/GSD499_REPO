@@ -15,6 +15,6 @@ public class IntroScript : MonoBehaviour {
 
     void Awake()
     {
-        Screen.SetResolution(640, 480, true);
+        Screen.SetResolution(1074, 768, true);
     }
 }
