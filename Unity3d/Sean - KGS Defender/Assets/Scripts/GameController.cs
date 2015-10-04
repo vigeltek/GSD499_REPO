@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour 
 {
-	public GameObject enemyType;
+	public GameObject[] enemyType;
 	public float spawnTimer = 3f;
 	public Transform[] spawnPoints;
 	public Transform[] targets;
@@ -44,7 +44,12 @@ public class GameController : MonoBehaviour
 		{
             yield return new WaitForSeconds(3f);
             int index = Random.Range(0, spawnPoints.Length);
-            GameObject clone = (GameObject)Instantiate(enemyType, spawnPoints[index].position, spawnPoints[index].rotation);
+            GameObject clone;
+
+
+                    clone = (GameObject)Instantiate(enemyType[index], spawnPoints[index].position, spawnPoints[index].rotation);
+
+
             clone.GetComponent<MoveToTarget>().target = targets[index];
             clone.GetComponent<NavMeshAgent>().speed = moveSpeed;
 
@@ -53,14 +58,4 @@ public class GameController : MonoBehaviour
 			enemyCount++;
 		}
 	}
-
-    //void SpawnEnemy()
-    //{
-    //    int index = Random.Range(0, 2);
-    //    GameObject clone = (GameObject)Instantiate(enemyType, spawnPoints[index].position, spawnPoints[index].rotation);
-    //    clone.GetComponent<MoveToTarget>().target = targets[index];
-    //    clone.GetComponent<NavMeshAgent>().speed = moveSpeed;
-
-    //    currentEnemies[enemyCount] = clone;
-    //}
 }
