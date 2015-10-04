@@ -44,13 +44,17 @@ public class TempScript : MonoBehaviour {
             CurrentOrthoSize = MaxToClamp;
 
         _mainCamera.orthographicSize = CurrentOrthoSize;
+        if (Input.GetMouseButtonDown(2))
+        {
+            ZoomAmount = 0;
+        }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             bDragging = true;
             Debug.Log("Drag Start");
         }
-        else if(Input.GetMouseButtonUp(0) && bDragging)
+        else if(Input.GetMouseButtonUp(1) && bDragging)
         {
             bDragging = false;
             Debug.Log("Drag End");
