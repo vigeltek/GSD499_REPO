@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 6d50d7c2581008e4ab47ae97885a77eb
+timeCreated: 1443795368
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube22
+    100004: pCube24
+    100006: pCylinder10
+    100008: pCylinder11
+    100010: pCylinder12
+    100012: pCylinder9
+    100014: polySurface82
+    100016: polySurface83
+    100018: polySurface84
+    100020: polySurface84 1
+    100022: polySurface86
+    100024: polySurface87
+    100026: polySurface88
+    100028: polySurface88 1
+    100030: polySurface89
+    100032: polySurface90
+    100034: polySurface91
+    100036: polySurface92
+    100038: pSphere1
+    100040: pTorus6
+    100042: pTorus7
+    100044: pTorus8
+    100046: transform100
+    100048: transform101
+    100050: transform102
+    100052: transform103
+    100054: transform104
+    100056: transform105
+    100058: transform106
+    100060: transform107
+    100062: transform108
+    100064: transform109
+    100066: transform110
+    100068: transform111
+    100070: transform112
+    100072: transform113
+    100074: transform99
+    400000: //RootNode
+    400002: pCube22
+    400004: pCube24
+    400006: pCylinder10
+    400008: pCylinder11
+    400010: pCylinder12
+    400012: pCylinder9
+    400014: polySurface82
+    400016: polySurface83
+    400018: polySurface84
+    400020: polySurface84 1
+    400022: polySurface86
+    400024: polySurface87
+    400026: polySurface88
+    400028: polySurface88 1
+    400030: polySurface89
+    400032: polySurface90
+    400034: polySurface91
+    400036: polySurface92
+    400038: pSphere1
+    400040: pTorus6
+    400042: pTorus7
+    400044: pTorus8
+    400046: transform100
+    400048: transform101
+    400050: transform102
+    400052: transform103
+    400054: transform104
+    400056: transform105
+    400058: transform106
+    400060: transform107
+    400062: transform108
+    400064: transform109
+    400066: transform110
+    400068: transform111
+    400070: transform112
+    400072: transform113
+    400074: transform99
+    2300000: pCube22
+    2300002: pCylinder9
+    2300004: polySurface92
+    2300006: pSphere1
+    2300008: pTorus6
+    2300010: pTorus7
+    2300012: pTorus8
+    3300000: pCube22
+    3300002: pCylinder9
+    3300004: polySurface92
+    3300006: pSphere1
+    3300008: pTorus6
+    3300010: pTorus7
+    3300012: pTorus8
+    4300000: pCube22
+    4300002: pCylinder9
+    4300004: pSphere1
+    4300006: pTorus6
+    4300008: pTorus7
+    4300010: pTorus8
+    4300012: polySurface92
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

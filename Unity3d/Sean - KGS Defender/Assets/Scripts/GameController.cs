@@ -29,7 +29,6 @@ public class GameController : MonoBehaviour
 		enemyCount = 0;
 		enemyTarget = 5 * wave;
 
-		StartCoroutine(Spawner(enemyTarget));
 	}
 	
 	// Update is called once per frame
@@ -37,6 +36,12 @@ public class GameController : MonoBehaviour
 	{
 
 	}
+
+    void Awake()
+    {
+        Screen.SetResolution(1074, 768, true);
+        StartCoroutine(Spawner(enemyTarget));
+    }
 
 	IEnumerator Spawner(int enemyTarget)
 	{
