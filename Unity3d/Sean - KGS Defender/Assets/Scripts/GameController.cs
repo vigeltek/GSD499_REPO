@@ -3,7 +3,10 @@ using System.Collections;
 
 public class GameController : MonoBehaviour 
 {
-	public GameObject[] enemyType;
+	public GameObject spider;
+    public GameObject buzzer;
+    public GameObject tank;
+    public GameObject mastermind;
 	public float spawnTimer = 3f;
 	public Transform[] spawnPoints;
 	public Transform[] targets;
@@ -20,16 +23,17 @@ public class GameController : MonoBehaviour
 	private int totalWaves;
 	private int enemyCount;
 	private int enemyTarget;
-	private GameObject[] currentEnemies;
+    public GameObject[] currentEnemies;
 
-	// Use this for initialization
-	void Start()
-	{
-		wave = 1;
+    // Use this for initialization
+    void Start()
+	{  
+        wave = 1;
 		enemyCount = 0;
 		enemyTarget = 5 * wave;
-
-	}
+        currentEnemies = new GameObject[enemyTarget];
+        StartCoroutine(SpiderSpawner(enemyTarget));
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -40,27 +44,36 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         Screen.SetResolution(1074, 768, true);
-        StartCoroutine(Spawner(enemyTarget));
+        
     }
 
-	IEnumerator Spawner(int enemyTarget)
+	IEnumerator SpiderSpawner(int enemyTarget)
 	{
 		while (enemyCount < enemyTarget)
 		{
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(spawnTimer);
             int index = Random.Range(0, spawnPoints.Length);
+
+            // Create empty game object to hold each enemy
             GameObject clone;
 
+            // Instantiate the enemy of the appropriate type.
+            clone = (GameObject)Instantiate(spider, spawnPoints[index].position, spawnPoints[index].rotation);
 
-                    clone = (GameObject)Instantiate(enemyType[index], spawnPoints[index].position, spawnPoints[index].rotation);
+            // Assign target to enemy according to which spawnpoint they spawn from.
+            clone.GetComponent<EnemyController>().target = targets[index];
 
+            // Assign enemy stats
+            clone.GetComponent<EnemyController>().healthPoints = healthPoints;
+            clone.GetComponent<EnemyController>().attackPower = attackPower;
+            clone.GetComponent<EnemyController>().attackSpeed = attackSpeed;
+            clone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
+            clone.GetComponent<EnemyController>().resourceValue = resourceValue;
+            clone.GetComponent<EnemyController>().waveModifier = waveModifier;
 
-            clone.GetComponent<MoveToTarget>().target = targets[index];
-            clone.GetComponent<NavMeshAgent>().speed = moveSpeed;
+            currentEnemies[enemyCount] = clone;
 
-            //currentEnemies[enemyCount] = clone;
-
-			enemyCount++;
+            enemyCount++;
 		}
 	}
 }
