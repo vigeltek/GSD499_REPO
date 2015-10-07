@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
     private Animator animator;
+    private GameObject gameController;
 
     //Enemy Stats
     public float healthPoints;
@@ -13,14 +14,18 @@ public class EnemyController : MonoBehaviour
     public float attackSpeed;
     public float moveSpeed;
     public float resourceValue;
-    public float waveModifier;
+
     public float distToTarget;
 
+    private float currentHealth;
+
     // Use this for initialization
-    void Start () 
+    void Awake () 
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        gameController = GameObject.FindGameObjectWithTag ( "Game Manager" );
+        currentHealth = healthPoints;
 	}
 	
 	// Update is called once per frame
@@ -33,9 +38,23 @@ public class EnemyController : MonoBehaviour
 
         if (distToTarget <= 20)
         {
-            agent.speed = 0;
+            agent.Stop();
             animator.SetBool("ReachTarget", true);
+            
         }
+
+        IsDead();
 	}
+
+    void IsDead()
+    {
+        if (gameObject.GetComponent<Animator>().GetBool("ReachTarget") == true)
+        {
+
+            gameController.GetComponent<GameController>().RemoveEnemy();
+            Destroy(gameObject);
+
+        }
+    }
 
 }
