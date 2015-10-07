@@ -185,7 +185,10 @@ public class WeaponController : MonoBehaviour {
     {
         //Rests all targeting scripts in preparation for getting next target.
         Target = null;
-        swivel1.target = null;
+        if (isLaser || isRocket)
+        {
+            swivel1.target = null;
+        }
         if (isLaser)
         {
             swivel2.target = null;
