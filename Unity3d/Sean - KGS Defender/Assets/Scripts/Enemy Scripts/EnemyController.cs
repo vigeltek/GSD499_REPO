@@ -43,8 +43,18 @@ public class EnemyController : MonoBehaviour
             
         }
 
+        if (currentHealth <= 0)
+        {
+            IsDead();
+        }
+
         IsDead();
 	}
+
+    void TakeDamage(int dmgAmount)
+    {
+        currentHealth = currentHealth - dmgAmount;
+    }
 
     void IsDead()
     {

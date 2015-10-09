@@ -23,16 +23,16 @@ public class GameController : MonoBehaviour
 	private float waveModifier;
 	private int wave;
 	private int totalWaves;
-	private int enemyCount;
+	public int enemyCount;
 	private int numToSpawn;
-    private int enemiesRemaining;
+    public int enemiesRemaining;
     private bool bossWave;
-    private GameObject[] currentEnemies;
+    public GameObject[] currentEnemies;
 
     void Awake()
     {
         Screen.SetResolution(1074, 768, true);
-        wave = 0;
+        wave = 3;
         waveModifier = 0;
         enemyCount = 0;
         numToSpawn = 0;
@@ -48,6 +48,8 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+        spawnTimer = Random.Range(1.5f, 2.5f);
+
         if (enemiesRemaining == 0)
         {
             StartNewWave();
@@ -57,12 +59,9 @@ public class GameController : MonoBehaviour
     void StartNewWave()
     {
         wave++;
-        numToSpawn = 2 * wave;
-        if (wave > 1)
-        {
-            waveModifier = 0.1f;
-            waveModifier = waveModifier * (wave-1);
-        }
+        numToSpawn = 6 * wave;
+
+        waveModifier = .01f * (wave-1);
 
         WaveGenerator(wave, numToSpawn);
     }
@@ -88,8 +87,8 @@ public class GameController : MonoBehaviour
 
             case 4:
             case 5:
-                StartCoroutine(BuzzerSpawner(toSpawn / 2));
-                StartCoroutine(SpiderSpawner(toSpawn / 2));
+                StartCoroutine(BuzzerSpawner(4));
+                StartCoroutine(SpiderSpawner(4));
                 bossWave = false;
                 break;
 
@@ -97,6 +96,26 @@ public class GameController : MonoBehaviour
                 StartCoroutine(BuzzerSpawner(toSpawn / 2));
                 StartCoroutine(SpiderSpawner(toSpawn / 2));
                 bossWave = true;
+                break;
+
+            case 7:
+            case 8:
+                StartCoroutine(TankSpawner(toSpawn / 3));
+                StartCoroutine(BuzzerSpawner(toSpawn / 3));
+                StartCoroutine(SpiderSpawner(toSpawn / 3));
+                bossWave = false;
+                break;
+
+            case 9:
+                StartCoroutine(TankSpawner(toSpawn / 3));
+                StartCoroutine(BuzzerSpawner(toSpawn / 3));
+                StartCoroutine(SpiderSpawner(toSpawn / 3));
+                bossWave = true;
+                break;
+
+            case 10:
+                StartCoroutine(MasterMindSpawner(toSpawn));
+                bossWave = false;
                 break;
         }
     }
@@ -108,32 +127,32 @@ public class GameController : MonoBehaviour
 
     IEnumerator SpiderSpawner(int spawnNum)
     {
-        while (enemyCount < spawnNum)
+        while (enemyCount < numToSpawn)
         {
             yield return new WaitForSeconds(spawnTimer);
             int index = Random.Range(0, spawnPoints.Length);
-            GameObject clone;
+            GameObject spiderClone;
 
             // If it is a boss wave, spawn a larger more powerful version.
             if ((bossWave == true) && (enemyCount == spawnNum - 1))
             {
                 // Instantiate the enemy of the appropriate type.
-                clone = (GameObject)Instantiate(spider, (spawnPoints[index].position), spawnPoints[index].rotation);
+                spiderClone = (GameObject)Instantiate(spider, (spawnPoints[index].position), spawnPoints[index].rotation);
 
                 // Assign target to enemy according to which spawnpoint they spawn from.
-                clone.GetComponent<EnemyController>().target = targets[index];
+                spiderClone.GetComponent<EnemyController>().target = targets[index];
 
                 // Assign enemy stats
-                clone.GetComponent<EnemyController>().healthPoints = healthPoints * 5;
-                clone.GetComponent<EnemyController>().attackPower = attackPower * 2;
-                clone.GetComponent<EnemyController>().attackSpeed = attackSpeed * 2;
-                clone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
-                clone.GetComponent<EnemyController>().resourceValue = resourceValue * 10;
+                spiderClone.GetComponent<EnemyController>().healthPoints = healthPoints * 5;
+                spiderClone.GetComponent<EnemyController>().attackPower = attackPower * 2;
+                spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed * 2;
+                spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
+                spiderClone.GetComponent<EnemyController>().resourceValue = resourceValue * 10;
 
-                clone.transform.localScale += new Vector3(1, 1, 1);
+                spiderClone.transform.localScale += new Vector3(1, 1, 1);
 
                 // Add to the currentEnemies array.
-                currentEnemies[enemyCount] = clone;
+                currentEnemies[enemyCount] = spiderClone;
 
                 // Increase enemy count for tracking purposes.
                 enemyCount++;
@@ -141,20 +160,20 @@ public class GameController : MonoBehaviour
             else
             {
                 // Instantiate the enemy of the appropriate type.
-                clone = (GameObject)Instantiate(spider, spawnPoints[index].position, spawnPoints[index].rotation);
+                spiderClone = (GameObject)Instantiate(spider, spawnPoints[index].position, spawnPoints[index].rotation);
 
                 // Assign target to enemy according to which spawnpoint they spawn from.
-                clone.GetComponent<EnemyController>().target = targets[index];
+                spiderClone.GetComponent<EnemyController>().target = targets[index];
 
                 // Assign enemy stats
-                clone.GetComponent<EnemyController>().healthPoints = healthPoints + (healthPoints * waveModifier);
-                clone.GetComponent<EnemyController>().attackPower = attackPower + (attackPower * waveModifier);
-                clone.GetComponent<EnemyController>().attackSpeed = attackSpeed + (attackSpeed * waveModifier);
-                clone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
-                clone.GetComponent<EnemyController>().resourceValue = resourceValue;
+                spiderClone.GetComponent<EnemyController>().healthPoints = healthPoints + (healthPoints * waveModifier);
+                spiderClone.GetComponent<EnemyController>().attackPower = attackPower + (attackPower * waveModifier);
+                spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed + (attackSpeed * waveModifier);
+                spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
+                spiderClone.GetComponent<EnemyController>().resourceValue = resourceValue;
 
                 // Add to the currentEnemies array.
-                currentEnemies[enemyCount] = clone;
+                currentEnemies[enemyCount] = spiderClone;
 
                 // Increase enemy count for tracking purposes.
                 enemyCount++;
@@ -164,32 +183,32 @@ public class GameController : MonoBehaviour
 
     IEnumerator BuzzerSpawner(int spawnNum)
     {
-        while (enemyCount < spawnNum)
+        while (enemyCount < numToSpawn)
         {
-            yield return new WaitForSeconds(spawnTimer + 0.25f);
+            yield return new WaitForSeconds(spawnTimer + 0.50f);
             int index = Random.Range(0, spawnPoints.Length);
-            GameObject clone;
+            GameObject buzzerClone;
 
             // If it is a boss wave, spawn a larger more powerful version.
             if ((bossWave == true) && (enemyCount == spawnNum - 1))
             {
                 // Instantiate the enemy of the appropriate type.
-                clone = (GameObject)Instantiate(buzzer, (spawnPoints[index].position), spawnPoints[index].rotation);
+                buzzerClone = (GameObject)Instantiate(buzzer, (spawnPoints[index].position), spawnPoints[index].rotation);
 
                 // Assign target to enemy according to which spawnpoint they spawn from.
-                clone.GetComponent<EnemyController>().target = targets[index];
+                buzzerClone.GetComponent<EnemyController>().target = targets[index];
 
                 // Assign enemy stats
-                clone.GetComponent<EnemyController>().healthPoints = (healthPoints * 1.5f) * 5;
-                clone.GetComponent<EnemyController>().attackPower = (attackPower * 0.5f) * 2;
-                clone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) *2;
-                clone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
-                clone.GetComponent<EnemyController>().resourceValue = (resourceValue * 2) *10;
+                buzzerClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 1.5f) * 5;
+                buzzerClone.GetComponent<EnemyController>().attackPower = (attackPower * 0.5f) * 2;
+                buzzerClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) *2;
+                buzzerClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
+                buzzerClone.GetComponent<EnemyController>().resourceValue = (resourceValue * 2) *10;
 
-                clone.transform.localScale += new Vector3(1, 1, 1);
+                buzzerClone.transform.localScale += new Vector3(1, 1, 1);
 
                 // Add to the currentEnemies array.
-                currentEnemies[enemyCount] = clone;
+                currentEnemies[enemyCount] = buzzerClone;
 
                 // Increase enemy count for tracking purposes.
                 enemyCount++;
@@ -197,20 +216,20 @@ public class GameController : MonoBehaviour
             else
             {
                 // Instantiate the enemy of the appropriate type.
-                clone = (GameObject)Instantiate(buzzer, spawnPoints[index].position, spawnPoints[index].rotation);
+                buzzerClone = (GameObject)Instantiate(buzzer, spawnPoints[index].position, spawnPoints[index].rotation);
 
                 // Assign target to enemy according to which spawnpoint they spawn from.
-                clone.GetComponent<EnemyController>().target = targets[index];
+                buzzerClone.GetComponent<EnemyController>().target = targets[index];
 
                 // Assign enemy stats
-                clone.GetComponent<EnemyController>().healthPoints = (healthPoints * 1.5f) + ((healthPoints * 1.5f) * waveModifier);
-                clone.GetComponent<EnemyController>().attackPower = (attackPower * 0.5f) + ((attackPower * 0.5f) * waveModifier);
-                clone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) + ((attackSpeed * 2f) * waveModifier);
-                clone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
-                clone.GetComponent<EnemyController>().resourceValue = resourceValue * 2;
+                buzzerClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 1.5f) + ((healthPoints * 1.5f) * waveModifier);
+                buzzerClone.GetComponent<EnemyController>().attackPower = (attackPower * 0.5f) + ((attackPower * 0.5f) * waveModifier);
+                buzzerClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) + ((attackSpeed * 2f) * waveModifier);
+                buzzerClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
+                buzzerClone.GetComponent<EnemyController>().resourceValue = resourceValue * 2;
 
                 // Add to the currentEnemies array.
-                currentEnemies[enemyCount] = clone;
+                currentEnemies[enemyCount] = buzzerClone;
 
                 // Increase enemy count for tracking purposes.
                 enemyCount++;
@@ -218,4 +237,85 @@ public class GameController : MonoBehaviour
         }
     }
 
+    IEnumerator TankSpawner(int spawnNum)
+    {
+        while (enemyCount < numToSpawn)
+        {
+            yield return new WaitForSeconds(spawnTimer + 1.0f);
+            int index = Random.Range(0, spawnPoints.Length);
+            GameObject tankClone;
+
+            // If it is a boss wave, spawn a larger more powerful version.
+            if ((bossWave == true) && (enemyCount == spawnNum - 1))
+            {
+                // Instantiate the enemy of the appropriate type.
+                tankClone = (GameObject)Instantiate(tank, (spawnPoints[index].position), spawnPoints[index].rotation);
+
+                // Assign target to enemy according to which spawnpoint they spawn from.
+                tankClone.GetComponent<EnemyController>().target = targets[index];
+
+                // Assign enemy stats
+                tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) * 5;
+                tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) * 2;
+                tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) * 2;
+                tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
+                tankClone.GetComponent<EnemyController>().resourceValue = (resourceValue * 4) * 10;
+
+                tankClone.transform.localScale += new Vector3(1, 1, 1);
+
+                // Add to the currentEnemies array.
+                currentEnemies[enemyCount] = tankClone;
+
+                // Increase enemy count for tracking purposes.
+                enemyCount++;
+            }
+            else
+            {
+                // Instantiate the enemy of the appropriate type.
+                tankClone = (GameObject)Instantiate(tank, spawnPoints[index].position, spawnPoints[index].rotation);
+
+                // Assign target to enemy according to which spawnpoint they spawn from.
+                tankClone.GetComponent<EnemyController>().target = targets[index];
+
+                // Assign enemy stats
+                tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) + ((healthPoints * 3f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) + ((attackPower * 3f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) + ((attackSpeed * .5f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
+                tankClone.GetComponent<EnemyController>().resourceValue = resourceValue * 4;
+
+                // Add to the currentEnemies array.
+                currentEnemies[enemyCount] = tankClone;
+
+                // Increase enemy count for tracking purposes.
+                enemyCount++;
+            }
+        }
+    }
+
+    IEnumerator MasterMindSpawner(int spawnNum)
+    {
+        yield return new WaitForSeconds(spawnTimer + 1.0f);
+        int index = Random.Range(0, spawnPoints.Length);
+        GameObject masterMindClone;
+
+        // Instantiate the enemy of the appropriate type.
+        masterMindClone = (GameObject)Instantiate(mastermind, spawnPoints[index].position, spawnPoints[index].rotation);
+        
+        // Assign target to enemy according to which spawnpoint they spawn from.
+        masterMindClone.GetComponentInChildren<EnemyController>().target = targets[index];
+
+    // Assign enemy stats
+        masterMindClone.GetComponentInChildren<EnemyController>().healthPoints = 10000;
+        masterMindClone.GetComponentInChildren<EnemyController>().attackPower = 100;
+        masterMindClone.GetComponentInChildren<EnemyController>().attackSpeed = 1;
+        masterMindClone.GetComponentInChildren<EnemyController>().moveSpeed = 10;
+        masterMindClone.GetComponentInChildren<EnemyController>().resourceValue = 10000;
+
+        // Add to the currentEnemies array.
+        currentEnemies[enemyCount] = masterMindClone;
+
+        // Increase enemy count for tracking purposes.
+        enemyCount++;
+    }
 }
