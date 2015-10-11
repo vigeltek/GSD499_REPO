@@ -1,9 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum _GameState { Play, Pause, Over }
+
 public class GameController : MonoBehaviour 
 {
-	public GameObject[] enemyType;
+    // handle in game messages
+    public delegate void GameMessageHandler(string msg);
+    public static event GameMessageHandler onGameMessageE;
+
+    // display messages
+    public static void DisplayMessage(string msg) { if (onGameMessageE != null) onGameMessageE(msg); }
+
+    // handle game over
+    public delegate void GameOverHandler(bool win); //true if win
+    public static event GameOverHandler onGameOverE;
+
+    // track game state
+    public static _GameState GetGameState() { return instance.gameState; }
+
+    // how much you get for selling a tower
+    public float sellTowerRefundRatio = 0.5f;
+    private float timeStep = 0.015f;
+    public bool loadAudioManager = false;
+
+    public string nextScene = "";
+    public string mainMenu = "";
+
+    public _GameState gameState = _GameState.Play;
+
+    public GameObject[] enemyType;
 	public float spawnTimer = 3f;
 	public Transform[] spawnPoints;
 	public Transform[] targets;
@@ -22,8 +48,10 @@ public class GameController : MonoBehaviour
 	private int enemyTarget;
 	private GameObject[] currentEnemies;
 
-	// Use this for initialization
-	void Start()
+    public static GameController instance;
+
+    // Use this for initialization
+    void Start()
 	{
 		wave = 1;
 		enemyCount = 0;
@@ -39,11 +67,21 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
+        instance = this;
         Screen.SetResolution(1074, 768, true);
         StartCoroutine(Spawner(enemyTarget));
     }
 
-	IEnumerator Spawner(int enemyTarget)
+    // add enable and disable functions
+    void OnEnable()
+    {
+    }
+    void OnDisable()
+    {
+    }
+
+
+    IEnumerator Spawner(int enemyTarget)
 	{
 		while (enemyCount < enemyTarget)
 		{
