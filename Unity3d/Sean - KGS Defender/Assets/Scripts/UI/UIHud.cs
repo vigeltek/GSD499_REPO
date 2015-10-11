@@ -17,4 +17,22 @@ public class UIHud : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void OnPauseButton()
+    {
+        Debug.Log("OnPauseButton Clicked");
+        _GameState gameState = GameController.GetGameState();
+        if (gameState == _GameState.Over) return;
+        
+        if (gameState == _GameState.Pause)
+        {
+            GameController.ResumeGame();
+            UIPauseMenu.Hide();
+        }
+        else
+        {
+            GameController.PauseGame();
+            UIPauseMenu.Show();
+        }
+    }
 }
