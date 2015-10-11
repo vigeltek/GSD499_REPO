@@ -6,6 +6,7 @@ public class Stats : MonoBehaviour {
     public float health;
     WeaponController wc;
     GameObject LastWeapon;
+    public GameObject DestructionParticles;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,7 @@ public class Stats : MonoBehaviour {
                 wc.DeathConfirmation(this.gameObject);
             }
             //Instantiate death explosion
-
+            Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
             //Finally destroy this object.
             Destroy(this.gameObject);
         }

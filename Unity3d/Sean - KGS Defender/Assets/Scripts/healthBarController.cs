@@ -3,7 +3,7 @@ using System.Collections;
 
 public class healthBarController : MonoBehaviour {
 
-    public Camera camera;
+    public Camera cam;
     public Vector3 fullScale;
     public float healthBarEmptySpeed;
 
@@ -19,7 +19,7 @@ public class healthBarController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        transform.LookAt(camera.gameObject.transform);
+        transform.LookAt(cam.gameObject.transform);
        Vector3 currScale = this.gameObject.transform.localScale;
         Vector3 destScale = new Vector3(fullScale.x * (stat.health / 100), fullScale.y * (stat.health / 100), fullScale.z);
         Vector3 target = Vector3.Lerp(currScale, destScale, healthBarEmptySpeed);
