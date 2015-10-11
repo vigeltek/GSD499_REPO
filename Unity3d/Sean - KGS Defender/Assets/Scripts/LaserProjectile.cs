@@ -6,6 +6,7 @@ public class LaserProjectile : MonoBehaviour {
     public Vector3 movementSpeed;
     public float damage;
     Rigidbody rb;
+    public GameObject parent;
 
     public GameObject LaserHit;
 
@@ -39,7 +40,7 @@ public class LaserProjectile : MonoBehaviour {
     void ApplyDamage(GameObject go)
     {
         Stats stat = go.GetComponent<Stats>();
-        stat.DamageObject(damage);
+        stat.DamageObject(damage, parent);
     }
 
 }

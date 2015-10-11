@@ -1,5 +1,8 @@
 var target : Transform;
-var distance = 10.0;
+var distanceMin = 10.0;
+var distanceMax = 15.0;
+var distanceInitial = 12.5;
+var scrollSpeed = 1.0;
 
 var xSpeed = 250.0;
 var ySpeed = 120.0;
@@ -9,13 +12,16 @@ var yMaxLimit = 80;
 
 private var x = 0.0;
 private var y = 0.0;
+private var distanceCurrent = 0.0;
 
-@script AddComponentMenu("Camera-Control/Mouse Orbit")
+@script AddComponentMenu ("Camera-Control/Key Mouse Orbit")
 
 function Start () {
     var angles = transform.eulerAngles;
     x = angles.y;
     y = angles.x;
+
+	distanceCurrent = distanceInitial;
 
 	// Make the rigid body not change rotation
    	if (GetComponent.<Rigidbody>())
@@ -24,13 +30,15 @@ function Start () {
 
 function LateUpdate () {
     if (target) {
-        x += Input.GetAxis("Mouse X") * xSpeed * 0.02;
-        y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02;
- 		
+        x += Input.GetAxis("Horizontal") * xSpeed * 0.02;
+        y -= Input.GetAxis("Vertical") * ySpeed * 0.02;
+ 		distanceCurrent -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+		
+		distanceCurrent = Mathf.Clamp(distanceCurrent, distanceMin, distanceMax);
  		y = ClampAngle(y, yMinLimit, yMaxLimit);
  		       
         var rotation = Quaternion.Euler(y, x, 0);
-        var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
+        var position = rotation * Vector3(0.0, 0.0, -distanceCurrent) + target.position;
         
         transform.rotation = rotation;
         transform.position = position;
