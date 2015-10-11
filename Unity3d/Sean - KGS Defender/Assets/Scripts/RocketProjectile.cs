@@ -3,12 +3,12 @@ using System.Collections;
 
 public class RocketProjectile : MonoBehaviour {
 
-
+    public float trackingLockDelay;
     public Vector3 movementSpeed;
     public float damage;
     Rigidbody rb;
     public GameObject RocketHit;
-
+    public bool locked = false;
 
     public GameObject target;
     public laserTurretHeadPoint hp;
@@ -17,9 +17,12 @@ public class RocketProjectile : MonoBehaviour {
     private Vector3 targetPoint;
     private Quaternion targetRotation;
 
+    public GameObject Parent;
+
     // Use this for initialization
     void Start () {
         rb = this.gameObject.GetComponent<Rigidbody>();
+        StartCoroutine("Wait");
     }
 
     void FixedUpdate()
@@ -54,13 +57,23 @@ public class RocketProjectile : MonoBehaviour {
         }
         else
         {
-            Destroy(this.gameObject);
+            if (c.gameObject.tag != "Player")
+            {
+                Destroy(this.gameObject);
+            }
+
         }
     }
 
     void ApplyDamage(GameObject go)
     {
         Stats stat = go.GetComponent<Stats>();
-        stat.DamageObject(damage);
+        stat.DamageObject(damage, Parent);
+    }
+
+    public IEnumerable Wait()
+    {
+        yield return new WaitForSeconds(trackingLockDelay);
+        locked = true;
     }
 }
