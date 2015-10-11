@@ -155,6 +155,7 @@ public class GameController : MonoBehaviour
 
                 // Assign enemy stats
                 spiderClone.GetComponent<EnemyController>().healthPoints = healthPoints * 5;
+                spiderClone.GetComponent<Stats>().health = spiderClone.GetComponent<EnemyController>().healthPoints;
                 spiderClone.GetComponent<EnemyController>().attackPower = attackPower * 2;
                 spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed * 2;
                 spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
@@ -178,6 +179,7 @@ public class GameController : MonoBehaviour
 
                 // Assign enemy stats
                 spiderClone.GetComponent<EnemyController>().healthPoints = healthPoints + (healthPoints * waveModifier);
+                spiderClone.GetComponent<Stats>().health = spiderClone.GetComponent<EnemyController>().healthPoints;
                 spiderClone.GetComponent<EnemyController>().attackPower = attackPower + (attackPower * waveModifier);
                 spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed + (attackSpeed * waveModifier);
                 spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
