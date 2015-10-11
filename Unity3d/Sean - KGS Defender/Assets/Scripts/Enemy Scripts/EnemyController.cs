@@ -61,11 +61,8 @@ public class EnemyController : MonoBehaviour
     {
         if (animator.GetBool("ReachTarget") == true)
         {
-            GameObject deathFX = (GameObject)Instantiate(deathExplosion, gameObject.transform.position, gameObject.transform.rotation);
             gameController.GetComponent<GameController>().RemoveEnemy();
             Destroy(gameObject);
-
-
         }
     }
 
