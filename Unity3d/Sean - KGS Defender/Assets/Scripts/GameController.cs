@@ -50,6 +50,17 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
 
+    public static void LoadMainMenu() { if (instance.mainMenu != "") Load(instance.mainMenu); }
+
+    public static void Load(string levelName)
+    {
+        //if(gameState==_GameState.Ended && instance.playerLife>0){
+        //	ResourceManager.NewSceneNotification();
+        //}
+        Application.LoadLevel(levelName);
+    }
+
+
     // Use this for initialization
     void Start()
 	{
@@ -78,6 +89,17 @@ public class GameController : MonoBehaviour
     }
     void OnDisable()
     {
+    }
+
+    public static void PauseGame()
+    {
+        instance.gameState = _GameState.Pause;
+        Time.timeScale = 0;
+    }
+    public static void ResumeGame()
+    {
+        instance.gameState = _GameState.Play;
+        Time.timeScale = 1;
     }
 
 
