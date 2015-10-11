@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private GameObject gameController;
+    public GameObject deathExplosion;
 
     //Enemy Stats
     public float healthPoints;
@@ -20,7 +21,7 @@ public class EnemyController : MonoBehaviour
     private float currentHealth;
 
     // Use this for initialization
-    void Awake () 
+    void Start () 
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
@@ -58,11 +59,12 @@ public class EnemyController : MonoBehaviour
 
     void IsDead()
     {
-        if (gameObject.GetComponent<Animator>().GetBool("ReachTarget") == true)
+        if (animator.GetBool("ReachTarget") == true)
         {
-
+            GameObject deathFX = (GameObject)Instantiate(deathExplosion, gameObject.transform.position, gameObject.transform.rotation);
             gameController.GetComponent<GameController>().RemoveEnemy();
             Destroy(gameObject);
+
 
         }
     }
