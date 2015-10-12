@@ -3,7 +3,9 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour 
 {
-    public Transform target;
+    public Transform shield;
+    public Transform ship;
+    private bool shieldDown;
     private NavMeshAgent agent;
     private Animator animator;
     private GameObject spawnController;
@@ -28,19 +30,21 @@ public class EnemyController : MonoBehaviour
 
         attackObject = false;
         canFire = false;
-	}
+        shieldDown = false;
+
+        agent.SetDestination(shield.position);
+
+        agent.speed = moveSpeed;
+    }
 	
 	// Update is called once per frame
 	void Update () 
     {
-	    agent.SetDestination(target.position);
-        agent.speed = moveSpeed;
-
-        if(attackObject == true && collObject.GetComponent<Stats>().health > 0)
+        if(canFire == true && attackObject == true && collObject.GetComponent<Stats>().health > 0)
         {
             AttackTarget(collObject);
         }
-	}
+    }
 
     void OnTriggerEnter(Collider c)
     {   
@@ -52,6 +56,8 @@ public class EnemyController : MonoBehaviour
             gameObject.transform.LookAt(collObject.transform.position);
 
             attackObject = true;
+
+            StartCoroutine("ResetFire");
         }
     }
 
@@ -61,11 +67,14 @@ public class EnemyController : MonoBehaviour
 
         if (canFire)
         {
-            GameObject projClone = (GameObject)Instantiate(attackHit, new Vector3(transform.position.x, transform.position.y + 3, transform.position.z), transform.rotation);
+            
+            GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).rotation);
 
-            projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0, 0, 25);
+            projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0,0,25);
 
-            Physics.IgnoreCollision(projClone.GetComponent<Collider>(), transform.GetComponent<Collider>());
+            Physics.IgnoreLayerCollision(8,9);
+            Physics.IgnoreLayerCollision(9, 9);
+            Physics.IgnoreLayerCollision(9,10);
 
             collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
 
