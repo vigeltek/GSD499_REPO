@@ -6,8 +6,11 @@ public class EnemyController : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
     private Animator animator;
-    private GameObject gameController;
-    public GameObject deathExplosion;
+    private GameObject spawnController;
+    public GameObject attackHit;
+    private bool attackObject;
+    private bool canFire;
+    public GameObject collObject;
 
     //Enemy Stats
     public float healthPoints;
@@ -16,17 +19,15 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
     public float resourceValue;
 
-    public float distToTarget;
-
-    private float currentHealth;
-
     // Use this for initialization
     void Start () 
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        gameController = GameObject.FindGameObjectWithTag ( "Game Manager" );
-        currentHealth = healthPoints;
+        spawnController = GameObject.FindGameObjectWithTag ( "Spawn Manager" );
+
+        attackObject = false;
+        canFire = false;
 	}
 	
 	// Update is called once per frame
@@ -35,35 +36,53 @@ public class EnemyController : MonoBehaviour
 	    agent.SetDestination(target.position);
         agent.speed = moveSpeed;
 
-        distToTarget = Vector3.Distance(target.transform.position, this.transform.position);
-
-        if (distToTarget <= 20)
+        if(attackObject == true && collObject.GetComponent<Stats>().health > 0)
         {
-            agent.Stop();
-            animator.SetBool("ReachTarget", true);
-            
+            AttackTarget(collObject);
         }
-
-        if (currentHealth <= 0)
-        {
-            IsDead();
-        }
-
-        IsDead();
 	}
 
-    void TakeDamage(int dmgAmount)
-    {
-        currentHealth = currentHealth - dmgAmount;
+    void OnTriggerEnter(Collider c)
+    {   
+        if (c.gameObject.CompareTag("Base Component"))
+        {
+            collObject = c.gameObject;
+            agent.Stop();
+            animator.SetBool("ReachTarget", true);
+            gameObject.transform.LookAt(collObject.transform.position);
+
+            attackObject = true;
+        }
     }
 
-    void IsDead()
+    // Update is called once per frame
+    private void AttackTarget(GameObject collTarget)
     {
-        if (animator.GetBool("ReachTarget") == true)
+
+        if (canFire)
         {
-            gameController.GetComponent<GameController>().RemoveEnemy();
-            Destroy(gameObject);
+            GameObject projClone = (GameObject)Instantiate(attackHit, new Vector3(transform.position.x, transform.position.y + 3, transform.position.z), transform.rotation);
+
+            projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0, 0, 25);
+
+            Physics.IgnoreCollision(projClone.GetComponent<Collider>(), transform.GetComponent<Collider>());
+
+            collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
+
+            canFire = false;
         }
+
+        if (!canFire)
+        {
+            //set canFire = true after proper wait time.
+            StartCoroutine("ResetFire");
+        }
+    }
+
+    IEnumerator ResetFire()
+    {
+        yield return new WaitForSeconds(attackSpeed);
+        canFire = true;
     }
 
 }

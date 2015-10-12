@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameController : MonoBehaviour 
+public class SpawnController : MonoBehaviour 
 {
     // Prefabs for the Enemy types.
     public GameObject spider;
