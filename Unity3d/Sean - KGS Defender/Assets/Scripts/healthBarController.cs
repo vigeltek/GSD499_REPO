@@ -11,6 +11,7 @@ public class healthBarController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+    
         stat = this.gameObject.transform.parent.gameObject.GetComponent<Stats>();
         fullScale = gameObject.transform.localScale;
        

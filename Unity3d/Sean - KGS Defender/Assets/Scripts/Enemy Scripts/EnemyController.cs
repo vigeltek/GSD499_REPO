@@ -1,0 +1,88 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class EnemyController : MonoBehaviour 
+{
+    public Transform target;
+    private NavMeshAgent agent;
+    private Animator animator;
+    private GameObject spawnController;
+    public GameObject attackHit;
+    private bool attackObject;
+    private bool canFire;
+    public GameObject collObject;
+
+    //Enemy Stats
+    public float healthPoints;
+    public float attackPower;
+    public float attackSpeed;
+    public float moveSpeed;
+    public float resourceValue;
+
+    // Use this for initialization
+    void Start () 
+    {
+        agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        spawnController = GameObject.FindGameObjectWithTag ( "Spawn Manager" );
+
+        attackObject = false;
+        canFire = false;
+	}
+	
+	// Update is called once per frame
+	void Update () 
+    {
+	    agent.SetDestination(target.position);
+        agent.speed = moveSpeed;
+
+        if(attackObject == true && collObject.GetComponent<Stats>().health > 0)
+        {
+            AttackTarget(collObject);
+        }
+	}
+
+    void OnTriggerEnter(Collider c)
+    {   
+        if (c.gameObject.CompareTag("Base Component"))
+        {
+            collObject = c.gameObject;
+            agent.Stop();
+            animator.SetBool("ReachTarget", true);
+            gameObject.transform.LookAt(collObject.transform.position);
+
+            attackObject = true;
+        }
+    }
+
+    // Update is called once per frame
+    private void AttackTarget(GameObject collTarget)
+    {
+
+        if (canFire)
+        {
+            GameObject projClone = (GameObject)Instantiate(attackHit, new Vector3(transform.position.x, transform.position.y + 3, transform.position.z), transform.rotation);
+
+            projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0, 0, 25);
+
+            Physics.IgnoreCollision(projClone.GetComponent<Collider>(), transform.GetComponent<Collider>());
+
+            collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
+
+            canFire = false;
+        }
+
+        if (!canFire)
+        {
+            //set canFire = true after proper wait time.
+            StartCoroutine("ResetFire");
+        }
+    }
+
+    IEnumerator ResetFire()
+    {
+        yield return new WaitForSeconds(attackSpeed);
+        canFire = true;
+    }
+
+}

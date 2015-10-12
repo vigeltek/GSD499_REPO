@@ -7,14 +7,17 @@ public class Stats : MonoBehaviour {
     WeaponController wc;
     GameObject LastWeapon;
     public GameObject DestructionParticles;
+    private GameObject spawnController;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    // Use this for initialization
+    void Start ()
+    {
+        spawnController = GameObject.FindGameObjectWithTag("Spawn Manager");
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 	
         if(health <= 0)
         {
@@ -25,6 +28,7 @@ public class Stats : MonoBehaviour {
             }
             //Instantiate death explosion
             Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
+            spawnController.GetComponent<SpawnController>().RemoveEnemy();
             //Finally destroy this object.
             Destroy(this.gameObject);
         }
@@ -32,8 +36,7 @@ public class Stats : MonoBehaviour {
 	}
 
     public void DamageObject(float dmg, GameObject parent)
-    {
-        
+    {    
         LastWeapon = parent;
         health -= dmg;
     }
