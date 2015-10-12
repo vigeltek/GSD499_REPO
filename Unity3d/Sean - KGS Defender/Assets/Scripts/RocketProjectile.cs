@@ -27,8 +27,8 @@ public class RocketProjectile : MonoBehaviour {
 
     void FixedUpdate()
     {
-
-        rb.AddRelativeForce(movementSpeed * 2);
+        transform.Translate(movementSpeed);
+        // rb.AddRelativeForce(movementSpeed * 2);
     }
 
 
@@ -39,7 +39,7 @@ public class RocketProjectile : MonoBehaviour {
         {
                 targetPoint = target.transform.position - transform.position;
                 targetRotation = Quaternion.LookRotation(targetPoint, Vector3.forward);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationalMod);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationalMod);
             
         }
 

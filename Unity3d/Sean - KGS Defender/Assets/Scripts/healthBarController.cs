@@ -3,7 +3,7 @@ using System.Collections;
 
 public class healthBarController : MonoBehaviour {
 
-    public Camera cam;
+    public GameObject cam;
     public Vector3 fullScale;
     public float healthBarEmptySpeed;
 
@@ -11,7 +11,7 @@ public class healthBarController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-    
+        cam = GameObject.Find("MainCamera");
         stat = this.gameObject.transform.parent.gameObject.GetComponent<Stats>();
         fullScale = gameObject.transform.localScale;
        
