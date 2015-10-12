@@ -64,7 +64,13 @@ public class GameController : MonoBehaviour
         //}
         Application.LoadLevel(levelName);
     }
-
+    public static void LoadGame()
+    {
+        //if(gameState==_GameState.Ended && instance.playerLife>0){
+        //	ResourceManager.NewSceneNotification();
+        //}
+        Application.LoadLevel(instance.nextScene);
+    }
 
     // Use this for initialization
     void Start()
