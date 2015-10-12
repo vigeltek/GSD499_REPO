@@ -13,7 +13,8 @@ public class placementPanel : MonoBehaviour {
 	void Start () {
        rend = this.gameObject.GetComponent<MeshRenderer>();
         tpm = GameObject.FindWithTag("TPM").GetComponent<TPManager>();
-	}
+        BroadcastMessage("GridVisibility", false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -55,6 +56,12 @@ public class placementPanel : MonoBehaviour {
             currPrefab = null;
         }
 
+    }
+
+    public void GridVisibility(bool isvisible)
+    {
+        MeshRenderer render = GetComponent<MeshRenderer>();
+        render.enabled = isvisible;
     }
 
 }

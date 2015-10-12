@@ -36,10 +36,12 @@ public class TPManager : MonoBehaviour {
     public Color disabledColor;
 
     GameManager GM;
+    GameObject turrGrid;
 
 	// Use this for initialization
 	void Start () {
         GM = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        turrGrid = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	
 	// Update is called once per frame
@@ -118,6 +120,7 @@ public class TPManager : MonoBehaviour {
             placementMode = false;
             buildModeText.color = activeColor;
             buildModeText.text = "OFF";
+            turrGrid.BroadcastMessage("GridVisibility", false);
             DisableButtons();
         }
         else
@@ -126,6 +129,8 @@ public class TPManager : MonoBehaviour {
            // EnableButtons();
             buildModeText.color = disabledColor;
             buildModeText.text = "ON";
+            turrGrid.BroadcastMessage("GridVisibility", true);
+
         }
 
     }
