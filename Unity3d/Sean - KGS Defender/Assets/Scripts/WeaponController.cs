@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class WeaponController : MonoBehaviour {
 
     public float LDmg; //variable for deliverying lightning damage /30
+    public float laserLineReset; //Rests line renderer
+    public Material laserMat; //Material to use for laser lineRenderer;
 
     //Determines type of weapon this script is controlling
     public bool isLaser;
@@ -38,6 +40,18 @@ public class WeaponController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         targetList = new ArrayList();
+
+        if(isLaser)
+        {
+            FirePoint1.AddComponent<LineRenderer>();
+            LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
+            laserRender.enabled = false;
+            laserRender.SetPosition(0, FirePoint1.transform.position);
+            laserRender.SetPosition(1, FirePoint1.transform.position);
+            laserRender.material = laserMat;
+            
+
+        }
 	}
 	
 	// Update is called once per frame
@@ -69,6 +83,7 @@ public class WeaponController : MonoBehaviour {
                     swivel1.target = Target;
                     swivel2.target = Target;
                     canFire = false; //keep tower from firing repeatedly.
+
                     StartCoroutine("Wait"); //allows tower time to rotate before firing.
                     
                 }
@@ -80,7 +95,7 @@ public class WeaponController : MonoBehaviour {
             }
 
             //code for firing rockets
-            if (isRocket)
+            if (isRocket && Target != null)
             {
                 //Avoid invalid reference error, if tower attempts to fire without a target.
                 try
@@ -140,10 +155,12 @@ public class WeaponController : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         if (isLaser)
         {
-            GameObject l1 = (GameObject)Instantiate(LaserPrefab, FirePoint1.transform.position, FirePoint1.transform.rotation);
-            l1.GetComponent<LaserProjectile>().parent = this.gameObject;
+            //  GameObject l1 = (GameObject)Instantiate(LaserPrefab, FirePoint1.transform.position, FirePoint1.transform.rotation);
+            //  l1.GetComponent<LaserProjectile>().parent = this.gameObject;
+            //  l1.GetComponent<LaserProjectile>().damage = LDmg;
+            FireLaser();
         }
-        if(isRocket)
+        if(isRocket && Target != null)
         {
             FireRockets();
         }
@@ -157,6 +174,14 @@ public class WeaponController : MonoBehaviour {
         canFire = true;
     }
 
+    IEnumerator ResetLineRenderer()
+    {
+        yield return new WaitForSeconds(laserLineReset);
+        FirePoint1.GetComponent<LineRenderer>().SetPosition(1, FirePoint1.transform.position);
+        FirePoint1.GetComponent<LineRenderer>().enabled = false;
+
+
+    }
 
     void OnTriggerEnter(Collider c)
     {
@@ -184,20 +209,28 @@ public class WeaponController : MonoBehaviour {
     void resetTarget()
     {
         //Rests all targeting scripts in preparation for getting next target.
-        Target = null;
+        GameObject tempTarget = null;
+        try
+        {
+            tempTarget = (GameObject)targetList[0];
+        }
+        catch { }
+        Target = tempTarget;
+
         if (isLaser || isRocket)
         {
-            swivel1.target = null;
+            swivel1.target = Target;
         }
         if (isLaser)
         {
-            swivel2.target = null;
+            swivel2.target = Target;
+            FirePoint1.GetComponent<LineRenderer>().SetPosition(1, FirePoint1.transform.position);
         }
         if (isLightning)
         {
-            bolt.target = null;
+            bolt.target = Target.transform;
         }
-
+        
     }
 
     //Confirms that the current target has been destroyed, removes it from the list, and rests targeting system.
@@ -207,6 +240,18 @@ public class WeaponController : MonoBehaviour {
         resetTarget();
     }
 
+    void FireLaser()
+    {
+        try
+        {
+                FirePoint1.GetComponent<LineRenderer>().SetPosition(1, Target.transform.position);
+                FirePoint1.GetComponent<LineRenderer>().enabled = true;
+            Target.GetComponent<Stats>().DamageObject(LDmg, this.gameObject);
+
+                StartCoroutine("ResetLineRenderer");
+        }
+        catch { }
+    }
     //actualy fires rockets from coroutine wait if isRocket
     void FireRockets()
     {
@@ -223,5 +268,9 @@ public class WeaponController : MonoBehaviour {
         rocket1.GetComponent<RocketProjectile>().Parent = this.gameObject;
         rocket2.GetComponent<RocketProjectile>().Parent = this.gameObject;
         rocket3.GetComponent<RocketProjectile>().Parent = this.gameObject;
+        //Set the damage on rockets
+        rocket1.GetComponent<RocketProjectile>().damage = LDmg;
+        rocket2.GetComponent<RocketProjectile>().damage = LDmg;
+        rocket3.GetComponent<RocketProjectile>().damage = LDmg;
     }
 }

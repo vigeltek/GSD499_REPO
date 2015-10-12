@@ -7,10 +7,11 @@ public class Stats : MonoBehaviour {
     WeaponController wc;
     GameObject LastWeapon;
     public GameObject DestructionParticles;
+    GameObject turPanels;
 
 	// Use this for initialization
 	void Start () {
-	
+        turPanels = GameObject.FindGameObjectWithTag("PanelPlacement");
 	}
 	
 	// Update is called once per frame
@@ -21,7 +22,8 @@ public class Stats : MonoBehaviour {
             if (LastWeapon != null)
             {
                 wc = LastWeapon.GetComponent<WeaponController>();
-                wc.DeathConfirmation(this.gameObject);
+                //wc.DeathConfirmation(this.gameObject);
+                turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
             }
             //Instantiate death explosion
             Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);

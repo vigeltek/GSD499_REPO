@@ -19,7 +19,8 @@ public class LaserProjectile : MonoBehaviour {
     void FixedUpdate()
     {
         
-       rb.AddRelativeForce(movementSpeed*2);
+      // rb.AddRelativeForce(movementSpeed*2);
+        transform.Translate(movementSpeed);
     }
 
     void OnCollisionEnter(Collision c)
