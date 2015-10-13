@@ -22,11 +22,14 @@ public class GameManager : MonoBehaviour {
 	void Update ()
     {
         GetWave();
-	    if(gameOver == true)
+        float shipHealth = ship.GetComponent<Stats>().health;
+        float sheildHealth = shield.GetComponent<Stats>().health;
+        if (sheildHealth <= 0) //shipHealth <= 0 && 
         {
-            
+            gameOver = true;
+            UIGameOverMenu.Show();
         }
-	}
+    }
     public int GetScore()
     {
         return score;
@@ -54,9 +57,6 @@ public class GameManager : MonoBehaviour {
 
     private void GameOver()
     {
-        if(ship.GetComponent<Stats>().health <= 0 && shield.GetComponent<Stats>().health <= 0)
-        {
-            gameOver = true;
-        }
+        
     }
 }

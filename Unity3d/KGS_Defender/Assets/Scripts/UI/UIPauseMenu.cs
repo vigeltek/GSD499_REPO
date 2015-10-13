@@ -82,4 +82,5 @@ public class UIPauseMenu : MonoBehaviour {
         optionMenuObj.SetActive(false);
         pauseMenuObj.SetActive(true);
     }
+    
 }

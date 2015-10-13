@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SpawnController : MonoBehaviour 
 {
@@ -25,7 +26,10 @@ public class SpawnController : MonoBehaviour
 	public float moveSpeed;
 	public float resourceValue;
 
-	private float waveModifier;
+    public GameObject DisplayLevel;
+
+    private Text txtLevel;
+    private float waveModifier;
 	private int wave;
 	private int totalWaves;
     public int spiderCount;
@@ -37,9 +41,20 @@ public class SpawnController : MonoBehaviour
     private bool bossWave;
     public GameObject[] currentEnemies;
 
+    private void UpdateLevel()
+    {
+        if (DisplayLevel != null)
+        {
+            txtLevel.text = string.Format("Lvl: {0:00}", wave);
+        }
+
+    }
+
     void Awake()
     {
         Screen.SetResolution(1074, 768, true);
+        if(DisplayLevel != null)
+            txtLevel = DisplayLevel.GetComponent<Text>();
         wave = 0;
         waveModifier = 0;
         spiderCount = 0;
@@ -47,7 +62,9 @@ public class SpawnController : MonoBehaviour
         tankCount = 0;
         mastermindCount = 0;
         numToSpawn = 0;
-        enemiesRemaining = 0;       
+        enemiesRemaining = 0;
+
+        UpdateLevel();
     }
 
     // Use this for initialization
@@ -83,6 +100,8 @@ public class SpawnController : MonoBehaviour
         waveModifier = .10f * (wave-1);
 
         WaveGenerator(wave, numToSpawn);
+
+        UpdateLevel();
     }
 
     void WaveGenerator(int waveCount, int toSpawn)
