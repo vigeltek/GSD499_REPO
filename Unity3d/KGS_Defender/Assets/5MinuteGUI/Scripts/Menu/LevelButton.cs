@@ -10,7 +10,7 @@ namespace FMG
             switch (levelIndex)
             {
                 case 0:
-                    Application.LoadLevel("George_Scene");
+                    Application.LoadLevel("Main_Scene");
                     break;
                 case 1:
                     // show credits
