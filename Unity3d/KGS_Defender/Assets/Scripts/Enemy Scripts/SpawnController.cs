@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SpawnController : MonoBehaviour 
 {
+    private UIObject UI; // GameManager object.
+
     // Prefabs for the Enemy types.
     public GameObject spider;
     public GameObject buzzer;
@@ -50,8 +52,8 @@ public class SpawnController : MonoBehaviour
 
     // Use this for initialization
     void Start()
-	{  
-
+	{
+        
     }
 	
 	// Update is called once per frame
@@ -73,7 +75,9 @@ public class SpawnController : MonoBehaviour
 
     void StartNewWave()
     {
+
         wave++;
+
         numToSpawn = 9 * wave;
 
         waveModifier = .10f * (wave-1);

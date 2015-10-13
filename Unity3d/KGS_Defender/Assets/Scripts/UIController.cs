@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour {
 
     public GameObject score;
-    public GameObject level;
+    public GameObject wave;
     public GameObject cash;
     GameManager GM;
 	// Use this for initialization
