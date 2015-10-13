@@ -5,6 +5,8 @@ public class IntroMenuController : MonoBehaviour {
 
     public string MainGameScene;
 
+    public bool playAudio = false;
+
     public void onStartGameClick()
     {
 
@@ -19,15 +21,17 @@ public class IntroMenuController : MonoBehaviour {
     public void onCreditsClick()
     {
 
+        
     }
 
 	// Use this for initialization
-	void Start () {
-	
-	}
+	void Start ()
+    {
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+
+    }
 }
