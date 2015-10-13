@@ -40,6 +40,7 @@ public class EnemyController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+
         if(canFire == true && attackObject == true && collObject.GetComponent<Stats>().health > 0)
         {
             AttackTarget(collObject);
