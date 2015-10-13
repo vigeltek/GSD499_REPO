@@ -191,6 +191,10 @@ public class WeaponController : MonoBehaviour {
             //Add enemy to the target list, and set active target.
             targetList.Add(c.gameObject);
             //Debug.Log(c.gameObject.name + " has been added to the target list");
+            if((GameObject)targetList[0] == null)
+            {
+                targetList.RemoveAt(0);
+            }
             Target = (GameObject)targetList[0];
           
         }
@@ -234,7 +238,9 @@ public class WeaponController : MonoBehaviour {
             }
         }
         }
-        catch { Target = null; }
+        catch {
+            //Debug.Log(targetList[0].ToString());
+            Target = null; }
     }
 
     //Confirms that the current target has been destroyed, removes it from the list, and rests targeting system.
