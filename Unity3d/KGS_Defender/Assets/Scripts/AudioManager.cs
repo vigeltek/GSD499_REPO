@@ -16,7 +16,9 @@ public class AudioManager : MonoBehaviour {
 
     public static void Init()
     {
+
         if (instance != null) return;
+        Debug.Log("Loading Audio Manager");
         GameObject obj = new GameObject();
         obj.name = "AudioManager";
         obj.AddComponent<AudioManager>();
