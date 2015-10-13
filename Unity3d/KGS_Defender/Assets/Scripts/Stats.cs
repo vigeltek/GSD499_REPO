@@ -4,15 +4,18 @@ using System.Collections;
 public class Stats : MonoBehaviour {
 
     public float health;
+    public bool isFriendly;
     WeaponController wc;
     GameObject LastWeapon;
     public GameObject DestructionParticles;
-    private GameObject spawnController;
+    public GameObject turPanels;
+    public GameObject spawnController;
 
     // Use this for initialization
     void Start ()
     {
         spawnController = GameObject.FindGameObjectWithTag("Spawn Manager");
+        turPanels = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	
 	// Update is called once per frame
@@ -23,14 +26,18 @@ public class Stats : MonoBehaviour {
         {
             if (LastWeapon != null)
             {
-                wc = LastWeapon.GetComponent<WeaponController>();
-                wc.DeathConfirmation(this.gameObject);
+                if (!isFriendly)
+                {
+                    turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
+                    spawnController.GetComponent<SpawnController>().RemoveEnemy();
+                }
+
             }
             //Instantiate death explosion
             Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
-            spawnController.GetComponent<SpawnController>().RemoveEnemy();
+            
             //Finally destroy this object.
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.3f);
         }
 
 	}

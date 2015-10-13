@@ -16,8 +16,9 @@ public class UIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-        cash.GetComponent<Text>().text = "$"+GM.GetCash();
+
+        
+        cash.GetComponent<Text>().text = GM.GetCash().ToString();
 
 	}
 }
