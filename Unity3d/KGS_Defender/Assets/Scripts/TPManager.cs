@@ -36,10 +36,12 @@ public class TPManager : MonoBehaviour {
     public Color disabledColor;
 
     GameManager GM;
+    GameObject turrGrid;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         GM = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        turrGrid = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	
 	// Update is called once per frame
@@ -53,33 +55,33 @@ public class TPManager : MonoBehaviour {
             if(cash >= laserCost)
             {
                 laserButton.GetComponent<Button>().interactable = true;
-                laserButton.GetComponentInChildren<Text>().color = activeColor;
+                //laserButton.GetComponentInChildren<Text>().color = activeColor;
             }
             else
             {
                 laserButton.GetComponent<Button>().interactable = false;
-                laserButton.GetComponentInChildren<Text>().color = disabledColor;
+                //laserButton.GetComponentInChildren<Text>().color = disabledColor;
             }
             if(cash >= rocketCost)
             {
                 rocketButton.GetComponent<Button>().interactable = true;
-                rocketButton.GetComponentInChildren<Text>().color = activeColor;
+                //rocketButton.GetComponentInChildren<Text>().color = activeColor;
             }
             else
             {
                 rocketButton.GetComponent<Button>().interactable = false;
-                rocketButton.GetComponentInChildren<Text>().color = disabledColor;
+                //rocketButton.GetComponentInChildren<Text>().color = disabledColor;
             }
             if(cash >= lightningCost)
             {
                 lightningButton.GetComponent<Button>().interactable = true;
-                lightningButton.GetComponentInChildren<Text>().color = activeColor;
+                //lightningButton.GetComponentInChildren<Text>().color = activeColor;
 
             }
             else
             {
                 lightningButton.GetComponent<Button>().interactable = false;
-                lightningButton.GetComponentInChildren<Text>().color = disabledColor;
+                //lightningButton.GetComponentInChildren<Text>().color = disabledColor;
             }
 
         }
@@ -117,15 +119,17 @@ public class TPManager : MonoBehaviour {
         {
             placementMode = false;
             buildModeText.color = activeColor;
-            buildModeText.text = "OFF";
+            buildModeText.text = "Build";
             DisableButtons();
+            turrGrid.BroadcastMessage("GridVisibility", false);
         }
         else
         {
             placementMode = true;
            // EnableButtons();
             buildModeText.color = disabledColor;
-            buildModeText.text = "ON";
+            buildModeText.text = "OFF";
+            turrGrid.BroadcastMessage("GridVisibility", true);
         }
 
     }
@@ -138,9 +142,9 @@ public class TPManager : MonoBehaviour {
         lightningButton.GetComponent<Button>().interactable = false;
         //  SellButton.interactable = true;
 
-        laserButton.GetComponentInChildren<Text>().color = disabledColor;
-        rocketButton.GetComponentInChildren<Text>().color = disabledColor;
-        lightningButton.GetComponentInChildren<Text>().color = disabledColor;
+        //laserButton.GetComponentInChildren<Text>().color = disabledColor;
+        //rocketButton.GetComponentInChildren<Text>().color = disabledColor;
+        //lightningButton.GetComponentInChildren<Text>().color = disabledColor;
     }
 
     /*

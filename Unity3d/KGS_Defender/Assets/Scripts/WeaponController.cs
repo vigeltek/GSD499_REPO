@@ -57,12 +57,13 @@ public class WeaponController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
         //if the weapon can fire, fire.
        if(canFire)
         {
             Fire();
         }
-         
+        
 
 	}
 
@@ -213,9 +214,8 @@ public class WeaponController : MonoBehaviour {
         try
         {
             tempTarget = (GameObject)targetList[0];
-        }
-        catch { }
-        Target = tempTarget;
+        
+        if (tempTarget != null) { Target = tempTarget; }
 
         if (isLaser || isRocket)
         {
@@ -228,15 +228,33 @@ public class WeaponController : MonoBehaviour {
         }
         if (isLightning)
         {
-            bolt.target = Target.transform;
+            if (Target != null)
+            {
+                bolt.target = Target.transform;
+            }
         }
-        
+        }
+        catch { Target = null; }
     }
 
     //Confirms that the current target has been destroyed, removes it from the list, and rests targeting system.
     public void DeathConfirmation(GameObject go)
     {
-        targetList.Remove(go);
+        try
+        {
+            targetList.Remove(go);
+        }
+        catch
+        {
+            try
+            {
+                targetList.Remove(null);
+            }
+            catch { }
+            
+        }
+        
+        
         resetTarget();
     }
 
@@ -244,33 +262,40 @@ public class WeaponController : MonoBehaviour {
     {
         try
         {
+            Target = (GameObject)targetList[0];
                 FirePoint1.GetComponent<LineRenderer>().SetPosition(1, Target.transform.position);
                 FirePoint1.GetComponent<LineRenderer>().enabled = true;
             Target.GetComponent<Stats>().DamageObject(LDmg, this.gameObject);
 
                 StartCoroutine("ResetLineRenderer");
         }
-        catch { }
+        catch { resetTarget(); }
     }
     //actualy fires rockets from coroutine wait if isRocket
     void FireRockets()
     {
-        //Spawn three rocket objects.
-        GameObject rocket1 = (GameObject)Instantiate(RocketPrefab, FirePoint1.transform.position, FirePoint1.transform.rotation);
-        GameObject rocket2 = (GameObject)Instantiate(RocketPrefab, FirePoint2.transform.position, FirePoint2.transform.rotation);
-        GameObject rocket3 = (GameObject)Instantiate(RocketPrefab, FirePoint3.transform.position, FirePoint3.transform.rotation);
+        try
+        {
+            Target = (GameObject)targetList[0];
 
-        //Set the target for rocket homing scritps.
-        rocket1.GetComponent<RocketProjectile>().target = Target;
-        rocket2.GetComponent<RocketProjectile>().target = Target;
-        rocket3.GetComponent<RocketProjectile>().target = Target;
-        //Set the rockets parent to weaponCrontroller for return calls from dead objects.
-        rocket1.GetComponent<RocketProjectile>().Parent = this.gameObject;
-        rocket2.GetComponent<RocketProjectile>().Parent = this.gameObject;
-        rocket3.GetComponent<RocketProjectile>().Parent = this.gameObject;
-        //Set the damage on rockets
-        rocket1.GetComponent<RocketProjectile>().damage = LDmg;
-        rocket2.GetComponent<RocketProjectile>().damage = LDmg;
-        rocket3.GetComponent<RocketProjectile>().damage = LDmg;
+            //Spawn three rocket objects.
+            GameObject rocket1 = (GameObject)Instantiate(RocketPrefab, FirePoint1.transform.position, FirePoint1.transform.rotation);
+            GameObject rocket2 = (GameObject)Instantiate(RocketPrefab, FirePoint2.transform.position, FirePoint2.transform.rotation);
+            GameObject rocket3 = (GameObject)Instantiate(RocketPrefab, FirePoint3.transform.position, FirePoint3.transform.rotation);
+
+            //Set the target for rocket homing scritps.
+            rocket1.GetComponent<RocketProjectile>().target = Target;
+            rocket2.GetComponent<RocketProjectile>().target = Target;
+            rocket3.GetComponent<RocketProjectile>().target = Target;
+            //Set the rockets parent to weaponCrontroller for return calls from dead objects.
+            rocket1.GetComponent<RocketProjectile>().Parent = this.gameObject;
+            rocket2.GetComponent<RocketProjectile>().Parent = this.gameObject;
+            rocket3.GetComponent<RocketProjectile>().Parent = this.gameObject;
+            //Set the damage on rockets
+            rocket1.GetComponent<RocketProjectile>().damage = LDmg;
+            rocket2.GetComponent<RocketProjectile>().damage = LDmg;
+            rocket3.GetComponent<RocketProjectile>().damage = LDmg;
+        }
+        catch { resetTarget(); }
     }
 }
