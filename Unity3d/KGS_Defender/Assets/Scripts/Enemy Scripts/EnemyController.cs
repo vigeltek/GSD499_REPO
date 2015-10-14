@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     public float attackPower;
     public float attackSpeed;
     public float moveSpeed;
-    public float resourceValue;
+    public int resourceValue;
 
     // Use this for initialization
     void Start () 

@@ -27,8 +27,8 @@ public class ScrollingGUIText : MonoBehaviour
         for (int i = 0; i < textElements.Length; i++)
         {
             GameObject curr = textElements[i];
-            float y = curr.transform.position.y;
-            yPos.Add(y);
+           // float y = curr.transform.position.y;
+           // yPos.Add(y);
         }
 
         bInit = true;

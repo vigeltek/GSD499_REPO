@@ -12,6 +12,7 @@ public class SpawnController : MonoBehaviour
     public GameObject tank;
     public GameObject mastermind;
 
+    GameObject GM;
     // Where the enemies will spawn from and the corresponding target to that spawnpoint.
 	public Transform[] spawnPoints;
     public Transform shield;
@@ -24,7 +25,7 @@ public class SpawnController : MonoBehaviour
 	public float attackPower;
 	public float attackSpeed;
 	public float moveSpeed;
-	public float resourceValue;
+	public int resourceValue;
 
     public GameObject DisplayLevel;
 
@@ -52,7 +53,7 @@ public class SpawnController : MonoBehaviour
 
     void Awake()
     {
-        Screen.SetResolution(1074, 768, true);
+        //Screen.SetResolution(1074, 768, true);
         if(DisplayLevel != null)
             txtLevel = DisplayLevel.GetComponent<Text>();
         wave = 0;
@@ -70,7 +71,7 @@ public class SpawnController : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-        
+        GM = GameObject.FindGameObjectWithTag("GameController");
     }
 	
 	// Update is called once per frame
@@ -164,9 +165,12 @@ public class SpawnController : MonoBehaviour
         }
     }
 
-    public void RemoveEnemy()
+    public void RemoveEnemy(int recVal)
     {
+        GM.GetComponent<GameManager>().AddResource(recVal);
+        GM.GetComponent<GameManager>().AddScore(recVal);
         enemiesRemaining--;
+
     }
 
     IEnumerator SpiderSpawner(int spawnNum)
@@ -200,6 +204,10 @@ public class SpawnController : MonoBehaviour
                 spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed * 2;
                 spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
                 spiderClone.GetComponent<EnemyController>().resourceValue = resourceValue * 10;
+                spiderClone.GetComponent<Stats>().health = spiderClone.GetComponent<EnemyController>().healthPoints;
+                spiderClone.GetComponent<Stats>().recValue = resourceValue * 10;
+
+
 
                 spiderClone.transform.localScale += new Vector3(1, 1, 1);
             }
@@ -212,6 +220,7 @@ public class SpawnController : MonoBehaviour
                 spiderClone.GetComponent<EnemyController>().attackSpeed = attackSpeed + (attackSpeed * waveModifier);
                 spiderClone.GetComponent<EnemyController>().moveSpeed = moveSpeed;
                 spiderClone.GetComponent<EnemyController>().resourceValue = resourceValue;
+                spiderClone.GetComponent<Stats>().recValue = resourceValue;
             }
 
             // Add to the currentEnemies array.
@@ -252,7 +261,7 @@ public class SpawnController : MonoBehaviour
                 buzzerClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) * 2;
                 buzzerClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
                 buzzerClone.GetComponent<EnemyController>().resourceValue = (resourceValue * 2) * 10;
-
+                buzzerClone.GetComponent<Stats>().recValue = (resourceValue * 2) * 10;
                 buzzerClone.transform.localScale += new Vector3(1, 1, 1);
             }
             else
@@ -263,6 +272,7 @@ public class SpawnController : MonoBehaviour
                 buzzerClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * 2f) + ((attackSpeed * 2f) * waveModifier);
                 buzzerClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 10;
                 buzzerClone.GetComponent<EnemyController>().resourceValue = resourceValue * 2;
+                buzzerClone.GetComponent<Stats>().recValue = resourceValue * 2;
             }
 
             // Add to the currentEnemies array.

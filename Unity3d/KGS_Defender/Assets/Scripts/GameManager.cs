@@ -55,6 +55,15 @@ public class GameManager : MonoBehaviour {
         return false;
     }
 
+    public void AddResource(int rec)
+    {
+        cash = cash + rec;
+    }
+
+    public void AddScore(int rec)
+    {
+        score = score + rec;
+    }
     private void GameOver()
     {
         

@@ -19,6 +19,7 @@ public class UIController : MonoBehaviour {
 
         
         cash.GetComponent<Text>().text = GM.GetCash().ToString();
+        score.GetComponent<Text>().text = GM.GetScore().ToString();
 
 	}
 }

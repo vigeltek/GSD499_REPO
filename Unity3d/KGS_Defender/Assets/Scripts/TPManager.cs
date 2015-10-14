@@ -88,6 +88,14 @@ public class TPManager : MonoBehaviour {
 
 	}
 
+    public bool canAfford()
+    {
+        if(GM.GetCash() >= currCost)
+        {
+            return true;
+        }
+        return false;
+    }
     public GameObject GetTurret()
     {
         GM.SpendCash(currCost);

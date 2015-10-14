@@ -10,6 +10,7 @@ public class Stats : MonoBehaviour {
     public GameObject DestructionParticles;
     public GameObject turPanels;
     public GameObject spawnController;
+    public int recValue;
 
     // Use this for initialization
     void Start ()
@@ -29,7 +30,7 @@ public class Stats : MonoBehaviour {
                 if (!isFriendly)
                 {
                     turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
-                    spawnController.GetComponent<SpawnController>().RemoveEnemy();
+                    spawnController.GetComponent<SpawnController>().RemoveEnemy(recValue);
                 }
 
             }

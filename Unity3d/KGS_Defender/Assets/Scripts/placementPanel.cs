@@ -47,8 +47,11 @@ public class placementPanel : MonoBehaviour {
     {
         if (tpm.placementMode && currPrefab == null)
         {
-            currPrefab = (GameObject)Instantiate(tpm.GetTurret(), transform.position, transform.rotation);
-            currPrefab.transform.parent = this.gameObject.transform;
+            if (tpm.canAfford())
+            {
+                currPrefab = (GameObject)Instantiate(tpm.GetTurret(), transform.position, transform.rotation);
+                currPrefab.transform.parent = this.gameObject.transform;
+            }
         }
         if(tpm.destroyMode && currPrefab != null)
         {

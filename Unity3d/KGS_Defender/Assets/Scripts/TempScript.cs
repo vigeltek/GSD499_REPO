@@ -5,13 +5,13 @@ public class TempScript : MonoBehaviour {
     
 
     private Camera _mainCamera;
-    private float ZoomAmount = 0;
+    public float ZoomAmount = 0;
     private float CurrentOrthoSize = 125;
     private float MaxToClamp = 245;
     private float MinToClamp = 75;
     private float ROTSpeed = 10;
-    private float sensitivityX = 3.0f;
-    private float sensitivityY = 3.0f;
+    public float sensitivityX = 3.0f;
+    public float sensitivityY = 3.0f;
     private float mouseX;
     private float mouseY;
     private Vector3 cameraPos;
@@ -35,7 +35,7 @@ public class TempScript : MonoBehaviour {
 
         ZoomAmount += Input.GetAxis("Mouse ScrollWheel");
         ZoomAmount = Mathf.Clamp(ZoomAmount, -MaxToClamp, MaxToClamp);
-        Debug.Log("Zoom change: " + ZoomAmount);
+       // Debug.Log("Zoom change: " + ZoomAmount);
 
         CurrentOrthoSize += ZoomAmount;
         if (CurrentOrthoSize < MinToClamp)
@@ -52,19 +52,19 @@ public class TempScript : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             bDragging = true;
-            Debug.Log("Drag Start");
+           // Debug.Log("Drag Start");
         }
         else if(Input.GetMouseButtonUp(0) && bDragging)
         {
             bDragging = false;
-            Debug.Log("Drag End");
+          //  Debug.Log("Drag End");
         }
        
 	}
 
     void Awake()
     {
-        Debug.Log("Got Orthographic camera");
+       // Debug.Log("Got Orthographic camera");
         _mainCamera = GetComponent<Camera>();
         _mainCamera.orthographicSize = CurrentOrthoSize;
     }

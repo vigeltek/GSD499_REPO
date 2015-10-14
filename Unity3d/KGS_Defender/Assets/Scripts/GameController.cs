@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         instance = this;
-        Screen.SetResolution(1074, 768, true);
+       // Screen.SetResolution(1074, 768, true);
     }
 
     // add enable and disable functions
