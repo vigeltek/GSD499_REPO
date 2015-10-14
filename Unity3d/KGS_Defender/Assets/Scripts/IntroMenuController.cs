@@ -7,6 +7,12 @@ public class IntroMenuController : MonoBehaviour {
 
     public bool playAudio = false;
 
+    GameObject MenuMain;
+    GameObject TitleText;
+
+    GameObject Credits;
+
+
     public void onStartGameClick()
     {
 
@@ -20,12 +26,29 @@ public class IntroMenuController : MonoBehaviour {
 
     public void onCreditsClick()
     {
-
+        if (MenuMain != null && TitleText != null && Credits != null)
+        {
+            MenuMain.SetActive(false);
+            TitleText.SetActive(false);
+            Credits.SetActive(true);
+        }
         
     }
 
-	// Use this for initialization
-	void Start ()
+    public void onButtonbackClick()
+    {
+        if (MenuMain != null && TitleText != null && Credits != null)
+        {
+            Credits.SetActive(false);
+            MenuMain.SetActive(true);
+            TitleText.SetActive(true);
+        }
+        
+    }
+
+
+    // Use this for initialization
+    void Start ()
     {
 
     }
@@ -33,5 +56,19 @@ public class IntroMenuController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+    }
+
+    void Awake()
+    {
+        MenuMain = GameObject.Find("PanelGameOver");
+        TitleText = GameObject.Find("TitleText");
+        Credits = GameObject.Find("AnchorCenterCredits");
+
+        if (MenuMain != null && TitleText != null && Credits != null)
+        {
+            Credits.SetActive(false);
+            MenuMain.SetActive(true);
+            TitleText.SetActive(true);
+        }
     }
 }
