@@ -11,6 +11,8 @@ public class Stats : MonoBehaviour {
     public GameObject turPanels;
     public GameObject spawnController;
     public int recValue;
+   // public GameObject TPM;
+    public ArrayList towerList;
 
     // Use this for initialization
     void Start ()
@@ -24,6 +26,30 @@ public class Stats : MonoBehaviour {
     {
 
 	}
+
+    public void RegisterTower(GameObject t)
+    {
+        bool isFound = false;
+        for (int i = 0; i < towerList.Count; i++)
+        {
+            GameObject g = (GameObject)towerList[i];
+            if (t = g)
+            {
+                isFound = true;
+                break;
+            }
+        }
+        if (!isFound)
+        {
+            towerList.Add(t);
+        }
+
+    }
+
+    public void RemoveTower(GameObject t)
+    {
+        towerList.Remove(t);
+    }
 
     public void DamageObject(float dmg, GameObject parent)
     {    
