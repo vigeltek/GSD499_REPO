@@ -3,16 +3,17 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour 
 {
-    public Transform shield;
-    public Transform ship;
-    private bool shieldDown;
     private NavMeshAgent agent;
     private Animator animator;
-    private GameObject spawnController;
+    public GameObject GC;
     public GameObject attackHit;
     private bool attackObject;
     private bool canFire;
     public GameObject collObject;
+    private Transform destination;
+    private AudioSource AS;
+
+
 
     //Enemy Stats
     public float healthPoints;
@@ -21,18 +22,25 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
     public int resourceValue;
 
+    void Awake ()
+    {
+        Physics.IgnoreLayerCollision(8, 9);
+        Physics.IgnoreLayerCollision(9, 9);
+        Physics.IgnoreLayerCollision(9, 10);
+
+        AS = gameObject.GetComponent<AudioSource>();
+        GC = GameObject.FindGameObjectWithTag("GameController");
+        destination = GC.GetComponent<GameController>().destination;
+    }
+
     // Use this for initialization
     void Start () 
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        spawnController = GameObject.FindGameObjectWithTag ( "Spawn Manager" );
-
+        
         attackObject = false;
         canFire = false;
-        shieldDown = false;
-
-        agent.SetDestination(shield.position);
 
         agent.speed = moveSpeed;
     }
@@ -46,6 +54,12 @@ public class EnemyController : MonoBehaviour
             {
                 AttackTarget(collObject);
             }
+        }
+        if (collObject == null)
+        {
+            agent.SetDestination(destination.transform.position);
+            animator.SetBool("ReachTarget", false);
+            agent.Resume();
         }
     }
 
@@ -67,20 +81,14 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     private void AttackTarget(GameObject collTarget)
     {
-
         if (canFire)
-        {
-            
+        {            
             GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).rotation);
 
             projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0,0,25);
 
-            Physics.IgnoreLayerCollision(8,9);
-            Physics.IgnoreLayerCollision(9, 9);
-            Physics.IgnoreLayerCollision(9,10);
-
             collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
-
+            AS.Play();
             canFire = false;
         }
 
@@ -91,10 +99,14 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
     IEnumerator ResetFire()
     {
         yield return new WaitForSeconds(attackSpeed);
         canFire = true;
     }
-
 }

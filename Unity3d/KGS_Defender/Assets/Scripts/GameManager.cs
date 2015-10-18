@@ -11,20 +11,22 @@ public class GameManager : MonoBehaviour {
     public GameObject ship;
     public GameObject shield;
     private bool gameOver = false;
+    private float shipHealth;
+    private float shieldHealth;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        GetWave();
         float shipHealth = ship.GetComponent<Stats>().health;
-        float sheildHealth = shield.GetComponent<Stats>().health;
-        if (sheildHealth <= 0) //shipHealth <= 0 && 
+        float shieldHealth = shield.GetComponent<Stats>().health;
+
+        if (shieldHealth <= 0 && shipHealth <= 0)
         {
             gameOver = true;
             UIGameOverMenu.Show();
@@ -34,10 +36,7 @@ public class GameManager : MonoBehaviour {
     {
         return score;
     }
-    public void GetWave()
-    {
 
-    }
     //return cash value.
     public int GetCash()
     {

@@ -31,6 +31,8 @@ public class GameController : MonoBehaviour
 
     public _GameState gameState = _GameState.Play;
 
+    public Transform destination;
+
     public GameObject[] enemyType;
 	public float spawnTimer = 3f;
 	public Transform[] spawnPoints;
@@ -75,9 +77,6 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-		wave = 1;
-		enemyCount = 0;
-		enemyTarget = 5 * wave;
 
 	}
 	

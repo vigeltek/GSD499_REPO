@@ -21,7 +21,7 @@ public class healthBarController : MonoBehaviour {
 	void Update () {
 
         transform.LookAt(cam.gameObject.transform);
-       Vector3 currScale = this.gameObject.transform.localScale;
+        Vector3 currScale = this.gameObject.transform.localScale;
         Vector3 destScale = new Vector3(fullScale.x * (stat.health / 100), fullScale.y * (stat.health / 100), fullScale.z);
         Vector3 target = Vector3.Lerp(currScale, destScale, healthBarEmptySpeed);
         target.x = Mathf.Clamp(target.x, 0, fullScale.x);

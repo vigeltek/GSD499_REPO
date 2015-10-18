@@ -15,8 +15,6 @@ public class SpawnController : MonoBehaviour
     GameObject GM;
     // Where the enemies will spawn from and the corresponding target to that spawnpoint.
 	public Transform[] spawnPoints;
-    public Transform shield;
-    public Transform ship;
 
     public float spawnTimer;
 
@@ -46,9 +44,8 @@ public class SpawnController : MonoBehaviour
     {
         if (DisplayLevel != null)
         {
-            txtLevel.text = string.Format("Lvl: {0:00}", wave);
+            txtLevel.text = string.Format("WAVE: {0:00}/10", wave);
         }
-
     }
 
     void Awake()
@@ -71,7 +68,7 @@ public class SpawnController : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-        GM = GameObject.FindGameObjectWithTag("GameController");
+        GM = GameObject.FindGameObjectWithTag("Game Manager");
     }
 	
 	// Update is called once per frame
@@ -93,7 +90,6 @@ public class SpawnController : MonoBehaviour
 
     void StartNewWave()
     {
-
         wave++;
 
         numToSpawn = 9 * wave;
@@ -140,20 +136,20 @@ public class SpawnController : MonoBehaviour
                 bossWave = true;
                 break;
 
-            //case 7:
-            //case 8:
-            //    StartCoroutine(TankSpawner(toSpawn / 3));
-            //    StartCoroutine(BuzzerSpawner(toSpawn / 3));
-            //    StartCoroutine(SpiderSpawner(toSpawn / 3));
-            //    bossWave = false;
-            //    break;
+            case 7:
+            case 8:
+                StartCoroutine(TankSpawner(toSpawn / 3));
+                StartCoroutine(BuzzerSpawner(toSpawn / 3));
+                StartCoroutine(SpiderSpawner(toSpawn / 3));
+                bossWave = false;
+                break;
 
-            //case 9:
-            //    StartCoroutine(TankSpawner(toSpawn / 3));
-            //    StartCoroutine(BuzzerSpawner(toSpawn / 3));
-            //    StartCoroutine(SpiderSpawner(toSpawn / 3));
-            //    bossWave = true;
-            //    break;
+            case 9:
+                StartCoroutine(TankSpawner(toSpawn / 3));
+                StartCoroutine(BuzzerSpawner(toSpawn / 3));
+                StartCoroutine(SpiderSpawner(toSpawn / 3));
+                bossWave = true;
+                break;
 
                 //case 10:
                 //    StartCoroutine(TankSpawner(toSpawn / 3));
@@ -184,16 +180,6 @@ public class SpawnController : MonoBehaviour
             // Instantiate the enemy of the appropriate type.
             spiderClone = (GameObject)Instantiate(spider, (spawnPoints[index].position), spawnPoints[index].rotation);
 
-            // Assign target to enemy according to which spawnpoint they spawn from.
-            if (shield.GetComponent<Stats>().health > 0)
-            {
-                spiderClone.GetComponent<EnemyController>().shield = shield;
-            }
-            else
-            {
-                spiderClone.GetComponent<EnemyController>().ship = ship;
-            }
-
             // If it is a boss wave, spawn a larger more powerful version.
             if ((bossWave == true) && (spiderCount == spawnNum - 1))
             {
@@ -206,8 +192,6 @@ public class SpawnController : MonoBehaviour
                 spiderClone.GetComponent<EnemyController>().resourceValue = resourceValue * 10;
                 spiderClone.GetComponent<Stats>().health = spiderClone.GetComponent<EnemyController>().healthPoints;
                 spiderClone.GetComponent<Stats>().recValue = resourceValue * 10;
-
-
 
                 spiderClone.transform.localScale += new Vector3(1, 1, 1);
             }
@@ -243,14 +227,14 @@ public class SpawnController : MonoBehaviour
             buzzerClone = (GameObject)Instantiate(buzzer, (spawnPoints[index].position), spawnPoints[index].rotation);
 
             // Assign target to enemy according to which spawnpoint they spawn from.
-            if (shield.GetComponent<Stats>().health > 0)
-            {
-                buzzerClone.GetComponent<EnemyController>().shield = shield;
-            }
-            else
-            {
-                buzzerClone.GetComponent<EnemyController>().ship = ship;
-            }
+            //if (shield.GetComponent<Stats>().health > 0)
+            //{
+            //    buzzerClone.GetComponent<EnemyController>().shield = shield;
+            //}
+            //else
+            //{
+            //    buzzerClone.GetComponent<EnemyController>().ship = ship;
+            //}
 
             // If it is a boss wave, spawn a larger more powerful version.
             if ((bossWave == true) && (buzzerCount == spawnNum - 1))
@@ -283,56 +267,56 @@ public class SpawnController : MonoBehaviour
         }
     }
 
-    //IEnumerator TankSpawner(int spawnNum)
-    //{
-    //    while (tankCount < spawnNum)
-    //    {
-    //        yield return new WaitForSeconds(spawnTimer);
-    //        int index = Random.Range(0, spawnPoints.Length);
-    //        GameObject tankClone;
+    IEnumerator TankSpawner(int spawnNum)
+    {
+        while (tankCount < spawnNum)
+        {
+            yield return new WaitForSeconds(spawnTimer);
+            int index = Random.Range(0, spawnPoints.Length);
+            GameObject tankClone;
 
-    //        // Instantiate the enemy of the appropriate type.
-    //        tankClone = (GameObject)Instantiate(tank, (spawnPoints[index].position), spawnPoints[index].rotation);
+            // Instantiate the enemy of the appropriate type.
+            tankClone = (GameObject)Instantiate(tank, (spawnPoints[index].position), spawnPoints[index].rotation);
 
-    //        // Assign target to enemy according to which spawnpoint they spawn from.
-    //        if (shield.GetComponent<Stats>().health > 0)
-    //        {
-    //            tankClone.GetComponent<EnemyController>().shield = shield;
-    //        }
-    //        else
-    //        {
-    //            tankClone.GetComponent<EnemyController>().ship = ship;
-    //        }
+            // Assign target to enemy according to which spawnpoint they spawn from.
+            //if (shield.GetComponent<Stats>().health > 0)
+            //{
+            //    tankClone.GetComponent<EnemyController>().shield = shield;
+            //}
+            //else
+            //{
+            //    tankClone.GetComponent<EnemyController>().ship = ship;
+            //}
 
-    //        // If it is a boss wave, spawn a larger more powerful version.
-    //        if ((bossWave == true) && (tankCount == spawnNum - 1))
-    //        {
-    //            // Assign enemy stats
-    //            tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) * 5;
-    //            tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) * 2;
-    //            tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) * 2;
-    //            tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
-    //            tankClone.GetComponent<EnemyController>().resourceValue = (resourceValue * 4) * 10;
+            // If it is a boss wave, spawn a larger more powerful version.
+            if ((bossWave == true) && (tankCount == spawnNum - 1))
+            {
+                // Assign enemy stats
+                tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) * 5;
+                tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) * 2;
+                tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) * 2;
+                tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
+                tankClone.GetComponent<EnemyController>().resourceValue = (resourceValue * 4) * 10;
 
-    //            tankClone.transform.localScale += new Vector3(1, 1, 1);
-    //        }
-    //        else
-    //        {
-    //            // Assign enemy stats
-    //            tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) + ((healthPoints * 3f) * waveModifier);
-    //            tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) + ((attackPower * 3f) * waveModifier);
-    //            tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) + ((attackSpeed * .5f) * waveModifier);
-    //            tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
-    //            tankClone.GetComponent<EnemyController>().resourceValue = resourceValue * 4;
-    //        }
+                tankClone.transform.localScale += new Vector3(1, 1, 1);
+            }
+            else
+            {
+                // Assign enemy stats
+                tankClone.GetComponent<EnemyController>().healthPoints = (healthPoints * 3f) + ((healthPoints * 3f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().attackPower = (attackPower * 3f) + ((attackPower * 3f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().attackSpeed = (attackSpeed * .5f) + ((attackSpeed * .5f) * waveModifier);
+                tankClone.GetComponent<EnemyController>().moveSpeed = moveSpeed - 25;
+                tankClone.GetComponent<EnemyController>().resourceValue = resourceValue * 4;
+            }
 
-    //        // Add to the currentEnemies array.
-    //        currentEnemies[tankCount + (spawnNum * 2)] = tankClone;
+            // Add to the currentEnemies array.
+            currentEnemies[tankCount + (spawnNum * 2)] = tankClone;
 
-    //        // Increase enemy count for tracking purposes.
-    //        tankCount++;
-    //    }
-    //}
+            // Increase enemy count for tracking purposes.
+            tankCount++;
+        }
+    }
 
     //IEnumerator MasterMindSpawner(int spawnNum)
     //{

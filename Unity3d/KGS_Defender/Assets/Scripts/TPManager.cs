@@ -40,7 +40,7 @@ public class TPManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GM = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        GM = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManager>();
         turrGrid = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	

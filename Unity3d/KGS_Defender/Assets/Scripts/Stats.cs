@@ -22,24 +22,6 @@ public class Stats : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-	
-        if(health <= 0)
-        {
-            if (LastWeapon != null)
-            {
-                if (!isFriendly)
-                {
-                    turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
-                    spawnController.GetComponent<SpawnController>().RemoveEnemy(recValue);
-                }
-
-            }
-            //Instantiate death explosion
-            Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
-            
-            //Finally destroy this object.
-            Destroy(this.gameObject, 0.3f);
-        }
 
 	}
 
@@ -47,10 +29,28 @@ public class Stats : MonoBehaviour {
     {    
         LastWeapon = parent;
         health -= dmg;
+
+        if(health <= 0 && LastWeapon != null && !isFriendly)
+        {
+            DestroyEnemy();
+        }
     }
 
     public void ClearLastWeapon()
     {
         LastWeapon = null;
+    }
+
+    public void DestroyEnemy()
+    {
+        turPanels.GetComponentInChildren<WeaponController>().DeathConfirmation(this.gameObject);
+        //turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
+        spawnController.GetComponent<SpawnController>().RemoveEnemy(recValue);
+
+        // Instantiate death explosion
+        Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
+
+        // Finally destroy this object.
+        gameObject.GetComponent<EnemyController>().DestroySelf();
     }
 }
