@@ -4,6 +4,12 @@ using System.Collections;
 public class CameraScript : MonoBehaviour {
     private Camera _mainCamera;
     public float ZoomAmount = 0;
+
+    public float topLimit = 0;
+    public float bottomLimit = 0;
+    public float leftLimit = 0;
+    public float rightLimit = 0;
+
     private float CurrentOrthoSize = 125;
     private float MaxToClamp = 245;
     private float MinToClamp = 75;
@@ -24,6 +30,8 @@ public class CameraScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("X: " + _mainCamera.transform.position.x + " Y: " + _mainCamera.transform.position.y + " Z: " + _mainCamera.transform.position.z);
+
         if (bDragging)
         {
             mouseX = Input.GetAxis("Mouse X");
@@ -31,6 +39,24 @@ public class CameraScript : MonoBehaviour {
             cameraPos = new Vector3(-mouseX * sensitivityX, 0, -mouseY * sensitivityY);
 
             _mainCamera.transform.position += cameraPos;
+            if (_mainCamera.transform.position.x > rightLimit)
+            {
+                _mainCamera.transform.position = new Vector3(rightLimit, _mainCamera.transform.position.y, _mainCamera.transform.position.z);
+            }
+            else if (_mainCamera.transform.position.x < leftLimit)
+            {
+                _mainCamera.transform.position = new Vector3(leftLimit, _mainCamera.transform.position.y, _mainCamera.transform.position.z);
+            }
+
+            if (_mainCamera.transform.position.z > topLimit)
+            {
+                _mainCamera.transform.position = new Vector3(_mainCamera.transform.position.x, _mainCamera.transform.position.y, topLimit);
+            }
+            else if (_mainCamera.transform.position.z < bottomLimit)
+            {
+                _mainCamera.transform.position = new Vector3(_mainCamera.transform.position.x, _mainCamera.transform.position.y, bottomLimit);
+            }
+
         }
 
         ZoomAmount += Input.GetAxis("Mouse ScrollWheel");
