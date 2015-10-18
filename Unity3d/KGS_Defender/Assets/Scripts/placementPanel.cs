@@ -51,6 +51,7 @@ public class placementPanel : MonoBehaviour {
             {
                 currPrefab = (GameObject)Instantiate(tpm.GetTurret(), transform.position, transform.rotation);
                 currPrefab.transform.parent = this.gameObject.transform;
+                TPManager.PlacementMode();
             }
         }
         if(tpm.destroyMode && currPrefab != null)

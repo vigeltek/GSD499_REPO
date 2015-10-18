@@ -35,11 +35,30 @@ public class TPManager : MonoBehaviour {
     public Color activeColor;
     public Color disabledColor;
 
+    private static TPManager instance;
+    private GameObject thisObj;
+
     GameManager GM;
     GameObject turrGrid;
 
+    public static void Init()
+    {
+        if (instance != null) return;
+
+    }
+
     // Use this for initialization
-    void Start () {
+    void Awake () {
+        if(instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        thisObj = gameObject;
+
+
         GM = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManager>();
         turrGrid = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
@@ -48,45 +67,41 @@ public class TPManager : MonoBehaviour {
 	void Update () {
 
         //check to see if turret can be purchased.
-        if (placementMode)
+        int cash = GM.GetCash();
+
+        if (cash >= laserCost)
         {
-            int cash = GM.GetCash();
-
-            if(cash >= laserCost)
-            {
-                laserButton.GetComponent<Button>().interactable = true;
-                //laserButton.GetComponentInChildren<Text>().color = activeColor;
-            }
-            else
-            {
-                laserButton.GetComponent<Button>().interactable = false;
-                //laserButton.GetComponentInChildren<Text>().color = disabledColor;
-            }
-            if(cash >= rocketCost)
-            {
-                rocketButton.GetComponent<Button>().interactable = true;
-                //rocketButton.GetComponentInChildren<Text>().color = activeColor;
-            }
-            else
-            {
-                rocketButton.GetComponent<Button>().interactable = false;
-                //rocketButton.GetComponentInChildren<Text>().color = disabledColor;
-            }
-            if(cash >= lightningCost)
-            {
-                lightningButton.GetComponent<Button>().interactable = true;
-                //lightningButton.GetComponentInChildren<Text>().color = activeColor;
-
-            }
-            else
-            {
-                lightningButton.GetComponent<Button>().interactable = false;
-                //lightningButton.GetComponentInChildren<Text>().color = disabledColor;
-            }
+            laserButton.GetComponent<Button>().interactable = true;
+            //laserButton.GetComponentInChildren<Text>().color = activeColor;
+        }
+        else
+        {
+            laserButton.GetComponent<Button>().interactable = false;
+            //laserButton.GetComponentInChildren<Text>().color = disabledColor;
+        }
+        if (cash >= rocketCost)
+        {
+            rocketButton.GetComponent<Button>().interactable = true;
+            //rocketButton.GetComponentInChildren<Text>().color = activeColor;
+        }
+        else
+        {
+            rocketButton.GetComponent<Button>().interactable = false;
+            //rocketButton.GetComponentInChildren<Text>().color = disabledColor;
+        }
+        if (cash >= lightningCost)
+        {
+            lightningButton.GetComponent<Button>().interactable = true;
+            //lightningButton.GetComponentInChildren<Text>().color = activeColor;
 
         }
+        else
+        {
+            lightningButton.GetComponent<Button>().interactable = false;
+            //lightningButton.GetComponentInChildren<Text>().color = disabledColor;
+        }
 
-	}
+    }
 
     public bool canAfford()
     {
@@ -104,6 +119,11 @@ public class TPManager : MonoBehaviour {
 
     public void ChangeActiveTurret(int selection)
     {
+        if (!placementMode)
+        {
+            PlacementMode();
+        }
+
         if(selection == 1)
         {
             currentPrefab = laserTowerPrefab;
@@ -121,23 +141,23 @@ public class TPManager : MonoBehaviour {
         }
     }
     
-    public void PlacementMode()
+    public static void PlacementMode()
     {
-        if (placementMode)
+        if (instance.placementMode)
         {
-            placementMode = false;
-            buildModeText.color = activeColor;
-            buildModeText.text = "Build";
-            DisableButtons();
-            turrGrid.BroadcastMessage("GridVisibility", false);
+            instance.placementMode = false;
+            instance.buildModeText.color = instance.activeColor;
+            instance.buildModeText.text = "Build";
+            //DisableButtons();
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
         }
         else
         {
-            placementMode = true;
-           // EnableButtons();
-            buildModeText.color = disabledColor;
-            buildModeText.text = "OFF";
-            turrGrid.BroadcastMessage("GridVisibility", true);
+            instance.placementMode = true;
+            // EnableButtons();
+            instance.buildModeText.color = instance.disabledColor;
+            instance.buildModeText.text = "OFF";
+            instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
 
     }
