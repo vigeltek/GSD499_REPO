@@ -57,7 +57,24 @@ public class WeaponController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        for(int i = targetList.Count -1; i >= 0; i--)
+        {
+            GameObject temp = (GameObject)targetList[i];
+            if(temp == null)
+            {
+                targetList.RemoveAt(i);
+            }
+            
+        }
 
+        if(Target == null)
+        {
+            try
+            {
+                Target = (GameObject)targetList[0];
+            }
+            catch { }
+        }
         //if the weapon can fire, fire.
        if(canFire)
         {
@@ -186,13 +203,33 @@ public class WeaponController : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
+        bool isFound = false;
+
         if(c.gameObject.CompareTag("Enemy"))
         {
             //Add enemy to the target list, and set active target.
             targetList.Add(c.gameObject);
             //Debug.Log(c.gameObject.name + " has been added to the target list");
+
             Target = (GameObject)targetList[0];
-          
+
+            for (int i = 0; i < targetList.Count; i++)
+            {
+                GameObject temp = (GameObject)targetList[i];
+                if (temp = c.gameObject)
+                {
+                    isFound = true;
+                    break;
+                }
+
+            }
+
+            if (!isFound)
+            {
+                targetList.Add(c.gameObject);
+                Target = (GameObject)targetList[0];
+                Debug.Log("Added Enemy");
+            }
         }
     }
    
@@ -245,14 +282,7 @@ public class WeaponController : MonoBehaviour {
             targetList.Remove(go);
         }
         catch
-        {
-            try
-            {
-                targetList.Remove(null);
-            }
-            catch { }
-            
-        }
+        { }
         
         
         resetTarget();

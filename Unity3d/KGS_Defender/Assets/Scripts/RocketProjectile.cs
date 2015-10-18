@@ -9,6 +9,7 @@ public class RocketProjectile : MonoBehaviour {
     Rigidbody rb;
     public GameObject RocketHit;
     public bool locked = false;
+    public Vector3 offset;
 
     public GameObject target;
     public laserTurretHeadPoint hp;
@@ -38,6 +39,7 @@ public class RocketProjectile : MonoBehaviour {
         if (target != null)
         {
                 targetPoint = target.transform.position - transform.position;
+            targetPoint += offset;
                 targetRotation = Quaternion.LookRotation(targetPoint, Vector3.forward);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationalMod);
             
