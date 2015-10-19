@@ -16,7 +16,7 @@ public class IntroMenuController : MonoBehaviour {
     public void onStartGameClick()
     {
 
-        Application.LoadLevel(1);
+        Application.LoadLevel(2);
         
     }
 
