@@ -34,13 +34,19 @@ public class WeaponController : MonoBehaviour {
     public TurretLook swivel1;
     public laserTurretHeadPoint swivel2;
 
+    public AudioClip turretFireSound;
+    public GameObject LightningTurretSound;
+
+    public AudioSource sourceAudio;
+
     //list of targets to allow tracking the order enemies enter firing area.
     public ArrayList targetList;
+
 
 	// Use this for initialization
 	void Start () {
         targetList = new ArrayList();
-
+        sourceAudio = GetComponent<AudioSource>();
         if(isLaser)
         {
             FirePoint1.AddComponent<LineRenderer>();
@@ -52,6 +58,7 @@ public class WeaponController : MonoBehaviour {
             
 
         }
+        
 	}
 	
 	// Update is called once per frame
@@ -134,6 +141,14 @@ public class WeaponController : MonoBehaviour {
             //Code for firing lightning
             if (isLightning)
             {
+
+                for(int i = 0; i < targetList.Count - 1; i++)
+                {
+                    GameObject temp = (GameObject)targetList[i];
+                    temp.GetComponent<Stats>().DamageObject(LDmg / 30, this.gameObject);
+                    
+                }
+               /*
                 //Avoid invalid reference error, if tower attempts to fire without a target.
                 try
                 {
@@ -156,6 +171,7 @@ public class WeaponController : MonoBehaviour {
                     bolt.target = null;
                     lightningObject.SetActive(false); 
                 }
+                */
             }
 
             if (!canFire)
@@ -220,6 +236,7 @@ public class WeaponController : MonoBehaviour {
                 {
                     isFound = true;
                     break;
+                    
                 }
 
             }
@@ -228,8 +245,9 @@ public class WeaponController : MonoBehaviour {
             {
                 targetList.Add(c.gameObject);
                 Target = (GameObject)targetList[0];
-                Debug.Log("Added Enemy");
+             
             }
+            isFound = false;
         }
     }
    
@@ -296,7 +314,8 @@ public class WeaponController : MonoBehaviour {
                 FirePoint1.GetComponent<LineRenderer>().SetPosition(1, Target.transform.position);
                 FirePoint1.GetComponent<LineRenderer>().enabled = true;
             Target.GetComponent<Stats>().DamageObject(LDmg, this.gameObject);
-
+            sourceAudio.clip = turretFireSound;
+            sourceAudio.Play();
                 StartCoroutine("ResetLineRenderer");
         }
         catch { resetTarget(); }
@@ -308,23 +327,32 @@ public class WeaponController : MonoBehaviour {
         {
             Target = (GameObject)targetList[0];
 
+            int randomFirePoint = (int)Mathf.Round(Random.Range(1, 3));
             //Spawn three rocket objects.
-            GameObject rocket1 = (GameObject)Instantiate(RocketPrefab, FirePoint1.transform.position, FirePoint1.transform.rotation);
-            GameObject rocket2 = (GameObject)Instantiate(RocketPrefab, FirePoint2.transform.position, FirePoint2.transform.rotation);
-            GameObject rocket3 = (GameObject)Instantiate(RocketPrefab, FirePoint3.transform.position, FirePoint3.transform.rotation);
+            GameObject firePosition = null;
+            if(randomFirePoint == 1)
+            {
+                firePosition = FirePoint1;
+            }
+            if(randomFirePoint == 2)
+            {
+                firePosition = FirePoint2;
+            }
+            if(randomFirePoint == 3)
+            {
+                firePosition = FirePoint3;
+            }
+            GameObject rocket1 = (GameObject)Instantiate(RocketPrefab, firePosition.transform.position, firePosition.transform.rotation);
 
             //Set the target for rocket homing scritps.
             rocket1.GetComponent<RocketProjectile>().target = Target;
-            rocket2.GetComponent<RocketProjectile>().target = Target;
-            rocket3.GetComponent<RocketProjectile>().target = Target;
+
             //Set the rockets parent to weaponCrontroller for return calls from dead objects.
             rocket1.GetComponent<RocketProjectile>().Parent = this.gameObject;
-            rocket2.GetComponent<RocketProjectile>().Parent = this.gameObject;
-            rocket3.GetComponent<RocketProjectile>().Parent = this.gameObject;
-            //Set the damage on rockets
+            //Set the damage on rocket
             rocket1.GetComponent<RocketProjectile>().damage = LDmg;
-            rocket2.GetComponent<RocketProjectile>().damage = LDmg;
-            rocket3.GetComponent<RocketProjectile>().damage = LDmg;
+            sourceAudio.clip = turretFireSound;
+            sourceAudio.Play();
         }
         catch { resetTarget(); }
     }
