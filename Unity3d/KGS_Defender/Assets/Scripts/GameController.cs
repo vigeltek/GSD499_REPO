@@ -132,6 +132,7 @@ public class GameController : MonoBehaviour
         if (currentWave == 10 && enemiesRemaining == 0 && mastermindSpawned == true)
         {
             // Player wins
+            UIGameOverWin.Show();
         }
 	}
 
