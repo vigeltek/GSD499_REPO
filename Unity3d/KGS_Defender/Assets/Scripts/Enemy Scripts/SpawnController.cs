@@ -161,12 +161,11 @@ public class SpawnController : MonoBehaviour
         }
     }
 
-    public void RemoveEnemy(int recVal)
+    public void RemoveEnemy(float recVal)
     {
         GM.GetComponent<GameManager>().AddResource(recVal);
         GM.GetComponent<GameManager>().AddScore(recVal);
         enemiesRemaining--;
-
     }
 
     IEnumerator SpiderSpawner(int spawnNum)

@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour
     public float attackPower;
     public float attackSpeed;
     public float moveSpeed;
-    public int resourceValue;
+    public float resourceValue;
 
     void Awake ()
     {

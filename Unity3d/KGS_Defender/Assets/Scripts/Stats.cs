@@ -9,15 +9,15 @@ public class Stats : MonoBehaviour {
     GameObject LastWeapon;
     public GameObject DestructionParticles;
     public GameObject turPanels;
-    public GameObject spawnController;
-    public int recValue;
+    public GameObject gameController;
+    public float recValue;
    // public GameObject TPM;
     public ArrayList towerList;
 
     // Use this for initialization
     void Start ()
     {
-        spawnController = GameObject.FindGameObjectWithTag("Spawn Manager");
+        gameController = GameObject.FindGameObjectWithTag("GameController");
         turPanels = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	
@@ -71,7 +71,7 @@ public class Stats : MonoBehaviour {
     {
         turPanels.GetComponentInChildren<WeaponController>().DeathConfirmation(this.gameObject);
         //turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
-        spawnController.GetComponent<SpawnController>().RemoveEnemy(recValue);
+        gameController.GetComponent<SpawnController>().RemoveEnemy(recValue);
 
         // Instantiate death explosion
         Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);

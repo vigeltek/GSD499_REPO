@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-    public int cash;
-    public int score;
+    public float cash;
+    public float score;
     public GameObject wave;
     private string txt;
 
@@ -32,13 +32,13 @@ public class GameManager : MonoBehaviour {
             UIGameOverMenu.Show();
         }
     }
-    public int GetScore()
+    public float GetScore()
     {
         return score;
     }
 
     //return cash value.
-    public int GetCash()
+    public float GetCash()
     {
         return cash;
     }
@@ -54,17 +54,13 @@ public class GameManager : MonoBehaviour {
         return false;
     }
 
-    public void AddResource(int rec)
+    public void AddResource(float rec)
     {
         cash = cash + rec;
     }
 
-    public void AddScore(int rec)
+    public void AddScore(float rec)
     {
         score = score + rec;
-    }
-    private void GameOver()
-    {
-        
     }
 }

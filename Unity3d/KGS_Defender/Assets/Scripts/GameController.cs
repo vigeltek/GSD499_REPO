@@ -31,28 +31,32 @@ public class GameController : MonoBehaviour
 
     public _GameState gameState = _GameState.Play;
 
+    // Variable for the enemy target destination.
     public Transform destination;
 
-    public GameObject[] enemyType;
-	public float spawnTimer = 3f;
-	public Transform[] spawnPoints;
-	public Transform[] targets;
-
-	// Enemy stats to be applied to spawned enemy
-	public float healthPoints;
-	public float attackPower;
-	public float attackSpeed;
-	public float moveSpeed;
-	public float resourceValue;
-	public float waveModifier;
-
-	private int wave;
-	private int totalWaves;
-	private int enemyCount;
-	private int enemyTarget;
-	private GameObject[] currentEnemies;
-
     public static GameController instance;
+
+    #region // ********** Wave Generation Variables ********** //
+
+    // Create the enemy spawn factory.
+    iEnemyFactory enemySpawner;
+
+    // Prefabs for the Enemy types.
+    public GameObject spider;
+    public GameObject buzzer;
+    public GameObject tank;
+    public GameObject mastermind;
+
+    // Array of spawnpoints enemies can randomly appear at.
+    public Transform[] spawnPoints;
+
+    // Miscellaneous variables for wave control.
+    public int currentWave;                                // Number of the current wave.
+    public int numToSpawn;                                 // How many enemies to spawn?
+    public int enemyCount;                                 // How many enemies are there currently?
+    public int enemiesRemaining;                           // How many enemies are remaining?
+    private bool spawnWave;                                // Is it time to spawn a wave?
+    #endregion
 
     public static void LoadMainMenu() {
         if (instance.mainMenu != "")
@@ -77,8 +81,8 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-
-	}
+        StartNewWave(currentWave);
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -89,7 +93,13 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         instance = this;
-       // Screen.SetResolution(1074, 768, true);
+        // Screen.SetResolution(1074, 768, true);
+
+        currentWave = 1;
+        numToSpawn = 0;
+        enemyCount = 0;
+        enemiesRemaining = 0;
+        spawnWave = true;
     }
 
     // add enable and disable functions
@@ -111,5 +121,141 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    IEnumerator WaveDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        currentWave++;
+        spawnWave = true;
+    }
 
+    private void StartNewWave(int wave)
+    {
+        spawnWave = false;
+        numToSpawn = 12 * wave;
+        enemyCount = 0;
+        enemiesRemaining = 0;
+
+        switch (wave)
+        {
+            case 1:
+            case 2:
+                StartCoroutine(Spiders(numToSpawn, false));
+                break;
+
+            case 3:
+                StartCoroutine(Spiders(numToSpawn, true));
+                break;
+
+            case 4:
+            case 5:
+                StartCoroutine(Spiders(numToSpawn / 2, false));
+                StartCoroutine(Buzzers(numToSpawn / 2, false));
+                break;
+
+            case 6:
+                StartCoroutine(Spiders(numToSpawn / 2, true));
+                StartCoroutine(Buzzers(numToSpawn / 2, true));
+                break;
+
+            case 7:
+            case 8:
+                StartCoroutine(Spiders(numToSpawn / 3, false));
+                StartCoroutine(Buzzers(numToSpawn / 3, false));
+                StartCoroutine(Tanks(numToSpawn / 3, false));
+                break;
+
+            case 9:
+                StartCoroutine(Spiders(numToSpawn / 3, true));
+                StartCoroutine(Buzzers(numToSpawn / 3, true));
+                StartCoroutine(Tanks(numToSpawn / 3, true));
+                break;
+
+            case 10:
+                StartCoroutine(Spiders(numToSpawn / 3, true));
+                StartCoroutine(Buzzers(numToSpawn / 3, true));
+                StartCoroutine(Tanks(numToSpawn / 3, true));
+                StartCoroutine(Mastermind());
+                break;
+        }
+    }
+
+
+    IEnumerator Spiders(int toSpawn, bool bossWave)
+    {
+        while (enemyCount < toSpawn)
+        {
+            if (bossWave == true && (enemyCount == toSpawn - 1))
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new SpiderSpawner();
+                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], true);
+                enemyCount++;
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new SpiderSpawner();
+                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);
+                enemyCount++;
+            }
+        }
+    }
+
+    IEnumerator Buzzers(int toSpawn, bool bossWave)
+    {
+        while (enemyCount < toSpawn)
+        {
+            if (bossWave == true && (enemyCount == toSpawn - 1))
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new BuzzerSpawner();
+                enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], true);
+                enemyCount++;
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new BuzzerSpawner();
+                enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], false);
+                enemyCount++;
+            }
+        }
+    }
+
+    IEnumerator Tanks(int toSpawn, bool bossWave)
+    {
+        while (enemyCount < toSpawn)
+        {
+            if (bossWave == true && (enemyCount == toSpawn - 1))
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new TankSpawner();
+                enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], true);
+                enemyCount++;
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
+                enemySpawner = new TankSpawner();
+                enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], false);
+                enemyCount++;
+            }
+        }
+    }
+
+    IEnumerator Mastermind()
+    {
+        yield return new WaitForSeconds(30);
+        enemySpawner = new MastermindSpawner();
+        enemySpawner.SpawnEnemy(mastermind, currentWave, spawnPoints[Random.Range(0, 2)], false);
+        enemyCount++;
+    }
+
+    public void RemoveEnemy(float recVal)
+    {
+        GameObject GM = GameObject.FindGameObjectWithTag("GameManager");
+        GM.GetComponent<GameManager>().AddResource(recVal);
+        GM.GetComponent<GameManager>().AddScore(recVal);
+        enemiesRemaining--;
+    }
 }

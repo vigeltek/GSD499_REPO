@@ -67,7 +67,7 @@ public class TPManager : MonoBehaviour {
 	void Update () {
 
         //check to see if turret can be purchased.
-        int cash = GM.GetCash();
+        float cash = GM.GetCash();
 
         if (cash >= laserCost)
         {
