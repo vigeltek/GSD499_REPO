@@ -13,8 +13,6 @@ public class EnemyController : MonoBehaviour
     private Transform destination;
     private AudioSource AS;
 
-
-
     //Enemy Stats
     public float healthPoints;
     public float attackPower;

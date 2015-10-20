@@ -38,7 +38,7 @@ public class TPManager : MonoBehaviour {
     private static TPManager instance;
     private GameObject thisObj;
 
-    GameManager GM;
+    GameController GM;
     GameObject turrGrid;
 
     public static void Init()
@@ -59,7 +59,7 @@ public class TPManager : MonoBehaviour {
         thisObj = gameObject;
 
 
-        GM = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManager>();
+        GM = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         turrGrid = GameObject.FindGameObjectWithTag("PanelPlacement");
     }
 	

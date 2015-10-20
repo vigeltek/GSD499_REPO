@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public enum _GameState { Play, Pause, Over }
 
@@ -36,8 +37,19 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
 
-    #region // ********** Wave Generation Variables ********** //
+    #region // ********** Base Camp Variables ********** //
+    // Variables to hold the Ship information.
+    public GameObject ship;
+    public float shipHealth;
+    public bool shipDestroyed = false;
 
+    // Variables to hold the Shield information.
+    public GameObject shield;
+    public float shieldHealth;
+    public bool shieldDestroyed = false;
+    #endregion
+
+    #region // ********** Wave Generation Variables ********** //
     // Create the enemy spawn factory.
     iEnemyFactory enemySpawner;
 
@@ -56,7 +68,14 @@ public class GameController : MonoBehaviour
     public int enemyCount;                                 // How many enemies are there currently?
     public int enemiesRemaining;                           // How many enemies are remaining?
     private bool spawnWave;                                // Is it time to spawn a wave?
+    private bool mastermindSpawned;                        // Has the final boss spawned?
     #endregion
+
+    public float cash;
+    public float score;
+    private string txt;
+    public GameObject DisplayLevel;
+    private Text txtLevel;
 
     public static void LoadMainMenu() {
         if (instance.mainMenu != "")
@@ -81,13 +100,39 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-        StartNewWave(currentWave);
+        ship.GetComponent<Stats>().health = shipHealth;
+        shield.GetComponent<Stats>().health = shieldHealth;
     }
 	
 	// Update is called once per frame
 	void Update () 
 	{
+        if (spawnWave == true && enemiesRemaining == 0)
+        {
+            currentWave++;
+            StartCoroutine(StartNewWave(currentWave));
+            spawnWave = false;
+        }
 
+        if (ship.GetComponent<Stats>().health <= 0 && shipDestroyed == false)
+        {
+            shipDestroyed = true;
+        }
+
+        if (shield.GetComponent<Stats>().health <= 0 && shieldDestroyed == false)
+        {
+            shieldDestroyed = true;
+        }
+
+        if (shipDestroyed == true && shipDestroyed == true)
+        {
+            UIGameOverMenu.Show();
+        }
+
+        if (currentWave == 10 && enemiesRemaining == 0 && mastermindSpawned == true)
+        {
+            // Player wins
+        }
 	}
 
     void Awake()
@@ -95,11 +140,17 @@ public class GameController : MonoBehaviour
         instance = this;
         // Screen.SetResolution(1074, 768, true);
 
-        currentWave = 1;
+        if (DisplayLevel != null)
+        {
+            txtLevel = DisplayLevel.GetComponent<Text>();
+        }
+        currentWave = 0;
         numToSpawn = 0;
         enemyCount = 0;
         enemiesRemaining = 0;
         spawnWave = true;
+        mastermindSpawned = false;
+        UpdateLevel();
     }
 
     // add enable and disable functions
@@ -121,19 +172,24 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    IEnumerator WaveDelay()
+    private void UpdateLevel()
     {
-        yield return new WaitForSeconds(2f);
-        currentWave++;
-        spawnWave = true;
+        if (DisplayLevel != null)
+        {
+            txtLevel.text = string.Format("WAVE: {0:00}/10", currentWave);
+        }
     }
 
-    private void StartNewWave(int wave)
+
+    IEnumerator StartNewWave(int wave)
     {
         spawnWave = false;
+        UpdateLevel();
+        yield return new WaitForSeconds(5f);
+
         numToSpawn = 12 * wave;
         enemyCount = 0;
-        enemiesRemaining = 0;
+        enemiesRemaining = numToSpawn;
 
         switch (wave)
         {
@@ -249,13 +305,48 @@ public class GameController : MonoBehaviour
         enemySpawner = new MastermindSpawner();
         enemySpawner.SpawnEnemy(mastermind, currentWave, spawnPoints[Random.Range(0, 2)], false);
         enemyCount++;
+        mastermindSpawned = true;
     }
 
     public void RemoveEnemy(float recVal)
     {
-        GameObject GM = GameObject.FindGameObjectWithTag("GameManager");
-        GM.GetComponent<GameManager>().AddResource(recVal);
-        GM.GetComponent<GameManager>().AddScore(recVal);
+        AddResource(recVal);
+        AddScore(recVal);
+        if(enemiesRemaining == 1)
+        {
+            spawnWave = true;
+        }
         enemiesRemaining--;
+    }
+    public float GetScore()
+    {
+        return score;
+    }
+
+    //return cash value.
+    public float GetCash()
+    {
+        return cash;
+    }
+
+    //request permission to spend cash.
+    public bool SpendCash(int value)
+    {
+        if ((cash - value) >= 0)
+        {
+            cash -= value;
+            return true;
+        }
+        return false;
+    }
+
+    public void AddResource(float rec)
+    {
+        cash = cash + rec;
+    }
+
+    public void AddScore(float rec)
+    {
+        score = score + rec;
     }
 }

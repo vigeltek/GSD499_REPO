@@ -9,7 +9,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public GameObject score;
     public GameObject wave;
     public GameObject cash;
-    GameManager GM;
+    private GameController gameController;
 
     public GameObject laserButton;
     public GameObject rocketButton;
@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     // Use this for initialization
     void Start ()
     {
-        GM = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<GameManager>();
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         
     }
 
@@ -36,8 +36,8 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	// Update is called once per frame
 	void Update ()
     {
-        cash.GetComponent<Text>().text = GM.GetCash().ToString();
-        score.GetComponent<Text>().text = GM.GetScore().ToString();
+        cash.GetComponent<Text>().text = gameController.GetCash().ToString();
+        score.GetComponent<Text>().text = gameController.GetScore().ToString();
 
         
     }
