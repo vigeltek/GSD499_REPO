@@ -47,6 +47,21 @@ public class TPManager : MonoBehaviour {
 
     }
 
+    public static void BuildLaserTurretHotKey()
+    {
+        instance.ChangeActiveTurret(1);
+    }
+
+    public static void BuildRocketTurretHotKey()
+    {
+        instance.ChangeActiveTurret(2);
+    }
+
+    public static void BuildLightningTurretHotKey()
+    {
+        instance.ChangeActiveTurret(3);
+    }
+
     // Use this for initialization
     void Awake () {
         if(instance != null)

@@ -10,7 +10,7 @@ public class IntroMenuController : MonoBehaviour {
     GameObject MenuMain;
     GameObject TitleText;
 
-    GameObject Credits;
+    GameObject CreditsDialog;
 
 
     public void onStartGameClick()
@@ -20,6 +20,13 @@ public class IntroMenuController : MonoBehaviour {
         
     }
 
+    public void onStartMenuClick()
+    {
+
+        Application.LoadLevel(1);
+
+    }
+
     public void onExitGameClick()
     {
         Application.Quit();
@@ -27,20 +34,26 @@ public class IntroMenuController : MonoBehaviour {
 
     public void onCreditsClick()
     {
-        if (MenuMain != null && TitleText != null && Credits != null)
+
+        Application.LoadLevel(3);
+        /*
+        if (MenuMain != null && TitleText != null && CreditsDialog != null)
         {
             MenuMain.SetActive(false);
             TitleText.SetActive(false);
-            Credits.SetActive(true);
+            CreditsDialog.SetActive(true);
+
+            
         }
+        */
         
     }
 
     public void onButtonbackClick()
     {
-        if (MenuMain != null && TitleText != null && Credits != null)
+        if (MenuMain != null && TitleText != null && CreditsDialog != null)
         {
-            Credits.SetActive(false);
+            CreditsDialog.SetActive(false);
             MenuMain.SetActive(true);
             TitleText.SetActive(true);
         }
@@ -63,11 +76,11 @@ public class IntroMenuController : MonoBehaviour {
     {
         MenuMain = GameObject.Find("PanelGameOver");
         TitleText = GameObject.Find("TitleText");
-        Credits = GameObject.Find("AnchorCenterCredits");
+        CreditsDialog = GameObject.Find("AnchorCenterCredits");
 
-        if (MenuMain != null && TitleText != null && Credits != null)
+        if (MenuMain != null && TitleText != null && CreditsDialog != null)
         {
-            Credits.SetActive(false);
+            CreditsDialog.SetActive(false);
             MenuMain.SetActive(true);
             TitleText.SetActive(true);
         }

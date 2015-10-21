@@ -117,12 +117,12 @@ public class GameController : MonoBehaviour
             spawnWave = false;
         }
 
-        if (ship.GetComponent<Stats>().health <= 0 && shipDestroyed == false)
+        if (ship == null || (ship.GetComponent<Stats>().health <= 0 && shipDestroyed == false))
         {
             shipDestroyed = true;
         }
 
-        if (shield.GetComponent<Stats>().health <= 0 && shieldDestroyed == false)
+        if (shield == null || (shield.GetComponent<Stats>().health <= 0 && shieldDestroyed == false))
         {
             shieldDestroyed = true;
         }

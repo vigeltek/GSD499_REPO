@@ -39,11 +39,42 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         cash.GetComponent<Text>().text = gameController.GetCash().ToString();
         score.GetComponent<Text>().text = gameController.GetScore().ToString();
 
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+            laserButtonToolTip.enabled = true;
+            rocketButtonToolTip.enabled = true;
+            lightningButtonToolTip.enabled = true;
+        }
+        else
+        {
+            laserButtonToolTip.enabled = false;
+            rocketButtonToolTip.enabled = false;
+            lightningButtonToolTip.enabled = false;
+
+        }
         
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            TPManager.BuildLaserTurretHotKey();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            TPManager.BuildLightningTurretHotKey();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            TPManager.BuildRocketTurretHotKey();
+        }
+
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        /*
         if(eventData.hovered.Count>0)
         {
             foreach (GameObject g in eventData.hovered) {
@@ -61,10 +92,12 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
             }
         }
+        */
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        /*
         foreach (GameObject g in eventData.hovered)
         {
             if (g == laserButton)
@@ -78,5 +111,6 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 lightningButtonToolTip.enabled = false;
 
         }
+        */
     }
 }
