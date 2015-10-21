@@ -12,6 +12,7 @@ public class UIPauseMenu : MonoBehaviour {
 
     public GameObject pauseMenuObj;
     public GameObject optionMenuObj;
+    public GameObject helpMenuObj;
 
     void Awake()
     {
@@ -42,6 +43,7 @@ public class UIPauseMenu : MonoBehaviour {
     public void OnOptionButton()
     {
         pauseMenuObj.SetActive(false);
+        helpMenuObj.SetActive(false);
         optionMenuObj.SetActive(true);
     }
 
@@ -80,7 +82,14 @@ public class UIPauseMenu : MonoBehaviour {
     public void OnOptionBackButton()
     {
         optionMenuObj.SetActive(false);
+        helpMenuObj.SetActive(false);
         pauseMenuObj.SetActive(true);
     }
-    
+
+    public void OnOptionHelpButton()
+    {
+        optionMenuObj.SetActive(false);
+        pauseMenuObj.SetActive(false);
+        helpMenuObj.SetActive(true);
+    }
 }
