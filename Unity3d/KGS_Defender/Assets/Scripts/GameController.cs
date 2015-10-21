@@ -63,10 +63,13 @@ public class GameController : MonoBehaviour
     public Transform[] spawnPoints;
 
     // Miscellaneous variables for wave control.
-    public int currentWave;                                // Number of the current wave.
-    public int numToSpawn;                                 // How many enemies to spawn?
-    public int enemyCount;                                 // How many enemies are there currently?
-    public int enemiesRemaining;                           // How many enemies are remaining?
+    private int currentWave;                                // Number of the current wave.
+    private int numToSpawn;                                 // How many enemies to spawn?
+    private int spiderCount;                                 // How many enemies are there currently?
+    private int buzzerCount;
+    private int tankCount;
+    private int mastermindCount;
+    private int enemiesRemaining;                           // How many enemies are remaining?
     private bool spawnWave;                                // Is it time to spawn a wave?
     private bool mastermindSpawned;                        // Has the final boss spawned?
     #endregion
@@ -147,7 +150,10 @@ public class GameController : MonoBehaviour
         }
         currentWave = 0;
         numToSpawn = 0;
-        enemyCount = 0;
+        spiderCount = 0;
+        buzzerCount = 0;
+        tankCount = 0;
+        mastermindCount = 0;
         enemiesRemaining = 0;
         spawnWave = true;
         mastermindSpawned = false;
@@ -187,9 +193,12 @@ public class GameController : MonoBehaviour
         spawnWave = false;
         UpdateLevel();
         yield return new WaitForSeconds(5f);
-
+        
         numToSpawn = 12 * wave;
-        enemyCount = 0;
+        spiderCount = 0;
+        buzzerCount = 0;
+        tankCount = 0;
+        mastermindCount = 0;
         enemiesRemaining = numToSpawn;
 
         switch (wave)
@@ -239,63 +248,63 @@ public class GameController : MonoBehaviour
 
     IEnumerator Spiders(int toSpawn, bool bossWave)
     {
-        while (enemyCount < toSpawn)
+        while (spiderCount < toSpawn)
         {
-            if (bossWave == true && (enemyCount == toSpawn - 1))
+            if (bossWave == true && (spiderCount == toSpawn - 1))
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new SpiderSpawner();
                 enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                enemyCount++;
+                spiderCount++;
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new SpiderSpawner();
                 enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                enemyCount++;
+                spiderCount++;
             }
         }
     }
 
     IEnumerator Buzzers(int toSpawn, bool bossWave)
     {
-        while (enemyCount < toSpawn)
+        while (buzzerCount < toSpawn)
         {
-            if (bossWave == true && (enemyCount == toSpawn - 1))
+            if (bossWave == true && (buzzerCount == toSpawn - 1))
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new BuzzerSpawner();
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                enemyCount++;
+                buzzerCount++;
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new BuzzerSpawner();
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                enemyCount++;
+                buzzerCount++;
             }
         }
     }
 
     IEnumerator Tanks(int toSpawn, bool bossWave)
     {
-        while (enemyCount < toSpawn)
+        while (tankCount < toSpawn)
         {
-            if (bossWave == true && (enemyCount == toSpawn - 1))
+            if (bossWave == true && (tankCount == toSpawn - 1))
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new TankSpawner();
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                enemyCount++;
+                tankCount++;
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new TankSpawner();
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                enemyCount++;
+                tankCount++;
             }
         }
     }
@@ -305,7 +314,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(30);
         enemySpawner = new MastermindSpawner();
         enemySpawner.SpawnEnemy(mastermind, currentWave, spawnPoints[Random.Range(0, 2)], false);
-        enemyCount++;
+        mastermindCount++;
         mastermindSpawned = true;
     }
 
