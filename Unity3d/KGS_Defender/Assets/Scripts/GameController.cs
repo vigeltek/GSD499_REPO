@@ -194,7 +194,7 @@ public class GameController : MonoBehaviour
         UpdateLevel();
         yield return new WaitForSeconds(5f);
         
-        numToSpawn = 12 * wave;
+        numToSpawn = 6 * wave;
         spiderCount = 0;
         buzzerCount = 0;
         tankCount = 0;
@@ -254,16 +254,15 @@ public class GameController : MonoBehaviour
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new SpiderSpawner();
-                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                spiderCount++;
+                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], true);              
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new SpiderSpawner();
-                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                spiderCount++;
+                enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);              
             }
+            spiderCount++;
         }
     }
 
@@ -276,15 +275,14 @@ public class GameController : MonoBehaviour
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new BuzzerSpawner();
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                buzzerCount++;
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new BuzzerSpawner();
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                buzzerCount++;
             }
+            buzzerCount++;
         }
     }
 
@@ -297,15 +295,14 @@ public class GameController : MonoBehaviour
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new TankSpawner();
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], true);
-                tankCount++;
             }
             else
             {
                 yield return new WaitForSeconds(Random.Range(1.5f, 3.0f));
                 enemySpawner = new TankSpawner();
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], false);
-                tankCount++;
             }
+            tankCount++;
         }
     }
 
@@ -322,10 +319,6 @@ public class GameController : MonoBehaviour
     {
         AddResource(recVal);
         AddScore(recVal);
-        if(enemiesRemaining == 1)
-        {
-            spawnWave = true;
-        }
         enemiesRemaining--;
     }
     public float GetScore()
