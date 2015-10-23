@@ -24,7 +24,7 @@ public class TPManager : MonoBehaviour {
     int currCost;
 
     public bool placementMode;
-    public bool destroyMode;
+    public bool sellMode;
 
     public UnityEngine.UI.Text buildModeText;
     public GameObject laserButton;
@@ -134,6 +134,10 @@ public class TPManager : MonoBehaviour {
 
     public void ChangeActiveTurret(int selection)
     {
+        if(placementMode)
+        {
+            PlacementMode();
+        }
         if (!placementMode)
         {
             PlacementMode();
@@ -155,23 +159,51 @@ public class TPManager : MonoBehaviour {
             currCost = lightningCost;
         }
     }
-    
+
+    public void SellTurret(int selection)
+    {
+        if (selection == 1)
+        {
+            GM.AddResource(laserSellPrice);
+        }
+        if (selection == 2)
+        {
+            GM.AddResource(rocketSellPrice);
+        }
+        if (selection == 3)
+        {
+            GM.AddResource(lightningSellPrice);
+        }
+    }
+
+    public void SellMode()
+    {
+        if (instance.sellMode)
+        {
+            instance.sellMode = false;
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
+        }
+        else
+        {
+            instance.placementMode = false;
+            instance.sellMode = true;
+            instance.turrGrid.BroadcastMessage("GridVisibility", true);
+        }
+            
+            
+
+    }
     public static void PlacementMode()
     {
         if (instance.placementMode)
         {
             instance.placementMode = false;
-            instance.buildModeText.color = instance.activeColor;
-            instance.buildModeText.text = "Build";
-            //DisableButtons();
             instance.turrGrid.BroadcastMessage("GridVisibility", false);
         }
         else
         {
+            //Debug.Log("Turn On Grid");
             instance.placementMode = true;
-            // EnableButtons();
-            instance.buildModeText.color = instance.disabledColor;
-            instance.buildModeText.text = "OFF";
             instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
 
@@ -183,26 +215,6 @@ public class TPManager : MonoBehaviour {
         laserButton.GetComponent<Button>().interactable = false;      
         rocketButton.GetComponent<Button>().interactable = false;
         lightningButton.GetComponent<Button>().interactable = false;
-        //  SellButton.interactable = true;
-
-        //laserButton.GetComponentInChildren<Text>().color = disabledColor;
-        //rocketButton.GetComponentInChildren<Text>().color = disabledColor;
-        //lightningButton.GetComponentInChildren<Text>().color = disabledColor;
     }
-
-    /*
-    void EnableButtons()
-    {
-        laserButton.GetComponent<Button>().interactable = true;
-        rocketButton.GetComponent<Button>().interactable = true;
-        lightningButton.GetComponent<Button>().interactable = true;
-        //   SellButton.interactable = false;
-        laserButton.GetComponentInChildren<Text>().color = activeColor;
-        rocketButton.GetComponentInChildren<Text>().color = activeColor;
-        lightningButton.GetComponentInChildren<Text>().color = activeColor;
-       
-    }
-    */
-
-
+    
 }

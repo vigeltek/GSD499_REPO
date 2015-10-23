@@ -91,6 +91,26 @@ public class WeaponController : MonoBehaviour {
 
 	}
 
+    public int GetTurretType()
+    {
+        int temp = 0;
+
+        if (isLaser)
+        {
+            temp = 1;
+        }
+        if(isRocket)
+        {
+            temp = 2;
+        }
+        if (isLightning)
+        {
+            temp = 3;
+        }
+
+        return temp;
+
+    }
 
     private void Fire()
     {

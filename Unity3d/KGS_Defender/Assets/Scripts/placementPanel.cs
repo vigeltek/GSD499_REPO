@@ -9,6 +9,8 @@ public class placementPanel : MonoBehaviour {
 
     public MeshRenderer rend;
 
+    public bool placementMode = true;
+
 	// Use this for initialization
 	void Start () {
        rend = this.gameObject.GetComponent<MeshRenderer>();
@@ -35,6 +37,17 @@ public class placementPanel : MonoBehaviour {
                 rend.material.SetColor("_Color", tpm.invalidColor);
             }
         }
+        if(tpm.sellMode)
+        {
+            if (currPrefab == null)
+            {
+                rend.material.SetColor("_Color", tpm.invalidColor);
+            }
+            else
+            {
+                rend.material.SetColor("_Color", tpm.highlightColor);
+            }
+        }
     }
 
     void OnMouseExit()
@@ -54,18 +67,22 @@ public class placementPanel : MonoBehaviour {
                 TPManager.PlacementMode();
             }
         }
-        if(tpm.destroyMode && currPrefab != null)
+        if(tpm.sellMode && currPrefab != null)
         {
+            WeaponController wc = currPrefab.GetComponent<WeaponController>();
+            int resource = wc.GetTurretType();
             Destroy(currPrefab);
             currPrefab = null;
+            tpm.SellTurret(resource);
+            tpm.SellMode();
         }
 
     }
 
-    public void GridVisibility(bool isvisible)
+    public void GridVisibility(bool isVisible)
     {
-        MeshRenderer render = GetComponent<MeshRenderer>();
-        render.enabled = isvisible;
+            MeshRenderer render = GetComponent<MeshRenderer>();
+            render.enabled = isVisible;
     }
 
 }
