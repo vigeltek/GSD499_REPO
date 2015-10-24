@@ -97,11 +97,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void DestroySelf()
-    {
-        Destroy(gameObject);
-    }
-
     IEnumerator ResetFire()
     {
         yield return new WaitForSeconds(attackSpeed);

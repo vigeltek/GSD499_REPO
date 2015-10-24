@@ -69,14 +69,16 @@ public class Stats : MonoBehaviour {
 
     public void DestroyEnemy()
     {
+
         turPanels.GetComponentInChildren<WeaponController>().DeathConfirmation(this.gameObject);
         //turPanels.BroadcastMessage("DeathConfirmation", this.gameObject, SendMessageOptions.DontRequireReceiver);
-        gameController.GetComponent<GameController>().RemoveEnemy(recValue);
 
         // Instantiate death explosion
         Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
 
+        gameController.GetComponent<GameController>().RemoveEnemy(recValue);
+
         // Finally destroy this object.
-        gameObject.GetComponent<EnemyController>().DestroySelf();
+        Destroy(gameObject);
     }
 }

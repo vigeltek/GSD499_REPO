@@ -47,17 +47,17 @@ public class WeaponController : MonoBehaviour {
 	void Start () {
         targetList = new ArrayList();
         sourceAudio = GetComponent<AudioSource>();
-        if(isLaser)
-        {
-            FirePoint1.AddComponent<LineRenderer>();
-            LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
-            laserRender.enabled = false;
-            laserRender.SetPosition(0, FirePoint1.transform.position);
-            laserRender.SetPosition(1, FirePoint1.transform.position);
-            laserRender.material = laserMat;
+        //if(isLaser)
+        //{
+        //    FirePoint1.AddComponent<LineRenderer>();
+        //    LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
+        //    laserRender.enabled = false;
+        //    laserRender.SetPosition(0, FirePoint1.transform.position);
+        //    laserRender.SetPosition(1, FirePoint1.transform.position);
+        //    laserRender.material = laserMat;
             
 
-        }
+        //}
         
 	}
 	
@@ -87,9 +87,19 @@ public class WeaponController : MonoBehaviour {
         {
             Fire();
         }
-        
 
-	}
+        if (isLaser)
+        {
+            FirePoint1.AddComponent<LineRenderer>();
+            LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
+            laserRender.enabled = false;
+            laserRender.SetPosition(0, FirePoint1.transform.position);
+            laserRender.SetPosition(1, FirePoint1.transform.position);
+            laserRender.material = laserMat;
+
+
+        }
+    }
 
     public int GetTurretType()
     {

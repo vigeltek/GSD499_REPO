@@ -63,15 +63,15 @@ public class GameController : MonoBehaviour
     public Transform[] spawnPoints;
 
     // Miscellaneous variables for wave control.
-    private int currentWave;                                // Number of the current wave.
-    private int numToSpawn;                                 // How many enemies to spawn?
-    private int spiderCount;                                 // How many enemies are there currently?
-    private int buzzerCount;
-    private int tankCount;
-    private int mastermindCount;
-    private int enemiesRemaining;                           // How many enemies are remaining?
-    private bool spawnWave;                                // Is it time to spawn a wave?
-    private bool mastermindSpawned;                        // Has the final boss spawned?
+    public int currentWave;                                // Number of the current wave.
+    public int numToSpawn;                                 // How many enemies to spawn?
+    public int spiderCount;                                 // How many enemies are there currently?
+    public int buzzerCount;
+    public int tankCount;
+    public int mastermindCount;
+    public int enemiesRemaining;                           // How many enemies are remaining?
+    public bool waveComplete;
+    public bool mastermindSpawned;                        // Has the final boss spawned?
     #endregion
 
     public float cash;
@@ -110,11 +110,12 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-        if (spawnWave == true && enemiesRemaining == 0)
+        if (GameObject.FindGameObjectWithTag("Enemy") == null && waveComplete == true)
+            
         {
             currentWave++;
             StartCoroutine(StartNewWave(currentWave));
-            spawnWave = false;
+            // spawnWave = false;
         }
 
         if (ship == null || (ship.GetComponent<Stats>().health <= 0 && shipDestroyed == false))
@@ -155,7 +156,7 @@ public class GameController : MonoBehaviour
         tankCount = 0;
         mastermindCount = 0;
         enemiesRemaining = 0;
-        spawnWave = true;
+        waveComplete = true;
         mastermindSpawned = false;
         UpdateLevel();
     }
@@ -190,7 +191,7 @@ public class GameController : MonoBehaviour
 
     IEnumerator StartNewWave(int wave)
     {
-        spawnWave = false;
+        waveComplete = false;
         UpdateLevel();
         yield return new WaitForSeconds(5f);
         
@@ -263,6 +264,7 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);              
             }
             spiderCount++;
+            waveComplete = true;
         }
     }
 
@@ -283,6 +285,7 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], false);
             }
             buzzerCount++;
+            waveComplete = true;
         }
     }
 
@@ -303,6 +306,7 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], false);
             }
             tankCount++;
+            waveComplete = true;
         }
     }
 
