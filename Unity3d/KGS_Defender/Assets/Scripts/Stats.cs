@@ -76,7 +76,7 @@ public class Stats : MonoBehaviour {
         // Instantiate death explosion
         Instantiate(DestructionParticles, this.gameObject.transform.position, this.gameObject.transform.rotation);
 
-        gameController.GetComponent<GameController>().RemoveEnemy(recValue);
+        gameController.GetComponent<GameController>().AddValues(recValue);
 
         // Finally destroy this object.
         Destroy(gameObject);

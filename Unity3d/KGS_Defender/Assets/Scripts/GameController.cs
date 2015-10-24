@@ -111,11 +111,9 @@ public class GameController : MonoBehaviour
 	void Update () 
 	{
         if (GameObject.FindGameObjectWithTag("Enemy") == null && waveComplete == true)
-            
         {
             currentWave++;
             StartCoroutine(StartNewWave(currentWave));
-            // spawnWave = false;
         }
 
         if (ship == null || (ship.GetComponent<Stats>().health <= 0 && shipDestroyed == false))
@@ -130,10 +128,12 @@ public class GameController : MonoBehaviour
 
         if (shipDestroyed == true && shipDestroyed == true)
         {
+            
             UIGameOverMenu.Show();
+            Time.timeScale = 0.1f;
         }
 
-        if (currentWave == 10 && enemiesRemaining == 0 && mastermindSpawned == true)
+        if (currentWave == 10 && GameObject.FindGameObjectWithTag("Enemy") == null && mastermindSpawned == true)
         {
             // Player wins
             UIGameOverWin.Show();
@@ -155,7 +155,6 @@ public class GameController : MonoBehaviour
         buzzerCount = 0;
         tankCount = 0;
         mastermindCount = 0;
-        enemiesRemaining = 0;
         waveComplete = true;
         mastermindSpawned = false;
         UpdateLevel();
@@ -200,7 +199,6 @@ public class GameController : MonoBehaviour
         buzzerCount = 0;
         tankCount = 0;
         mastermindCount = 0;
-        enemiesRemaining = numToSpawn;
 
         switch (wave)
         {
@@ -264,8 +262,8 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(spider, currentWave, spawnPoints[Random.Range(0, 2)], false);              
             }
             spiderCount++;
-            waveComplete = true;
         }
+        waveComplete = true;
     }
 
     IEnumerator Buzzers(int toSpawn, bool bossWave)
@@ -285,8 +283,8 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(buzzer, currentWave, spawnPoints[Random.Range(0, 2)], false);
             }
             buzzerCount++;
-            waveComplete = true;
         }
+        waveComplete = true;
     }
 
     IEnumerator Tanks(int toSpawn, bool bossWave)
@@ -306,8 +304,8 @@ public class GameController : MonoBehaviour
                 enemySpawner.SpawnEnemy(tank, currentWave, spawnPoints[Random.Range(0, 2)], false);
             }
             tankCount++;
-            waveComplete = true;
         }
+        waveComplete = true;
     }
 
     IEnumerator Mastermind()
@@ -319,11 +317,10 @@ public class GameController : MonoBehaviour
         mastermindSpawned = true;
     }
 
-    public void RemoveEnemy(float recVal)
+    public void AddValues(float recVal)
     {
         AddResource(recVal);
-        AddScore(recVal);
-        enemiesRemaining--;
+        AddScore(recVal*10);
     }
     public float GetScore()
     {

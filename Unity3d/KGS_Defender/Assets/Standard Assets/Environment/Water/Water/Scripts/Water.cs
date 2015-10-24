@@ -201,10 +201,10 @@ namespace UnityStandardAssets.Water
 
             Vector4 waveSpeed = mat.GetVector("WaveSpeed");
             float waveScale = mat.GetFloat("_WaveScale");
-            Vector4 waveScale4 = new Vector4(waveScale, waveScale, waveScale * 0.4f, waveScale * 0.45f);
+            Vector4 waveScale4 = new Vector4(waveScale, waveScale, waveScale * 0.40f, waveScale * 0.45f);
 
             // Time since level load, and do intermediate calculations with doubles
-            double t = Time.timeSinceLevelLoad / 20.0;
+            double t = Time.timeSinceLevelLoad / 20;
             Vector4 offsetClamped = new Vector4(
                 (float)Math.IEEERemainder(waveSpeed.x * waveScale4.x * t, 1.0),
                 (float)Math.IEEERemainder(waveSpeed.y * waveScale4.y * t, 1.0),

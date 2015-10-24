@@ -4,6 +4,7 @@ using System.Collections;
 public class ShieldControl : MonoBehaviour
 {
     public GameObject shieldGen;
+    public ParticleSystem particleEffect;
     private bool shieldOff = false;
     private Color lerpColor;
     private float shieldHealth;
@@ -21,6 +22,8 @@ public class ShieldControl : MonoBehaviour
             
             shieldGen.GetComponent<GeneratorControl>().ShieldDown(true);
             gameObject.GetComponent<Animator>().SetBool("Shield Down", true);
+            gameObject.active = false;
+            Destroy(particleEffect);
             Destroy(gameObject, 0.5f);        
         }
 
@@ -48,6 +51,9 @@ public class ShieldControl : MonoBehaviour
         temp = shieldHealth / GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().shieldHealth;
 
         lerpColor = Color.Lerp(Color.red, Color.green, temp);
-        gameObject.GetComponentInChildren<ParticleSystem>().startColor = lerpColor;
+        if (particleEffect != null)
+        { 
+            particleEffect.GetComponent<ParticleSystem>().startColor = lerpColor;
+        }
     }
 }
