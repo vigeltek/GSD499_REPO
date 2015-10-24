@@ -15,11 +15,9 @@ public class GeneratorControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        gameObject.GetComponent<Transform>().Rotate(0, -(Time.deltaTime * 360), 0);
-
         if(shieldDown == true)
         {
-            GameObject FXClone = (GameObject)Instantiate(explosion, this.transform.position, this.transform.rotation);
+            GameObject FXClone = (GameObject)Instantiate(explosion, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }
