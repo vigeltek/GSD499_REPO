@@ -54,17 +54,17 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         }
         
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             TPManager.BuildLaserTurretHotKey();
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             TPManager.BuildLightningTurretHotKey();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             TPManager.BuildRocketTurretHotKey();
         }

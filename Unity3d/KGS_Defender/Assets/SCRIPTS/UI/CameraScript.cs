@@ -117,7 +117,28 @@ public class CameraScript : MonoBehaviour {
         else
         {
 
+            /* WASD Key Control */
+            if (Input.GetKey(KeyCode.W))
+            {
+                newY += sensitivityY;
+            }
 
+            if (Input.GetKey(KeyCode.A))
+            {
+                newX -= sensitivityX;
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                newY -= sensitivityY;
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                newX += sensitivityX;
+            }
+
+            /*
             if (Input.mousePosition.x >= 0 && Input.mousePosition.x <= movementMargin)
             {
                 newX -= sensitivityX;
@@ -135,7 +156,7 @@ public class CameraScript : MonoBehaviour {
             {
                 newY += sensitivityY;
             }
-
+            */
             cameraPos = new Vector3(newX, 0, newY);
 
             _mainCamera.transform.position += cameraPos;
@@ -158,28 +179,14 @@ public class CameraScript : MonoBehaviour {
             }
         }
 
-        _mainCamera.fieldOfView += (Input.GetAxis("Mouse ScrollWheel")*12);
+        _mainCamera.fieldOfView -= (Input.GetAxis("Mouse ScrollWheel")*12);
         
         //Debug.Log("Zoom change: " + _mainCamera.fieldOfView);
         if (_mainCamera.fieldOfView <= 8.0f)
             _mainCamera.fieldOfView = 8.0f;
         else if (_mainCamera.fieldOfView >= 40.0f)
             _mainCamera.fieldOfView = 40.0f;
-        
-        //Debug.Log("FOV: " + _mainCamera.fieldOfView);
-        /*
-                
-                if (Input.GetMouseButtonDown(0))
-                {
-                    bDragging = true;
-                    // Debug.Log("Drag Start");
-                }
-                else if (Input.GetMouseButtonUp(0) && bDragging)
-                {
-                    bDragging = false;
-                    //  Debug.Log("Drag End");
-                }
-        */
+
     }
 
     void Awake()
