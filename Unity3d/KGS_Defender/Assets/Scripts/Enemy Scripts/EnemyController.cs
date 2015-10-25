@@ -53,11 +53,16 @@ public class EnemyController : MonoBehaviour
                 AttackTarget(collObject);
             }
         }
+
+
         if (collObject == null)
         {
-            agent.SetDestination(destination.transform.position);
-            animator.SetBool("ReachTarget", false);
-            agent.Resume();
+            if (destination.gameObject != null)
+            {
+                agent.SetDestination(destination.transform.position);
+                animator.SetBool("ReachTarget", false);
+                agent.Resume();
+            }
         }
     }
 

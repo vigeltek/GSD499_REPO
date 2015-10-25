@@ -12,7 +12,7 @@ public class ShieldControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        gameObject.GetComponent<Transform>().Rotate(0,Time.deltaTime * 90  ,0);
+        gameObject.GetComponent<Transform>().Rotate(0,Time.deltaTime * 15  ,0);
 
         shieldHealth = gameObject.GetComponent<Stats>().health;
 
@@ -22,7 +22,7 @@ public class ShieldControl : MonoBehaviour
             
             shieldGen.GetComponent<GeneratorControl>().ShieldDown(true);
             gameObject.GetComponent<Animator>().SetBool("Shield Down", true);
-            gameObject.active = false;
+            gameObject.SetActive(false);
             Destroy(particleEffect);
             Destroy(gameObject, 0.5f);        
         }
@@ -35,8 +35,7 @@ public class ShieldControl : MonoBehaviour
     {
         if (c.gameObject.CompareTag("Enemy Attack"))
         {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
-            gameObject.GetComponent<Renderer>().material.color = lerpColor;
+            StartCoroutine(FlashShield());
         }
     }
 
@@ -55,5 +54,13 @@ public class ShieldControl : MonoBehaviour
         { 
             particleEffect.GetComponent<ParticleSystem>().startColor = lerpColor;
         }
+    }
+
+    IEnumerator FlashShield()
+    {
+        gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+        yield return new WaitForSeconds(.025f);
+        gameObject.GetComponent<Renderer>().material.color = lerpColor;
+
     }
 }

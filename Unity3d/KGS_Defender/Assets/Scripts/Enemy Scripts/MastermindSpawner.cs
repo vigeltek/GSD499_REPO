@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MastermindSpawner : MonoBehaviour, iEnemyFactory
+public class MastermindSpawner : iEnemyFactory
 {
     // Variables for enemy stats.
     private float healthPoints = 2500;                              // How much damage the enemy can take.       
@@ -19,7 +19,7 @@ public class MastermindSpawner : MonoBehaviour, iEnemyFactory
         GameObject clone;
 
         // Create an instance of enemy.
-        clone = (GameObject)Instantiate(enemyType, startLoc.position, startLoc.rotation);
+        clone = (GameObject)GameObject.Instantiate(enemyType, startLoc.position, startLoc.rotation);
 
         // Assign enemy stats.
         clone.GetComponent<EnemyController>().healthPoints = healthPoints;

@@ -39,6 +39,8 @@ public class WeaponController : MonoBehaviour {
 
     public AudioSource sourceAudio;
 
+    LineRenderer laserRender;
+
     //list of targets to allow tracking the order enemies enter firing area.
     public ArrayList targetList;
 
@@ -47,19 +49,17 @@ public class WeaponController : MonoBehaviour {
 	void Start () {
         targetList = new ArrayList();
         sourceAudio = GetComponent<AudioSource>();
-        //if(isLaser)
-        //{
-        //    FirePoint1.AddComponent<LineRenderer>();
-        //    LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
-        //    laserRender.enabled = false;
-        //    laserRender.SetPosition(0, FirePoint1.transform.position);
-        //    laserRender.SetPosition(1, FirePoint1.transform.position);
-        //    laserRender.material = laserMat;
-            
+        if (isLaser)
+        {
+            FirePoint1.AddComponent<LineRenderer>();
+            laserRender = FirePoint1.GetComponent<LineRenderer>();
+            laserRender.enabled = false;
+            laserRender.SetPosition(0, FirePoint1.transform.position);
+            laserRender.SetPosition(1, FirePoint1.transform.position);
+            laserRender.material = laserMat;
+        }
 
-        //}
-        
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -90,12 +90,12 @@ public class WeaponController : MonoBehaviour {
 
         if (isLaser)
         {
-            FirePoint1.AddComponent<LineRenderer>();
-            LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
-            laserRender.enabled = false;
+            
+            //LineRenderer laserRender = FirePoint1.GetComponent<LineRenderer>();
+            //laserRender.enabled = false;
             laserRender.SetPosition(0, FirePoint1.transform.position);
             laserRender.SetPosition(1, FirePoint1.transform.position);
-            laserRender.material = laserMat;
+            //laserRender.material = laserMat;
 
 
         }

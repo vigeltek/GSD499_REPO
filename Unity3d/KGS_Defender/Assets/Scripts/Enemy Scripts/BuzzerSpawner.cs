@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BuzzerSpawner : MonoBehaviour, iEnemyFactory
+public class BuzzerSpawner : iEnemyFactory
 {
     // Variables for enemy stats.
     private float healthPoints = 150;                           // How much damage the enemy can take.       
@@ -25,7 +25,7 @@ public class BuzzerSpawner : MonoBehaviour, iEnemyFactory
         GameObject clone;
 
         // Create an instance of enemy.
-        clone = (GameObject)Instantiate(enemyType, startLoc.position, startLoc.rotation);
+        clone = (GameObject)GameObject.Instantiate(enemyType, startLoc.position, startLoc.rotation);
 
         // If it is a boss wave, spawn a larger more powerful version last.
         if (bossWave == true)
