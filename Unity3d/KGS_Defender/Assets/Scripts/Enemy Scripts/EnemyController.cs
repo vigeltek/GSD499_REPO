@@ -61,6 +61,10 @@ public class EnemyController : MonoBehaviour
             {
                 agent.SetDestination(destination.transform.position);
                 animator.SetBool("ReachTarget", false);
+                if (gameObject.GetComponent<Animation>() != null)
+                {
+                    gameObject.GetComponent<Animation>().Play();
+                }
                 agent.Resume();
             }
         }
@@ -73,6 +77,10 @@ public class EnemyController : MonoBehaviour
             collObject = c.gameObject;
             agent.Stop();
             animator.SetBool("ReachTarget", true);
+            if (gameObject.GetComponent<Animation>() != null)
+            {
+                gameObject.GetComponent<Animation>().Stop();
+            }
             gameObject.transform.LookAt(collObject.transform.position);
 
             attackObject = true;
@@ -86,9 +94,9 @@ public class EnemyController : MonoBehaviour
     {
         if (canFire)
         {            
-            GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).rotation);
+            GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).localRotation);
 
-            projClone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(0,0,25);
+            projClone.GetComponent<Rigidbody>().AddForce(projClone.transform.forward * Time.deltaTime * 250);
 
             collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
             AS.Play();

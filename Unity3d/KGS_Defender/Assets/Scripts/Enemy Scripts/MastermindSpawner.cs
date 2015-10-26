@@ -5,10 +5,10 @@ public class MastermindSpawner : iEnemyFactory
 {
     // Variables for enemy stats.
     private float healthPoints = 2500;                              // How much damage the enemy can take.       
-    private float attackPower = 100;                                // How much damage each attack does.
-    private float attackSpeed = 2;                                  // How quickly the enemy attacks.
+    private float attackPower = 1;                                  // How much damage each attack does.
+    private float attackSpeed = .10f;                               // How quickly the enemy attacks.
     private float moveSpeed = 20;                                   // How quickly the enemy moves on the NavMesh.
-    private float resourceValue = 1000;                             // How many resources each enemy is worth.
+    private float resourceValue = 10000;                             // How many resources each enemy is worth.
     private float waveModifier;                                     // Modifier to increase enemy stats depending on Wave.
     private float bossModifier;                                     // Modifier to increase boss enemy stats.
 
