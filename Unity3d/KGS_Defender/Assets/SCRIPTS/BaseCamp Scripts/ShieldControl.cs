@@ -58,7 +58,7 @@ public class ShieldControl : MonoBehaviour
 
     IEnumerator FlashShield()
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+        gameObject.GetComponent<Renderer>().material.color = Color.black;
         yield return new WaitForSeconds(.025f);
         gameObject.GetComponent<Renderer>().material.color = lerpColor;
 

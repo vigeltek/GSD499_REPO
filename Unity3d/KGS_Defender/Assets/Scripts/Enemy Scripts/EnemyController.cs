@@ -96,7 +96,7 @@ public class EnemyController : MonoBehaviour
         {            
             GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).localRotation);
 
-            projClone.GetComponent<Rigidbody>().AddForce(projClone.transform.forward * Time.deltaTime * 250);
+            projClone.GetComponent<Rigidbody>().AddForce(projClone.transform.forward * 2000);
 
             collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
             AS.Play();
