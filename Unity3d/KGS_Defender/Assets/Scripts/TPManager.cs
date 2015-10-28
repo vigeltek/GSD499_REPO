@@ -62,6 +62,17 @@ public class TPManager : MonoBehaviour {
         instance.ChangeActiveTurret(3);
     }
 
+    public static void SellTurretHotKey()
+    {
+        instance.SellMode();
+    }
+
+    public static void CancelHotKey()
+    {
+        
+    }
+
+
     // Use this for initialization
     void Awake () {
         if(instance != null)
