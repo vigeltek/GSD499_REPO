@@ -37,7 +37,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	void Update ()
     {
         cash.GetComponent<Text>().text = gameController.GetCash().ToString();
-        score.GetComponent<Text>().text = gameController.GetScore().ToString();
+        score.GetComponent<Text>().text = string.Format("{0,6}", gameController.GetScore().ToString());
 
         if (Input.GetKey(KeyCode.Space))
         {
