@@ -69,7 +69,7 @@ public class TPManager : MonoBehaviour {
 
     public static void CancelHotKey()
     {
-        
+        instance.CancelCurrentAction();
     }
 
 
@@ -185,6 +185,22 @@ public class TPManager : MonoBehaviour {
         {
             GM.AddResource(lightningSellPrice);
         }
+    }
+
+    public void CancelCurrentAction()
+    {
+        if (instance.sellMode)
+        {
+            instance.sellMode = false;
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
+        }
+
+        if (instance.placementMode)
+        {
+            instance.placementMode = false;
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
+        }
+
     }
 
     public void SellMode()

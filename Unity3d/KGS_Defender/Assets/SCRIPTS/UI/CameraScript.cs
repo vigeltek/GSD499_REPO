@@ -138,6 +138,49 @@ public class CameraScript : MonoBehaviour {
                 newX += sensitivityX;
             }
 
+            if (Input.GetKey(KeyCode.E))
+            {
+
+                pitch += .25f;
+                if (pitch >= 22.5f)
+                    pitch = 22.5f;
+                else
+                    _mainCamera.transform.Rotate(Vector3.left, .25f);
+            }
+
+            if (Input.GetKey(KeyCode.C))
+            {
+
+                pitch -= .25f;
+                if (pitch < -22.5f)
+                    pitch = -22.5f;
+                else
+                    _mainCamera.transform.Rotate(Vector3.left, -.25f);
+            }
+            
+
+            if (Input.GetKey(KeyCode.Q))
+            {
+                // rotate left
+
+                yaw -= .25f;
+                if (yaw < -22.5f)
+                    yaw = -22.5f;
+                else
+                    _mainCamera.transform.Rotate(Vector3.up, -.25f);
+
+            }
+
+            if (Input.GetKey(KeyCode.R))
+            {
+                // rotate right
+                yaw += .25f;
+                if (yaw > 22.5f)
+                    yaw = 22.5f;
+                else
+                    _mainCamera.transform.Rotate(Vector3.up, .25f);
+            }
+
             /*
             if (Input.mousePosition.x >= 0 && Input.mousePosition.x <= movementMargin)
             {
