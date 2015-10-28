@@ -128,9 +128,11 @@ public class GameController : MonoBehaviour
 
         if (shipDestroyed == true && shipDestroyed == true)
         {
-            
-            UIGameOverMenu.Show();
-            Time.timeScale = 0.1f;
+            if (!UIGameOverMenu.isOn)
+            {
+                UIGameOverMenu.Show();
+                Time.timeScale = 0.1f;
+            }
         }
 
         if (currentWave == 10 && GameObject.FindGameObjectWithTag("Enemy") == null && mastermindSpawned == true)

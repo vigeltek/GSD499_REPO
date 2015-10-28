@@ -57,7 +57,7 @@ public class EnemyController : MonoBehaviour
 
         if (collObject == null)
         {
-            if (destination.gameObject != null)
+            if (destination != null && destination.gameObject != null)
             {
                 agent.SetDestination(destination.transform.position);
                 animator.SetBool("ReachTarget", false);
