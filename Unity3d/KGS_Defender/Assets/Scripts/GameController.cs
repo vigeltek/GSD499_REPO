@@ -179,6 +179,12 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public static void RestartLevel()
+    {
+        
+        //instance.StartNewWave(instance.currentWave);
+    }
+
     private void UpdateLevel()
     {
         if (DisplayLevel != null)

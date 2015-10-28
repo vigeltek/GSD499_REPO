@@ -15,7 +15,14 @@ public class UIGameOverMenu : MonoBehaviour {
 	void Update () {
 	
 	}
-    
+
+    public void OnTryAgaincButton()
+    {
+        Time.timeScale = 1;
+        Application.LoadLevel(2);
+    }
+
+
     public void OnMainMenuButton()
     {
         Time.timeScale = 1;
