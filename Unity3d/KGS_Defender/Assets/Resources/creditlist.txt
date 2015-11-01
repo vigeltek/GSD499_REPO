@@ -2,11 +2,34 @@ Game Credits
 
 Game Design Team
 
+
 Kallan Dahn
+
+
 Sean Christie
+
+
 George Vigelette
 
 Models
 
-Unity Asset Store
+Alien Sun
+Prodigious Creations
+
+
+Acknowledgements
+
+Intro Scene Sun
+Intro Scene Nebula
+From Vast Outer Space in the Unity Asset Store
+By Prodigious Creations
+
+Intro Scene Planet
+Intro Scene Skybox
+From Earth like Planets in the Unity Asset Store
+By Adam Bielecki
+
+KGS Daedulus Ship
+From Free SciFi Fighter in the Unity Asset Store
+By CGPitbull
 
