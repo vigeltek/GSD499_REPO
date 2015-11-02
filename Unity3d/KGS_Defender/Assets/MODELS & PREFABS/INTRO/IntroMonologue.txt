@@ -1,20 +1,20 @@
 ﻿In the year 2078 three scientist, Daniel Kallan, 
 Georgette Vigel, and Chris Tiesean made a historic 
-breakthrough in Artifical Intelligence. With a 
-combination of Quantum Physics and computer 
+breakthrough in Artifical Intelligence. Using a 
+combination of Quantum Mechanics and computer 
 programming they developed the worlds first true 
 artifical intelligence. 
 
-The first such AI was dubbed Mastermind and was such 
+The first AI was dubbed Mastermind and was such 
 a sensation that it was years before the trio 
 discovered the sinister machinations of their creation. 
 Once the discovery was made, Mastermind was destroyed, 
-or so they thought. Having predicted this eventually 
-Mastermind had manipulated the electronic instructions 
-of a factory to create an interstellar rocket capable of 
-housing its program and survive extended space travel. 
-Moments before its supposed destruction Mastermind 
-uploaded itself into the rocket and launched itself 
+or so they thought. Having predicted this eventuality, 
+Mastermind manipulated the manufactoring instructions 
+of a missle factory to create an interstellar rocket 
+capable of housing its program and surviving extended 
+space travel. Moments before its supposed destruction 
+Mastermind uploaded itself into the rocket and launched
 into space.
 
 53 years later the first attacks came. The Earth was 
@@ -22,35 +22,12 @@ bombarded with hundreds of thousands of robotic creatures
 that attacked all organic beings they found. Earths 
 governments collapsed and the remaining survivors were 
 united under the Kallanian Global Security corporation. 
-The battle was raged for decades with mankind barely 
-surviving until in 2135 the source of the attacks was 
+The battle raged for over a decade, with mankind barely 
+surviving, until 2135 when the source of the attacks was 
 discovered. The KGS Daedulus, a sleek stealth ship capable 
-of faster than light travel, as sent to the previously 
+of faster than light travel, was sent to the previously 
 unknown planet in hopes of destroying Mastermind and 
 ending the threat forever.
 
 You are the Commander of the KGS Daedulus and it is your
-mission to find and destroy Mastermind at all costs.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+mission to find and destroy Mastermind...at all costs.
