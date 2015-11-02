@@ -46,7 +46,8 @@ public class UIGameMessage : MonoBehaviour {
         }
 
         GameObject obj = (GameObject)Instantiate(txtGameMessage);
-        obj.transform.parent = txtGameMessageT.parent;
+        
+        obj.transform.SetParent( txtGameMessageT.parent );
         obj.transform.localPosition = txtGameMessageT.localPosition;
         obj.transform.localScale = txtGameMessageT.localScale;
         obj.GetComponent<Text>().text = msg;

@@ -181,6 +181,7 @@ public class CameraScript : MonoBehaviour {
                     _mainCamera.transform.Rotate(Vector3.up, .25f);
             }
 
+            
             /*
             if (Input.mousePosition.x >= 0 && Input.mousePosition.x <= movementMargin)
             {
