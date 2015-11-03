@@ -31,5 +31,9 @@ public class MastermindSpawner : iEnemyFactory
         // Pass health and value to Stats script.
         clone.GetComponent<Stats>().health = clone.GetComponent<EnemyController>().healthPoints;
         clone.GetComponent<Stats>().recValue = clone.GetComponent<EnemyController>().resourceValue;
+        clone.name = "Mastermind";
+
+        UIGameMessage.DisplayMessage("Commander!  Mastermind has arrived!");
     }
+
 }

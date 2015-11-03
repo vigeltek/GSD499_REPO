@@ -40,7 +40,7 @@ public class UIGameMessage : MonoBehaviour {
         int counter = msgList.Count;
         foreach (GameObject msgObj in msgList)
         {
-            Vector3 pos = txtGameMessageT.localPosition + new Vector3(0, counter * 20, 0);
+            Vector3 pos = txtGameMessageT.localPosition + new Vector3(0, counter * -20, 0);
             TweenPosition(msgObj, .15f, pos);
             counter -= 1;
         }
@@ -63,10 +63,10 @@ public class UIGameMessage : MonoBehaviour {
         float dur = 0;
         while (dur < 1.25f) { dur += Time.unscaledDeltaTime; yield return null; }
 
-        TweenScale(obj, 0.5f, new Vector3(0.01f, 0.01f, 0.01f));
+        //TweenScale(obj, 0.5f, new Vector3(0.01f, 0.01f, 0.01f));
 
         dur = 0;
-        while (dur < 0.75f) { dur += Time.unscaledDeltaTime; yield return null; }
+        while (dur < 5.00f) { dur += Time.unscaledDeltaTime; yield return null; }
 
         msgList.RemoveAt(0);
         Destroy(obj);

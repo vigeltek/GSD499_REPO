@@ -58,20 +58,21 @@ public class GameController : MonoBehaviour
     public GameObject buzzer;
     public GameObject tank;
     public GameObject mastermind;
+    private string[] waveNames = { "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth" };
 
     // Array of spawnpoints enemies can randomly appear at.
     public Transform[] spawnPoints;
 
     // Miscellaneous variables for wave control.
-    public int currentWave;                                // Number of the current wave.
-    public int numToSpawn;                                 // How many enemies to spawn?
-    public int spiderCount;                                 // How many enemies are there currently?
-    public int buzzerCount;
-    public int tankCount;
-    public int mastermindCount;
-    public int enemiesRemaining;                           // How many enemies are remaining?
-    public bool waveComplete;
-    public bool mastermindSpawned;                        // Has the final boss spawned?
+    private int currentWave;                                // Number of the current wave.
+    private int numToSpawn;                                 // How many enemies to spawn?
+    private int spiderCount;                                 // How many enemies are there currently?
+    private int buzzerCount;
+    private int tankCount;
+    private int mastermindCount;
+    private int enemiesRemaining;                           // How many enemies are remaining?
+    private bool waveComplete;
+    private bool mastermindSpawned;                        // Has the final boss spawned?
     #endregion
 
     public float cash;
@@ -200,9 +201,22 @@ public class GameController : MonoBehaviour
     {
         waveComplete = false;
         UpdateLevel();
-        yield return new WaitForSeconds(5f);
-        
-        numToSpawn = 6 * wave;
+
+
+        UIGameMessage.DisplayMessage("Commander! Wave incoming in 15 seconds!");
+
+        yield return new WaitForSeconds(15f);
+
+
+        UIGameMessage.DisplayMessage("Commander! The " + waveNames[wave - 1] + " wave is beginning.");
+        if(wave > 1)
+        {
+
+            UIGameMessage.DisplayMessage("Enemies appear to be " + (20 * (wave - 1)) + "% stronger!");
+        }
+
+
+        numToSpawn = 12 * wave;
         spiderCount = 0;
         buzzerCount = 0;
         tankCount = 0;

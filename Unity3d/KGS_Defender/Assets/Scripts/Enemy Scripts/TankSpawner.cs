@@ -16,7 +16,7 @@ public class TankSpawner : iEnemyFactory
     public void SpawnEnemy(GameObject enemyType, int wave, Transform startLoc, bool bossWave)
     {
         // Set the wave modifier.
-        waveModifier = ((wave - 1) * .25f);
+        waveModifier = ((wave - 1) * .20f);
 
         // Set the boss modifier.
         bossModifier = wave * 1.25f;
@@ -43,6 +43,9 @@ public class TankSpawner : iEnemyFactory
 
             // Increase the size of the model.
             clone.transform.localScale += new Vector3(1, 1, 1);
+            clone.name = "Mega-Mechatank";
+
+            UIGameMessage.DisplayMessage("A " + clone.name + " has spawned!");
         }
         else
         {
@@ -56,6 +59,7 @@ public class TankSpawner : iEnemyFactory
             // Pass health and value to Stats script.
             clone.GetComponent<Stats>().health = clone.GetComponent<EnemyController>().healthPoints;
             clone.GetComponent<Stats>().recValue = clone.GetComponent<EnemyController>().resourceValue;
+            clone.name = "Mechatank";
         }
     }
 }

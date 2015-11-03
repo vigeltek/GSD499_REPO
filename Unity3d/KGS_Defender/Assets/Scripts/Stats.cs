@@ -80,5 +80,8 @@ public class Stats : MonoBehaviour {
 
         // Finally destroy this object.
         Destroy(gameObject);
+
+
+        UIGameMessage.DisplayMessage(this.gameObject.name + " destoryed!");
     }
 }
