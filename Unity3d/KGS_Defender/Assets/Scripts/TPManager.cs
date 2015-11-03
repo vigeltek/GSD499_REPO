@@ -25,6 +25,7 @@ public class TPManager : MonoBehaviour {
 
     public bool placementMode;
     public bool sellMode;
+    public bool upgrade;
 
     public UnityEngine.UI.Text buildModeText;
     public GameObject laserButton;
@@ -40,6 +41,12 @@ public class TPManager : MonoBehaviour {
 
     GameController GM;
     GameObject turrGrid;
+
+    public GameObject UpgradeGUI;
+    public Text upgradeCostGUIText;
+    public Button upgradeGUIConfirmButton;
+    public Text textTitle;
+    string textTitleInitialValue;
 
     public static void Init()
     {
@@ -72,7 +79,10 @@ public class TPManager : MonoBehaviour {
         instance.CancelCurrentAction();
     }
 
-
+    void Start()
+    {
+        textTitleInitialValue = textTitle.text;
+    }
     // Use this for initialization
     void Awake () {
         if(instance != null)
@@ -213,6 +223,7 @@ public class TPManager : MonoBehaviour {
         else
         {
             instance.placementMode = false;
+            instance.upgrade = false;
             instance.sellMode = true;
             instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
@@ -220,6 +231,22 @@ public class TPManager : MonoBehaviour {
             
 
     }
+
+    public void TurnOnGrid()
+    {
+        instance.upgrade = true;
+        instance.turrGrid.BroadcastMessage("GridVisibility", true);
+    }
+
+    public void TurnOffGrid()
+    {
+        instance.upgrade = false;
+        UpgradeGUI.SetActive(false);
+        instance.turrGrid.BroadcastMessage("GridVisibility", false);
+
+    }
+
+    
     public static void PlacementMode()
     {
         if (instance.placementMode)
@@ -231,6 +258,8 @@ public class TPManager : MonoBehaviour {
         {
             //Debug.Log("Turn On Grid");
             instance.placementMode = true;
+            instance.sellMode = false;
+            instance.upgrade = false;
             instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
 
@@ -243,5 +272,34 @@ public class TPManager : MonoBehaviour {
         rocketButton.GetComponent<Button>().interactable = false;
         lightningButton.GetComponent<Button>().interactable = false;
     }
-    
+
+    public void Upgrade(placementPanel panel, TurretUpgrade tu)
+    {
+        //Set the reference for the panel asking to upgrade
+        UpgradeGUI.GetComponent<GUIRef>().GUIReference = panel;
+        upgradeCostGUIText.text = "$" + tu.CostOfUpgrade().ToString();
+
+        if (GM.GetCash() >= tu.CostOfUpgrade())
+        {
+            if (tu.CostOfUpgrade() == 0)
+            {
+                textTitle.text = "This turret is Max Level";
+                upgradeCostGUIText.text = "";
+                upgradeGUIConfirmButton.interactable = false;
+            }
+            else
+            {
+                textTitle.text = textTitleInitialValue;
+                upgradeGUIConfirmButton.interactable = true;
+            }
+        }
+        else
+        {
+            upgradeGUIConfirmButton.interactable = false;
+        }
+
+            UpgradeGUI.SetActive(true);
+
+    }
+
 }
