@@ -40,7 +40,7 @@ public class UIGameMessage : MonoBehaviour {
         int counter = msgList.Count;
         foreach (GameObject msgObj in msgList)
         {
-            Vector3 pos = txtGameMessageT.localPosition + new Vector3(0, counter * -20, 0);
+            Vector3 pos = txtGameMessageT.localPosition + new Vector3(0, counter * -18, 0);
             TweenPosition(msgObj, .15f, pos);
             counter -= 1;
         }

@@ -41,12 +41,18 @@ public class GameController : MonoBehaviour
     // Variables to hold the Ship information.
     public GameObject ship;
     public float shipHealth;
-    public bool shipDestroyed = false;
+    public Text shipHP;
+    public Image shipHPBar;
+    private float shipPerc;
+    private bool shipDestroyed = false;
 
     // Variables to hold the Shield information.
     public GameObject shield;
     public float shieldHealth;
-    public bool shieldDestroyed = false;
+    public Text shieldHP;
+    public Image shieldHPBar;
+    private float shieldPerc;
+    private bool shieldDestroyed = false;
     #endregion
 
     #region // ********** Wave Generation Variables ********** //
@@ -107,10 +113,23 @@ public class GameController : MonoBehaviour
         ship.GetComponent<Stats>().health = shipHealth;
         shield.GetComponent<Stats>().health = shieldHealth;
     }
-	
-	// Update is called once per frame
-	void Update () 
-	{
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (ship != null)
+        {
+            shipPerc = ((ship.GetComponent<Stats>().health / shipHealth) * 100);
+            shipHP.text = string.Format(" SHIP: {0:##}%", shipPerc);
+            shipHPBar.fillAmount = shipPerc / 100;
+        }
+        if (shield != null)
+        { 
+            shieldPerc = ((shield.GetComponent<Stats>().health / shieldHealth) * 100);
+            shieldHP.text = string.Format(" SHIELDS: {0:##}%", shieldPerc);
+            shieldHPBar.fillAmount = shieldPerc / 100;
+        }
+
         if (GameObject.FindGameObjectWithTag("Enemy") == null && waveComplete == true)
         {
             currentWave++;
