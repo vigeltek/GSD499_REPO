@@ -52,6 +52,8 @@ public class EnemyController : MonoBehaviour
             {
                 AttackTarget(collObject);
             }
+
+            RotateTowards(collObject.transform.position);
         }
 
 
@@ -68,6 +70,8 @@ public class EnemyController : MonoBehaviour
                 agent.Resume();
             }
         }
+        
+        
     }
 
     void OnTriggerEnter(Collider c)
@@ -81,7 +85,7 @@ public class EnemyController : MonoBehaviour
             {
                 gameObject.GetComponent<Animation>().Stop();
             }
-            gameObject.transform.LookAt(collObject.transform.position);
+            RotateTowards(collObject.transform.position);
 
             attackObject = true;
 
@@ -94,9 +98,9 @@ public class EnemyController : MonoBehaviour
     {
         if (canFire)
         {            
-            GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).localRotation);
+            GameObject projClone = (GameObject)Instantiate(attackHit, gameObject.transform.GetChild(0).position, gameObject.transform.GetChild(0).rotation);
 
-            projClone.GetComponent<Rigidbody>().AddForce(projClone.transform.forward * 2000);
+            projClone.GetComponent<Rigidbody>().AddForce(projClone.transform.forward * 2500);
 
             collTarget.GetComponent<Stats>().DamageObject(attackPower, gameObject);
             AS.Play();
@@ -114,5 +118,12 @@ public class EnemyController : MonoBehaviour
     {
         yield return new WaitForSeconds(attackSpeed);
         canFire = true;
+    }
+
+    private void RotateTowards(Vector3 target)
+    {
+        Quaternion rotAmt = Quaternion.LookRotation((target - transform.position).normalized);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotAmt, Time.deltaTime * 500);
     }
 }
