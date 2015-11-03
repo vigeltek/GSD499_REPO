@@ -19,7 +19,7 @@ public class IntroMonoScroll : MonoBehaviour {
 
     private Transform creditHolderTransform;
 
-    private Animator anim;
+
 
     private IntroVideoController IVC;
 
@@ -28,7 +28,7 @@ public class IntroMonoScroll : MonoBehaviour {
         InitializeCreditHolder();
         RecalculateFontSize();
         PlaceCreditsAtTheScreensBottom();
-        anim = GameObject.FindGameObjectWithTag("IntroShip").GetComponent<Animator>();
+
         IVC = GameObject.FindGameObjectWithTag("IntroVideoController").GetComponent<IntroVideoController>();
     }
 
@@ -65,7 +65,7 @@ public class IntroMonoScroll : MonoBehaviour {
     {
         float screeny = 0;
         float y = 0.0f;
-        float minScreenY = (-1.0f * creditText.GetScreenRect().height) + Screen.height / 2;
+        float minScreenY = (-1.0f * creditText.GetScreenRect().height) + Screen.height / 8;
         do
         {
             creditHolderTransform.position = new Vector2(0.5f, y);
@@ -97,10 +97,10 @@ public class IntroMonoScroll : MonoBehaviour {
 
     private void MoveCreditsTextUntilEndIsReached()
     {
-        if (creditText.GetScreenRect().y > Screen.height * .99)
+        if (creditText.GetScreenRect().y > Screen.height * 1.01)
         {
-            anim.SetBool("IsStart", true);
             IVC.monoOver = true;
+
             this.gameObject.SetActive(false);
             return;
         }

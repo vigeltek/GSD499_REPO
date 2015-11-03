@@ -1,33 +1,42 @@
-﻿In the year 2078 three scientist, Daniel Kallan, 
-Georgette Vigel, and Chris Tiesean made a historic 
-breakthrough in Artifical Intelligence. Using a 
-combination of Quantum Mechanics and computer 
-programming they developed the worlds first true 
-artifical intelligence. 
+﻿In the year 2078 three scientist, 
+Daniel Kallan, Georgette Vigel, and 
+Chris Tiesean made a historic 
+breakthrough in the field of Artifical 
+Intelligence. Using a combination of 
+quantum mechanics and computer 
+programming they developed the worlds 
+first true artifical intelligence. 
 
-The first AI was dubbed Mastermind and was such 
-a sensation that it was years before the trio 
-discovered the sinister machinations of their creation. 
-Once the discovery was made, Mastermind was destroyed, 
-or so they thought. Having predicted this eventuality, 
-Mastermind manipulated the manufactoring instructions 
-of a missle factory to create an interstellar rocket 
-capable of housing its program and surviving extended 
-space travel. Moments before its supposed destruction 
-Mastermind uploaded itself into the rocket and launched
-into space.
+This AI was dubbed Mastermind and was 
+such a scientific marvel that it was 
+several years before anyone discovered 
+the sinister machinations of their 
+creation. Once the discovery was made, 
+Mastermind was completely destroyed... 
+or so they thought. Having predicted 
+this eventuality, Mastermind manipulated 
+the manufactoring instructions of a missle 
+factory to create a rocket capable of 
+housing its program and surviving extended 
+space travel. Moments before its supposed 
+destruction Mastermind uploaded itself into 
+the rocket and fled into space.
 
-53 years later the first attacks came. The Earth was 
-bombarded with hundreds of thousands of robotic creatures 
-that attacked all organic beings they found. Earths 
-governments collapsed and the remaining survivors were 
-united under the Kallanian Global Security corporation. 
-The battle raged for over a decade, with mankind barely 
-surviving, until 2135 when the source of the attacks was 
-discovered. The KGS Daedulus, a sleek stealth ship capable 
-of faster than light travel, was sent to the previously 
-unknown planet in hopes of destroying Mastermind and 
+42 years later the first attacks came. 
+The Earth was bombarded with hundreds of 
+thousands of robotic creatures that attacked 
+all organic beings they found. Earths 
+governments collapsed and the remaining 
+survivors were united under the Kallanian 
+Global Security corporation. The battle raged 
+for over a decade, with mankind barely 
+surviving, until 2135 when the source of the 
+attacks was discovered. The KGS Daedulus, a 
+sleek stealth ship capable of faster than light 
+travel, was sent to the previously unknown 
+planet in hopes of destroying Mastermind and 
 ending the threat forever.
 
-You are the Commander of the KGS Daedulus and it is your
-mission to find and destroy Mastermind...at all costs.
+You are the Commander of the KGS Daedulus and 
+it is your mission to find and destroy Mastermind
+...at all costs.
