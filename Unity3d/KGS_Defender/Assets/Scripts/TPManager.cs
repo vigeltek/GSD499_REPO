@@ -25,13 +25,14 @@ public class TPManager : MonoBehaviour {
 
     public bool placementMode;
     public bool sellMode;
-    public bool upgrade;
+    public bool upgradeMode;
 
     public UnityEngine.UI.Text buildModeText;
     public GameObject laserButton;
     public GameObject rocketButton;
     public GameObject lightningButton;
-    public GameObject SellButton;
+    public GameObject sellButton;
+    public GameObject upgradeButton;
 
     public Color activeColor;
     public Color disabledColor;
@@ -72,6 +73,11 @@ public class TPManager : MonoBehaviour {
     public static void SellTurretHotKey()
     {
         instance.SellMode();
+    }
+
+    public static void UpgradeTurretHotKey()
+    {
+        instance.UpgradeMode();
     }
 
     public static void CancelHotKey()
@@ -211,6 +217,15 @@ public class TPManager : MonoBehaviour {
             instance.turrGrid.BroadcastMessage("GridVisibility", false);
         }
 
+
+        if (instance.upgradeMode)
+        {
+            instance.upgradeMode = false;
+            UpgradeGUI.SetActive(false);
+            EnableButtons();
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
+        }
+
     }
 
     public void SellMode()
@@ -223,7 +238,7 @@ public class TPManager : MonoBehaviour {
         else
         {
             instance.placementMode = false;
-            instance.upgrade = false;
+            instance.upgradeMode = false;
             instance.sellMode = true;
             instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
@@ -232,6 +247,26 @@ public class TPManager : MonoBehaviour {
 
     }
 
+    public void UpgradeMode() {
+        if (instance.upgradeMode)
+        {
+            instance.upgradeMode = false;
+            UpgradeGUI.SetActive(false);
+            EnableButtons();
+            instance.turrGrid.BroadcastMessage("GridVisibility", false);
+        }
+        else
+        {
+            instance.placementMode = false;
+            instance.upgradeMode = true;
+            instance.sellMode = false;
+            instance.turrGrid.BroadcastMessage("GridVisibility", true);
+        }
+
+
+    }
+
+    /*
     public void TurnOnGrid()
     {
         instance.upgrade = true;
@@ -240,13 +275,14 @@ public class TPManager : MonoBehaviour {
 
     public void TurnOffGrid()
     {
-        instance.upgrade = false;
+        instance.upgradeMode = false;
         UpgradeGUI.SetActive(false);
         instance.turrGrid.BroadcastMessage("GridVisibility", false);
 
     }
+    */
 
-    
+
     public static void PlacementMode()
     {
         if (instance.placementMode)
@@ -259,7 +295,7 @@ public class TPManager : MonoBehaviour {
             //Debug.Log("Turn On Grid");
             instance.placementMode = true;
             instance.sellMode = false;
-            instance.upgrade = false;
+            instance.upgradeMode = false;
             instance.turrGrid.BroadcastMessage("GridVisibility", true);
         }
 
@@ -271,6 +307,18 @@ public class TPManager : MonoBehaviour {
         laserButton.GetComponent<Button>().interactable = false;      
         rocketButton.GetComponent<Button>().interactable = false;
         lightningButton.GetComponent<Button>().interactable = false;
+        sellButton.GetComponent<Button>().interactable = false;
+        upgradeButton.GetComponent<Button>().interactable = false;
+    }
+
+    void EnableButtons()
+    {
+
+        laserButton.GetComponent<Button>().interactable = true;
+        rocketButton.GetComponent<Button>().interactable = true;
+        lightningButton.GetComponent<Button>().interactable = true;
+        sellButton.GetComponent<Button>().interactable = true;
+        upgradeButton.GetComponent<Button>().interactable = true;
     }
 
     public void Upgrade(placementPanel panel, TurretUpgrade tu)
@@ -298,7 +346,8 @@ public class TPManager : MonoBehaviour {
             upgradeGUIConfirmButton.interactable = false;
         }
 
-            UpgradeGUI.SetActive(true);
+        DisableButtons();
+        UpgradeGUI.SetActive(true);
 
     }
 

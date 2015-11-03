@@ -79,7 +79,7 @@ namespace UnityStandardAssets.Utility
                     case Mode.Deactivate:
                         if (targetGameObject != null)
                         {
-                            targetGameObject.SetActive(false);
+                            targetGameObject.SetActive(false);                            
                         }
                         break;
                 }

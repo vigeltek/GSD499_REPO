@@ -48,7 +48,7 @@ public class placementPanel : MonoBehaviour {
                 rend.material.SetColor("_Color", tpm.highlightColor);
             }
         }
-        if(tpm.upgrade)
+        if(tpm.upgradeMode)
         {
             if (currPrefab != null && GetComponentInChildren<TurretUpgrade>().CostOfUpgrade() != 0)
             {
@@ -88,7 +88,7 @@ public class placementPanel : MonoBehaviour {
             tpm.SellTurret(resource);
             tpm.SellMode();
         }
-        if (tpm.upgrade == true)
+        if (tpm.upgradeMode == true)
         {
             //Get Cost for upgrade. 
             TurretUpgrade tu = currPrefab.GetComponent<TurretUpgrade>();
