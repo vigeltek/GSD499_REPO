@@ -88,7 +88,7 @@ public class IntroVideoController : MonoBehaviour
 
     IEnumerator SwitchScene()
     {
-        warning.SetActive(false);
+        //warning.SetActive(false);
         yield return new WaitForSeconds(10f);
         Application.LoadLevel("Intro_Menu");
     }

@@ -19,7 +19,7 @@ public class UIGameOverMenu : MonoBehaviour {
     public void OnTryAgaincButton()
     {
         Time.timeScale = 1;
-        Application.LoadLevel(2);
+        Application.LoadLevel(3);
     }
 
 

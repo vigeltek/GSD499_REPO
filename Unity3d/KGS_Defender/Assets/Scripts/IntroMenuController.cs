@@ -16,14 +16,14 @@ public class IntroMenuController : MonoBehaviour {
     public void onStartGameClick()
     {
 
-        Application.LoadLevel(2);
+        Application.LoadLevel(3);
         
     }
 
     public void onStartMenuClick()
     {
 
-        Application.LoadLevel(1);
+        Application.LoadLevel(2);
 
     }
 
@@ -35,7 +35,7 @@ public class IntroMenuController : MonoBehaviour {
     public void onCreditsClick()
     {
 
-        Application.LoadLevel(3);
+        Application.LoadLevel(4);
         /*
         if (MenuMain != null && TitleText != null && CreditsDialog != null)
         {
