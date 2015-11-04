@@ -38,6 +38,10 @@ public class UIPauseMenu : MonoBehaviour {
     {
         Hide();
         GameController.ResumeGame();
+        if (UIHud.upgradeMenuShowing)
+        {
+            TPManager.showUpgradeMenu(true);
+        }
     }
 
     public void OnOptionButton()

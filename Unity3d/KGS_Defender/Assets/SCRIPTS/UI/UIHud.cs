@@ -7,7 +7,7 @@ public class UIHud : MonoBehaviour {
     public Text txtLife;
     public Text txtLevel;
     public UnityButton buttonSpawn;
-
+    public static bool upgradeMenuShowing = false;
     // Use this for initialization
     void Start () {
 	
@@ -28,9 +28,19 @@ public class UIHud : MonoBehaviour {
         {
             GameController.ResumeGame();
             UIPauseMenu.Hide();
+            if (upgradeMenuShowing)
+            {
+                upgradeMenuShowing = false;
+                TPManager.showUpgradeMenu(true);
+            }
         }
         else
         {
+            if (TPManager.isUpgradeMenuActive())
+            {
+                upgradeMenuShowing = true;
+                TPManager.showUpgradeMenu(false);
+            }
             GameController.PauseGame();
             UIPauseMenu.Show();
         }

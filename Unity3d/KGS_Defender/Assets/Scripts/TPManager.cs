@@ -247,6 +247,16 @@ public class TPManager : MonoBehaviour {
 
     }
 
+    public static bool isUpgradeMenuActive()
+    {
+        return instance.UpgradeGUI.activeSelf;
+    }
+    public static void showUpgradeMenu(bool bShow)
+    {
+        instance.UpgradeGUI.SetActive(bShow);       
+    }
+
+
     public void UpgradeMode() {
         if (instance.upgradeMode)
         {
