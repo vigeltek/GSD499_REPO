@@ -19,6 +19,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public Text rocketButtonToolTip;
     public Text lightningButtonToolTip;
     public Text sellButtonToolTip;
+    public Text upgradeButtonToolTip;
 
     // Use this for initialization
     void Start ()
@@ -33,6 +34,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         rocketButtonToolTip.enabled = false;
         lightningButtonToolTip.enabled = false;
         sellButtonToolTip.enabled = false;
+        upgradeButtonToolTip.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -48,6 +50,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
             rocketButtonToolTip.enabled = true;
             lightningButtonToolTip.enabled = true;
             sellButtonToolTip.enabled = true;
+            upgradeButtonToolTip.enabled = true;
         }
         else
         {
@@ -55,6 +58,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
             rocketButtonToolTip.enabled = false;
             lightningButtonToolTip.enabled = false;
             sellButtonToolTip.enabled = false;
+            upgradeButtonToolTip.enabled = false;
 
         }
         
@@ -71,6 +75,11 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             TPManager.BuildLightningTurretHotKey();
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            TPManager.UpgradeTurretHotKey();
         }
 
         if (Input.GetKeyDown(KeyCode.Delete))

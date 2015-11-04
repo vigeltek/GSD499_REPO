@@ -48,6 +48,18 @@ public class placementPanel : MonoBehaviour {
                 rend.material.SetColor("_Color", tpm.highlightColor);
             }
         }
+        if(tpm.upgradeMode)
+        {
+            if (currPrefab != null && GetComponentInChildren<TurretUpgrade>().CostOfUpgrade() != 0)
+            {
+                rend.material.SetColor("_Color", tpm.highlightColor);
+
+            }
+            else
+            {
+                rend.material.SetColor("_Color", tpm.invalidColor);
+            }
+        }
     }
 
     void OnMouseExit()
@@ -58,7 +70,7 @@ public class placementPanel : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (tpm.placementMode && currPrefab == null)
+        if (tpm.placementMode == true && currPrefab == null)
         {
             if (tpm.canAfford())
             {
@@ -76,9 +88,25 @@ public class placementPanel : MonoBehaviour {
             tpm.SellTurret(resource);
             tpm.SellMode();
         }
-
+        if (tpm.upgradeMode == true)
+        {
+            //Get Cost for upgrade. 
+            TurretUpgrade tu = currPrefab.GetComponent<TurretUpgrade>();
+            if (tu.currentLevel != 3)
+            {
+                tpm.Upgrade(this, tu);
+            }
+        }
     }
 
+    public void ConfirmUpgrade()
+    {
+        Debug.Log("Upgrade Code is working");
+        GetComponentInChildren<TurretUpgrade>().Upgrade();
+
+
+
+    }
     public void GridVisibility(bool isVisible)
     {
             MeshRenderer render = GetComponent<MeshRenderer>();
