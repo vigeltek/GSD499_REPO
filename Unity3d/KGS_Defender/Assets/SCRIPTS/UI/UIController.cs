@@ -79,7 +79,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if (Input.GetKeyDown(KeyCode.U))
         {
-
+            TPManager.UpgradeTurretHotKey();
         }
 
         if (Input.GetKeyDown(KeyCode.Delete))
