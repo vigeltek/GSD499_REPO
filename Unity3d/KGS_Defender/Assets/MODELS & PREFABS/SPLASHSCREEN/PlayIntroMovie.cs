@@ -17,7 +17,7 @@ public class PlayIntroMovie : MonoBehaviour {
         {
             Debug.Log("Intro call");
 
-            Application.LoadLevel(1);
+            Application.LoadLevel("OpeningVideo");
         }
 	}
 }

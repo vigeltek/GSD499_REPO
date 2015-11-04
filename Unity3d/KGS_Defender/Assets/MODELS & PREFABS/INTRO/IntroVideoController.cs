@@ -53,6 +53,7 @@ public class IntroVideoController : MonoBehaviour
             alienSystem.SetActive(true);
             warning.SetActive(true);
             anim.SetBool("HitPlanet", true);
+            StartCoroutine(SwitchScene());
         }
 
 	}
@@ -83,6 +84,13 @@ public class IntroVideoController : MonoBehaviour
         warpPS2.SetActive(true);
 
         reachedPlanet = true;
+    }
+
+    IEnumerator SwitchScene()
+    {
+        warning.SetActive(false);
+        yield return new WaitForSeconds(10f);
+        Application.LoadLevel("Intro_Menu");
     }
 
 }
