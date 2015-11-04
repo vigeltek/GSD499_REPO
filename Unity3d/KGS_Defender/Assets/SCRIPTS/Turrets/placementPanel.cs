@@ -102,7 +102,11 @@ public class placementPanel : MonoBehaviour {
     public void ConfirmUpgrade()
     {
         Debug.Log("Upgrade Code is working");
+        int temp = GetComponentInChildren<TurretUpgrade>().CostOfUpgrade();
+        tpm.GM.SpendCash(temp);
         GetComponentInChildren<TurretUpgrade>().Upgrade();
+        tpm.TurnOffGrid();
+        tpm.EnableButtons();
 
 
 

@@ -40,7 +40,7 @@ public class TPManager : MonoBehaviour {
     private static TPManager instance;
     private GameObject thisObj;
 
-    GameController GM;
+    public GameController GM;
     GameObject turrGrid;
 
     public GameObject UpgradeGUI;
@@ -272,15 +272,17 @@ public class TPManager : MonoBehaviour {
         instance.upgrade = true;
         instance.turrGrid.BroadcastMessage("GridVisibility", true);
     }
-
+    */
     public void TurnOffGrid()
     {
         instance.upgradeMode = false;
         UpgradeGUI.SetActive(false);
+        EnableButtons();
         instance.turrGrid.BroadcastMessage("GridVisibility", false);
 
+
     }
-    */
+   
 
 
     public static void PlacementMode()
@@ -311,7 +313,7 @@ public class TPManager : MonoBehaviour {
         upgradeButton.GetComponent<Button>().interactable = false;
     }
 
-    void EnableButtons()
+    public void EnableButtons()
     {
 
         laserButton.GetComponent<Button>().interactable = true;
